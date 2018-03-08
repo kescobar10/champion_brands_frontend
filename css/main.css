@@ -135,6 +135,17 @@ footer p a, footer p span, .info a {
   font-weight: 800;
   color: #d6a51d;
 }
+
+button {
+  color: white;
+  background-image:
+  linear-gradient(
+     #b52d26,
+     #db493d);
+  padding: 4%;
+  font-size: 1.4rem;
+}
+
 /* CONTACT */
 .contact, .sub, .portal, .info{
   display: flex;
@@ -153,13 +164,6 @@ footer p a, footer p span, .info a {
 
 
 /* PORTAL */
-button {
-  color: white;
-  background-color: red;
-  padding: 50px;
-  font-family: 'Zilla Slab', serif;
-  font-weight: 600;
-  font-size: 1.4rem;
 }
 
 /* COPYRIGHT */
