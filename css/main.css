@@ -156,8 +156,8 @@ button {
   margin: 3%;
 }
 
-.contact section, .sub section, .portal section, .info section {
-  padding-top: 8%;
+.contact section, .sub > *, .portal  > *, .info  > *, button {
+  margin-top: 8%;
 }
 
 /* SUBSCRIBE */
