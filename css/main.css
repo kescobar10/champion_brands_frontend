@@ -100,11 +100,60 @@ li a:hover {
 
 
 /****** FOOTER ******/
+footer{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%
+}
 
+footer h3{
+  font-family: 'Zilla Slab', serif;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+footer p {
+  font-family: 'Zilla Slab', serif;
+  font-weight: 400;
+
+}
+
+footer p a, footer p span, .info a {
+  font-family: 'Zilla Slab', serif;
+  font-weight: 800;
+  color: #d6a51d;
+}
 /* CONTACT */
+.contact, .sub, .portal, .info{
+  display: flex;
+  flex-direction: column;
+  background-color: #666;
+  width: 85%;
+  padding: 1%;
+  margin: 3%;
+}
+
+.contact section, .sub section, .portal section, .info section {
+  padding-top: 8%;
+}
 
 /* SUBSCRIBE */
 
+
 /* PORTAL */
+button {
+  color: white;
+  background-color: red;
+  padding: 50px;
+  font-family: 'Zilla Slab', serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
 
 /* COPYRIGHT */
+.social-media-footer-hp {
+  display: flex;
+  align-items: center;
+}
