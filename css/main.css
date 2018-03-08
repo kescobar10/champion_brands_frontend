@@ -26,8 +26,30 @@
   }
 
 /****** FONTS ******/
+p, button, section a, .info a{
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
 
+}
 
+h2, h3{
+  font-family: 'Zilla Slab', serif;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+* a{
+  text-decoration: none;
+}
+
+section a, footer p a, footer p span, .info a {
+  font-weight: 800;
+  color: #d6a51d;
+}
 /****** HOMEPAGE HEADER ******/
 header {
   display: flex;
@@ -118,23 +140,6 @@ footer{
   padding: 1%
 }
 
-footer h3{
-  font-family: 'Zilla Slab', serif;
-  font-weight: 600;
-  padding-bottom: 5px;
-}
-
-footer p, button {
-  font-family: 'Asap', sans-serif;
-  font-weight: 400;
-
-}
-
-footer p a, footer p span, .info a {
-  font-family: 'Asap', sans-serif;
-  font-weight: 800;
-  color: #d6a51d;
-}
 
 button {
   color: white;
@@ -179,9 +184,7 @@ button {
   flex-direction: column;
   align-items: center;
 }
-.info a{
-  text-decoration: none;
-}
+
 .social-media-footer-hp {
   display: flex;
   align-self: normal;
