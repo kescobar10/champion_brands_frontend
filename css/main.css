@@ -124,6 +124,10 @@ a.navlist:hover{
 
 
 /****** HOMEPAGE BODY ******/
+.carousel, .blue-cards, .brand, .contact, .sub, .portal, .info {
+  padding: 1.5% 12%;
+  line-height: 2.5;
+}
 
 
 
@@ -157,7 +161,7 @@ button {
   flex-direction: column;
   background-color: rgba(102, 102, 102, 0.53);
   width: 85%;
-  padding: 5%;
+  line-height: 2;
   margin: 3%;
 }
 
