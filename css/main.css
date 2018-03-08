@@ -111,7 +111,7 @@ a.navlist:hover{
 
 /****** FOOTER ******/
 footer{
-  background-color: black;
+  background-color: grey;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,7 +139,7 @@ footer p a, footer p span, .info a {
 .contact, .sub, .portal, .info{
   display: flex;
   flex-direction: column;
-  background-color: #666;
+  background-color: rgba(102, 102, 102, 0.53);
   width: 85%;
   padding: 1%;
   margin: 3%;
