@@ -161,6 +161,9 @@ button {
 }
 
 /* SUBSCRIBE */
+.sub input{
+  padding: 5%;
+}
 
 
 /* PORTAL */
