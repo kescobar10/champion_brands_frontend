@@ -129,10 +129,26 @@ a.navlist:hover{
   line-height: 2.5;
 }
 
+.carousel {
+  background-color: #a9a4a3;
+  color: white;
+}
 
+.carousel h2{
+  color: #2b3268;
+}
 
+.blue-cards {
+  background-color: rgba(43, 50, 105, 0.8);
+  color: white;
+}
 
-
+.blue-cards section{
+  background:
+    url("../img/champion-logo.png"),
+    rgba(102, 102, 102, 0.53);
+  background-size: cover;
+}
 
 
 /****** FOOTER ******/
