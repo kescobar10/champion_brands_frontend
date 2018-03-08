@@ -61,12 +61,17 @@ header {
   max-width: 300px;
 }
 /* NAV LIST */
+nav{
+  width: 100%;
+  font-size: 1rem;
+}
 
 nav ul {
   list-style-type: none;
   text-align: center;
   display: flex;
   background-color: #df4c3f;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
