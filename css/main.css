@@ -84,20 +84,18 @@ nav ul {
 }
 
 li {
-  padding: 1.5% 2% 1.5% 2%;
+  padding: 1.5% 2%;
 }
 
-li:hover {
+a.navlist{
+  width: 100%;
+  padding: 1.5% 2%;
+}
+
+a.navlist:hover{
   color: #df4c3f;
   background-color: white;
 }
-
-li a:hover {
-  color: #df4c3f;
-}
-
-
-
 
 
 
