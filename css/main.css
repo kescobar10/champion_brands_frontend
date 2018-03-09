@@ -1,4 +1,10 @@
-/****** IMPORTANT ******/
+/****** IMPORTANT
+
+This page defines sections that can be found on all pages. ie header & footer
+
+IMPORTANT ******/
+
+
 @import url('https://fonts.googleapis.com/css?family=Asap');
 
 :root {
@@ -26,11 +32,6 @@
   }
 
 /****** FONTS ******/
-p, button, section a, .info a{
-  font-family: 'Asap', sans-serif;
-  font-weight: 400;
-
-}
 
 h2, h3{
   font-family: 'Zilla Slab', serif;
@@ -38,8 +39,16 @@ h2, h3{
   text-transform: uppercase;
 }
 
-h3 {
+h3, h4  {
   font-weight: 600;
+}
+
+p, button, section a, .info a, .contact h4{
+  font-family: 'Asap', sans-serif;
+}
+
+p, button, section a, .info a {
+  font-weight: 400;
 }
 
 * a{
@@ -50,7 +59,7 @@ section a, footer p a, footer p span, .info a {
   font-weight: 800;
   color: #d6a51d;
 }
-/****** HOMEPAGE HEADER ******/
+/****** HEADER ******/
 header {
   display: flex;
   flex-direction: column;
@@ -122,35 +131,6 @@ a.navlist:hover{
 }
 
 
-
-/****** HOMEPAGE BODY ******/
-.carousel, .blue-cards, .brand, .contact, .sub, .portal, .info {
-  padding: 1.5% 12%;
-  line-height: 2.5;
-}
-
-.carousel {
-  background-color: #a9a4a3;
-  color: white;
-}
-
-.carousel h2{
-  color: #2b3268;
-}
-
-.blue-cards {
-  background-color: rgba(43, 50, 105, 0.8);
-  color: white;
-}
-
-.blue-cards section{
-  background:
-    url("../img/champion-logo.png"),
-    rgba(102, 102, 102, 0.53);
-  background-size: cover;
-}
-
-
 /****** FOOTER ******/
 footer{
   background-color: grey;
@@ -179,6 +159,8 @@ button {
   width: 85%;
   line-height: 2;
   margin: 3%;
+  padding: 1.5% 12%;
+  line-height: 2.5;
 }
 
 .contact section, .sub > *, .portal  > *, .info  > *, button {
