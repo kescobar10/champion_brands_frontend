@@ -7,10 +7,18 @@
 .carousel {
   background-color: #a9a4a3;
   color: white;
+  display: flex;
+  flex-direction: row;
 }
 
 .carousel h2{
   color: #2b3268;
+}
+
+.carousel-text {
+    padding: 1rem;
+    width: 66%;
+    align-self: flex-end;
 }
 
 .blue-cards {
