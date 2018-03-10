@@ -6,6 +6,9 @@
 
 .carousel {
   background-color: #a9a4a3;
+  background-image: url("../img/kegs_homepage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
   display: flex;
   flex-direction: row;
@@ -19,12 +22,17 @@
     padding: 1rem;
     width: 66%;
     align-self: flex-end;
+    background-color: rgba(102, 102, 102, 0.70);
 }
 
 .blue-cards {
   color: white;
   display: flex;
   flex-direction: column;
+}
+
+.carousel-img {
+    margin: auto;
 }
 
 .blue-cards section{
@@ -40,7 +48,6 @@ nav ul {
     background-color: #df4c3f;
 }
 
-.carousel-text,
 .card--team,
 .card--retail,
 .card--brewers {
