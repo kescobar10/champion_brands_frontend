@@ -193,3 +193,55 @@ button {
   /* ^^^ to make the icon space out correctly */
   justify-content: space-between;
 }
+
+/* MEDIA QUERIES */
+@media all and (min-width: 800px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    footer {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: calc(100% / 3 - 40px) calc(100% / 3) calc(100% / 3 - 40px);
+        grid-template-rows: auto auto;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    .contact,
+    .sub,
+    .portal,
+    .info {
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+        align-self: flex-start;
+        align-self: stretch;
+    }
+
+    .contact {
+        grid-column: 1 / 1;
+        grid-row: 1 / span 2;
+    }
+
+    .sub {
+        grid-column: 2 / 2;
+                grid-row: 1 / 1;
+    }
+
+    .portal {
+        grid-column: 3 / 3;
+        grid-row: 1 / 1;
+    }
+
+    .info {
+        grid-column: 2 / span 2;
+        grid-row: 2 / 2;
+        justify-self: stretch;
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+}

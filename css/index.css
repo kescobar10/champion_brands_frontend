@@ -14,13 +14,34 @@
 }
 
 .blue-cards {
-  background-color: rgba(43, 50, 105, 0.8);
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .blue-cards section{
   background:
     url("../img/champion-logo.png"),
-    rgba(102, 102, 102, 0.53);
+    rgba(41, 51, 104, 0.70);
   background-size: cover;
+  padding: 2%;
+  margin: 2%;
+}
+
+nav ul {
+    background-color: #df4c3f;
+}
+
+.carousel-text,
+.card--team,
+.card--retail,
+.card--brewers {
+    background-color: rgba(255,255,255,.5);
+}
+
+/* MEDIA QUERIES */
+@media all and (min-width: 800px) {
+    .blue-cards {
+        flex-direction: row;
+    }
 }
