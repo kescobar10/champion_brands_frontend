@@ -6,8 +6,8 @@
 
 .carousel {
   background-color: #a9a4a3;
-  background-image: url("../img/kegs_homepage.jpg");
-  background-position: center;
+  background-image: url("../img/kegs-homepage.jpg");
+  background-position: center left;
   background-repeat: no-repeat;
   color: white;
   display: flex;
