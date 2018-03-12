@@ -198,12 +198,10 @@ button,
 
 .fla {
     padding: .75rem 1rem 0 0;
-    display: inline-block;
 }
 
 .ga {
     padding: .75rem 0 0 1rem;
-    display: inline-block;
 }
 
 /* SUBSCRIBE */
@@ -315,6 +313,13 @@ button,
     .contact {
         grid-column: 1 / 1;
         grid-row: 1 / span 2;
+    }
+
+    .fla,
+    .ga,
+    .email {
+        display: block;
+        padding: 1rem 0;
     }
 
     .sub {
