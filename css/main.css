@@ -53,7 +53,7 @@ p, button, section a, .info a, .contact h4{
   font-family: 'Asap', sans-serif;
 }
 
-p, button, section a, .info a {
+p, section a, .info a {
   font-weight: 400;
 }
 
@@ -61,7 +61,7 @@ p, button, section a, .info a {
   text-decoration: none;
 }
 
-section a, footer p a, footer p span, .info a {
+section a, footer p a, footer p span, button, .info a {
   font-weight: 800;
   color: #d6a51d;
 }
@@ -102,7 +102,7 @@ header {
 /* NAV LIST */
 nav{
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 nav ul {
@@ -155,8 +155,8 @@ button {
   linear-gradient(
      #b52d26,
      #db493d);
-  padding: 4%;
-  font-size: 1.4rem;
+  padding: 1.1rem;
+  font-size: 1.2rem;
   border-radius: 4px;
 }
 
@@ -174,12 +174,20 @@ button {
   color: white;
 }
 
-.contact section, .sub > *, .portal  > *, .info  > *, button {
+.contact > *, .sub > *, .portal  > *, .info  > *, button {
   margin-top: 4%;
 }
 
-.sub > h3, .portal  > h3, .info  > h3 {
+.contact > h3, .sub > h3, .portal  > h3, .info  > h3 {
   margin-top: 1%;
+  color: rgba(255,255,255,.68);
+  letter-spacing: .2rem;
+  font-size: 1.3rem;
+}
+
+.fla,
+.ga {
+    padding: .75rem 0;
 }
 
 
