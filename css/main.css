@@ -61,7 +61,7 @@ p, section a, .info a {
   text-decoration: none;
 }
 
-section a, footer p a, footer p span, button, .info a, .sub input[type=submit] {
+section a, footer p a, .phone, button, .info a, .sub input[type=submit] {
   font-weight: 800;
   color: #edbf41;
 }
@@ -173,7 +173,7 @@ button,
   background-color: rgba(0, 0, 0, 0.2);
   width: 94%;
   margin: .75rem;
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem;
   line-height: 1.75;
   color: white;
 }
@@ -206,6 +206,19 @@ button,
     padding: 1rem 0;
 }
 
+.hide-mobile {
+    display: none;
+}
+
+.info-text,
+.info-text p a {
+    display: block;
+    text-align: center;
+}
+
+.info-text p a {
+    padding: .5rem 0;
+}
 /* SUBSCRIBE */
 
 .sub p {
@@ -239,20 +252,15 @@ button,
 }
 
 /* PORTAL */
-.portal{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 .portal button {
     margin: .75rem auto;
     box-shadow: -5px 5px 10px rgba(0,0,0,.3);
     width: 80%;
+    max-width: 300px;
 }
 
 /* COPYRIGHT */
-
 
 .social-media-footer-hp figure a {
     display: inline-block;
@@ -267,16 +275,40 @@ button,
     padding-right: 0;
 }
 
-.info p a:first-child {
-    display: inline-block;
-    padding: 0 .7rem 0 0;
-}
-.info p a:last-child {
-    display: inline-block;
-    padding: 0 0 0 .7rem;
-}
 
 /* MEDIA QUERIES */
+
+@media all and (min-width: 365px) {
+    .info p a {
+        display: inline-block;
+    }
+    .info p a:first-child {
+        padding: 0 .7rem 0 0;
+    }
+    .info p a:last-child {
+        padding: 0 0 0 .7rem;
+    }
+    .hide-mobile {
+        display: inline-block;
+    }
+
+    .portal {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+    }
+
+    .portal h3 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 1;
+    }
+
+    .portal button {
+        grid-row: 2 / 2;
+    }
+
+}
+
 @media all and (min-width: 800px) {
     nav ul {
         flex-direction: row;
@@ -343,5 +375,17 @@ button,
       align-items: center;
         justify-content: center;
         grid-gap: 10px;
+    }
+    .info-text,
+    .info-text p a {
+        text-align: left;
+    }
+
+    .portal {
+        display: block;
+    }
+
+    .portal button {
+        margin: 1rem auto;
     }
 }
