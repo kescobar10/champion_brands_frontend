@@ -71,7 +71,7 @@ section a, footer p a, .phone, button, .info a, .sub input[type=submit] {
   color: #edbf41;
 }
 
-section a, footer p a, .info a {
+section a, footer p a, .info a, .navlist {
   text-shadow: -4px 4px 10px rgba(0,0,0,.4);
 }
 /****** HEADER ******/
