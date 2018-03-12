@@ -171,8 +171,7 @@ button,
   flex-direction: column;
   justify-content: space-between; */
   background-color: rgba(0, 0, 0, 0.2);
-  width: 85%;
-  line-height: 2;
+  width: 94%;
   margin: .75rem;
   padding: 1.5rem 2.5rem;
   line-height: 1.75;
@@ -192,16 +191,19 @@ button,
 
 .fla,
 .ga {
-    padding: .75rem 1.5rem;
     display: inline-block;
 }
 
 .fla {
-    padding: .75rem 1rem 0 0;
+    padding: 1rem 2rem 1rem 0;
 }
 
 .ga {
-    padding: .75rem 0 0 1rem;
+    padding: 1rem 0 ;
+}
+
+.email {
+    padding: 1rem 0;
 }
 
 /* SUBSCRIBE */
@@ -250,14 +252,7 @@ button,
 }
 
 /* COPYRIGHT */
-.info {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  flex-direction: column;
-  align-items: center;
-    justify-content: center;
-    grid-gap: 10px;
-}
+
 
 .social-media-footer-hp figure a {
     display: inline-block;
@@ -339,5 +334,14 @@ button,
 
         flex-direction: row;
         flex-flow: wrap;
+    }
+
+    .info {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      flex-direction: column;
+      align-items: center;
+        justify-content: center;
+        grid-gap: 10px;
     }
 }
