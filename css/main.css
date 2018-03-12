@@ -49,7 +49,7 @@ h3, h4  {
   font-weight: 600;
 }
 
-p, button, section a, .info a, .contact h4{
+p, button, section a, .info a, .contact h4, .sub input {
   font-family: 'Asap', sans-serif;
 }
 
@@ -61,7 +61,7 @@ p, section a, .info a {
   text-decoration: none;
 }
 
-section a, footer p a, footer p span, button, .info a {
+section a, footer p a, footer p span, button, .info a, .sub input[type=submit] {
   font-weight: 800;
   color: #edbf41;
 }
@@ -153,7 +153,8 @@ footer{
 }
 
 
-button {
+button,
+.sub input[type=submit] {
   color: white;
   background-image:
   linear-gradient(
@@ -166,9 +167,9 @@ button {
 
 /* CONTACT */
 .contact, .sub, .portal, .info{
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
   background-color: rgba(0, 0, 0, 0.2);
   width: 85%;
   line-height: 2;
@@ -194,12 +195,29 @@ button {
     padding: .75rem 0;
 }
 
-
 /* SUBSCRIBE */
-.sub input{
-  padding: 5%;
+.sub input[type=text]{
+    padding: 1.1rem .1rem;
+    display: inline;
+    width: calc(70% - .2rem);
+    font-size: 1rem;
+    border-collapse: collapse;
+        border-spacing: 0;
 }
 
+.sub input[type=submit] {
+    background-image:
+    linear-gradient(
+       #bb8c08,
+       #d6a51d);
+    display: inline;
+    width: calc(30% - .2rem);
+    font-size: 1rem;
+    padding: 1.1rem .1rem;
+    border-radius: 0 4px 4px 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
 /* PORTAL */
 .portal{
