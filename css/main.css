@@ -173,8 +173,8 @@ button,
   background-color: rgba(0, 0, 0, 0.2);
   width: 85%;
   line-height: 2;
-  /* margin: 3%; */
-  padding: 1.5% 12%;
+  margin: .75rem;
+  padding: 1.5rem 2.5rem;
   line-height: 1.75;
   color: white;
 }
@@ -192,12 +192,24 @@ button,
 
 .fla,
 .ga {
-    padding: .75rem 0;
+    padding: .75rem 1.5rem;
+    display: inline-block;
+}
+
+.fla {
+    padding: .75rem 1rem 0 0;
+    display: inline-block;
+}
+
+.ga {
+    padding: .75rem 0 0 1rem;
+    display: inline-block;
 }
 
 /* SUBSCRIBE */
 
 .sub p {
+    padding-top: .75rem;
     padding-bottom: 1.5rem;
 }
 
@@ -234,7 +246,7 @@ button,
 }
 
 .portal button {
-    margin: 1rem auto;
+    margin: .75rem auto;
     box-shadow: -5px 5px 10px rgba(0,0,0,.3);
     width: 80%;
 }
@@ -285,6 +297,8 @@ button,
         grid-gap: 20px;
         grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3 - 40px);
         justify-content: space-evenly;
+        justify-items: stretch;
+        align-items: stretch;
         padding: 20px;
     }
 
@@ -295,7 +309,7 @@ button,
         width: 100%;
         padding: 1rem;
         margin: 0;
-        align-self: flex-start;
+        align-self: stretch;
     }
 
     .contact {
@@ -317,6 +331,7 @@ button,
         grid-column: 2 / span 2;
         grid-row: 2 / 2;
         justify-self: stretch;
+
         flex-direction: row;
         flex-flow: wrap;
     }
