@@ -173,18 +173,18 @@ button,
   background-color: rgba(0, 0, 0, 0.2);
   width: 85%;
   line-height: 2;
-  margin: 3%;
+  /* margin: 3%; */
   padding: 1.5% 12%;
   line-height: 1.75;
   color: white;
 }
 
-.contact > *, .sub > *, .portal  > *, .info  > *, button {
-  margin-top: 4%;
-}
+/* .contact > *, .sub > *, .portal  > *, .info  > *, button {
+  margin-top: .5rem;
+} */
 
 .contact > h3, .sub > h3, .portal  > h3, .info  > h3 {
-  margin-top: 1%;
+  /* margin-top: 1%; */
   color: rgba(255,255,255,.68);
   letter-spacing: .2rem;
   font-size: 1.3rem;
@@ -196,13 +196,24 @@ button,
 }
 
 /* SUBSCRIBE */
-.sub input[type=text]{
-    padding: 1.1rem .1rem;
+
+.sub p {
+    padding-bottom: 1.5rem;
+}
+
+.sub form {
+    padding: .8rem auto;
+        box-shadow: -5px 5px 10px rgba(0,0,0,.3);
+}
+.sub input[type=text],
+.sub input[type=submit] {
     display: inline;
-    width: calc(70% - .2rem);
     font-size: 1rem;
-    border-collapse: collapse;
-        border-spacing: 0;
+}
+
+.sub input[type=text]{
+    width: calc(70% - .2rem);
+    padding: 1.1rem .5rem;
 }
 
 .sub input[type=submit] {
@@ -210,13 +221,9 @@ button,
     linear-gradient(
        #bb8c08,
        #d6a51d);
-    display: inline;
     width: calc(30% - .2rem);
-    font-size: 1rem;
-    padding: 1.1rem .1rem;
     border-radius: 0 4px 4px 0;
-    border-collapse: collapse;
-    border-spacing: 0;
+    padding: 1.1rem .1rem;
 }
 
 /* PORTAL */
@@ -227,17 +234,23 @@ button,
 }
 
 /* COPYRIGHT */
-.info {
+/* .info {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .social-media-footer-hp {
   display: flex;
   align-self: normal;
   /* ^^^ to make the icon space out correctly */
   justify-content: space-between;
+}
+
+.portal button {
+    margin: 1rem auto;
+    box-shadow: -5px 5px 10px rgba(0,0,0,.3);
+    width: 80%;
 }
 
 /* MEDIA QUERIES */
