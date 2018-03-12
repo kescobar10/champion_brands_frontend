@@ -31,6 +31,12 @@ IMPORTANT ******/
     display: none;
   }
 
+.upper {
+    text-transform: uppercase;
+        -webkit-text-transform: uppercase;
+        -moz-text-transform: uppercase;
+}
+
 /****** FONTS ******/
 
 h2, h3{
