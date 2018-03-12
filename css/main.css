@@ -63,7 +63,11 @@ p, section a, .info a {
 
 section a, footer p a, footer p span, button, .info a {
   font-weight: 800;
-  color: #d6a51d;
+  color: #edbf41;
+}
+
+section a, footer p a, .info a {
+  text-shadow: -4px 4px 10px rgba(0,0,0,.4);
 }
 /****** HEADER ******/
 header {
