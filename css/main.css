@@ -200,12 +200,9 @@ button,
     padding: 1rem 2rem 1rem 0;
 }
 
-.ga {
-    padding: 1rem 0 ;
-}
-
+.ga,
 .email {
-    padding: 1rem 0;
+    padding: 1rem 0 ;
 }
 
 .hide-mobile {
@@ -423,5 +420,19 @@ button,
 
     .hide-mobile {
         display: none;
+    }
+
+    .info-text,
+    .info-text p a {
+        display: block;
+        text-align: center;
+    }
+
+    .info-text p a {
+        padding: .5rem 0;
+    }
+
+    .social-media-footer-hp {
+        align-self: flex-end;
     }
 }
