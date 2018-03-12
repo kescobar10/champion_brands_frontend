@@ -229,7 +229,7 @@ button {
         margin: auto;
         display: grid;
         grid-gap: 20px;
-        grid-template-columns: calc(100% / 3 - 40px) calc(100% / 3) calc(100% / 3 - 40px);
+        grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3 - 40px);
         justify-content: space-evenly;
         padding: 20px;
     }
