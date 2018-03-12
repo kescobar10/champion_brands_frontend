@@ -140,6 +140,7 @@ a.navlist{
 a.navlist:hover{
   color: #df4c3f;
   background-color: rgba(255,255,255,.9);
+  text-shadow: none;
 }
 
 
