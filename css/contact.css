@@ -1,0 +1,137 @@
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin:auto;
+  padding: 5% 0 5% 0;
+}
+
+label, h3 {
+  font-family: 'Zilla Slab', serif;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  font-size: 1.3rem;
+}
+
+h4 {
+  display: inline-block;
+  font-family: 'Zilla Slab', serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  font-size: 1.1rem;
+}
+
+.ga h4, .fla h4 {
+  color: white;
+}
+
+label {
+  color: #24408e;
+  display: block;
+}
+
+.container p, h3, h4 {
+  color: #726a68;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+p + p {
+  padding-top: 5%;
+}
+
+h4 + p {
+  display: inline-block;
+}
+
+article + article {
+  border-top: 2px solid #726a68;
+}
+
+/****** CONTACT FORM ******/
+
+article {
+  padding: 7% 0 7% 0;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  border: 1px solid #726a68;
+  font-size: 1rem;
+  padding: 3%;
+}
+
+textarea {
+  height: 300px;
+  resize: vertical;
+}
+
+.formpiece {
+  padding-top:5%;
+}
+
+.radio {
+  display: block;
+  padding-top: 3%;
+}
+
+.radio p {
+  display: inline-block;
+  font-family: 'Zilla Slab', serif;
+  font-size: 1.2rem;
+  padding-left: 2%;
+}
+
+input[type=radio] {
+  background-color: white;
+  border-radius: 50%;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+.newssub {
+  background-color: white;
+  color: #edbf41;
+  font-family: 'Asap', sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  float: right;
+  padding-top: 1%;
+}
+
+#formsubmit {
+  margin: .75rem auto;
+  box-shadow: -5px 5px 10px rgba(0,0,0,.3);
+  width: 100%;
+  font-family: 'Asap', sans-serif;
+  font-weight: 800;
+  color: white;
+  padding: 1.1rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  background-image:
+  linear-gradient(
+     #bb8c08,
+     #d6a51d);
+}
+
+/****** CONTACT INFO ******/
+
+.contactinfo section + section {
+  padding-top: 5%;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.infolabel {
+  font-weight: 600;
+}
