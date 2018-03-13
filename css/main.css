@@ -66,9 +66,21 @@ p, section a, .info a {
   text-decoration: none;
 }
 
-section a, footer p a, .phone, button, .info a, .sub input[type=submit] {
+section a,
+footer p a,
+.phone,
+button,
+.info a,
+.sub input[type=submit] {
   font-weight: 800;
   color: #edbf41;
+}
+
+section a:hover,
+footer p a:hover,
+.info a:hover {
+  font-weight: 400;
+  text-decoration: underline;
 }
 
 section a, footer p a, .info a, .navlist {
@@ -167,6 +179,13 @@ button,
   font-size: 1.2rem;
   border-radius: 4px;
 }
+
+button:hover {
+  background-image:
+      linear-gradient(
+        #a12822,
+        #c34136);
+    }
 
 form {
     background-color: white;
@@ -267,6 +286,13 @@ form {
     padding: 1.1rem .1rem;
 }
 
+.sub input[type=submit]:hover {
+    background-image:
+    linear-gradient(
+       #a67d07,
+       #bf931a);
+}
+
 /* PORTAL */
 
 .portal button {
@@ -286,6 +312,10 @@ form {
   /* ^^^ to make the icon space out correctly */
   justify-content: space-between;
 }
+
+/* .socialicon:hover {
+    max-width: 36px;
+} */
 /* MEDIA QUERIES */
 
 @media all and (min-width: 365px) {
