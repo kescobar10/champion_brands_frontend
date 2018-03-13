@@ -251,7 +251,7 @@ form {
     linear-gradient(
        #bb8c08,
        #d6a51d);
-    width: calc(30% - .2rem);
+    width: calc(30% - .05rem);
     border-radius: 0 4px 4px 0;
     padding: 1.1rem .1rem;
 }
@@ -267,6 +267,7 @@ form {
 /* COPYRIGHT */
 .social-media-footer-hp {
     width: 100%;
+    max-width: 360px;
     margin: auto;
     padding-top: 1rem;
   display: flex;
@@ -382,6 +383,10 @@ form {
     .portal button {
         margin: 1rem auto;
     }
+
+    .social-media-footer-hp {
+        max-width: none;
+    }
 }
 
 @media all and (min-width: 1300px) {
@@ -398,7 +403,8 @@ form {
     .info {
         grid-row: 1 / 1;
         grid-column: 4 / 4;
-        display: block;
+        display: flex;
+        align-items: stretch;
     }
 
     .portal button {
@@ -432,7 +438,10 @@ form {
         text-align: center;
     }
 
-    .info-text p a {
+    .info-text p a:first-child {
+        padding: 1.5rem 0 .5rem 0;
+    }
+    .info-text p a:last-child {
         padding: .5rem 0;
     }
 
