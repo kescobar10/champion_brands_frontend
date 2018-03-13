@@ -152,7 +152,7 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1%
+  padding: 10px;
 }
 
 
@@ -179,8 +179,8 @@ form {
   flex-direction: column;
   justify-content: space-between; */
   background-color: rgba(0, 0, 0, 0.2);
-  width: 94%;
-  margin: .75rem;
+  width: 100%;
+  margin: .5rem;
   padding: 1.5rem;
   line-height: 1.75;
   color: white;
@@ -198,7 +198,8 @@ form {
 }
 
 .fla,
-.ga {
+.ga,
+.email {
     display: inline-block;
 }
 
@@ -224,17 +225,26 @@ form {
 .info-text p a {
     padding: .5rem 0;
 }
-/* SUBSCRIBE */
 
+/* SUBSCRIBE */
+.sub {
+    display: flex;
+    flex-wrap: wrap;
+}
 .sub p {
     padding-top: .75rem;
     padding-bottom: 1.5rem;
 }
 
 .sub form {
+    width: 100%;
     padding: .8rem auto;
-        box-shadow: -5px 5px 10px rgba(0,0,0,.3);
+    box-shadow: -5px 5px 10px rgba(0,0,0,.3);
+        -webkit-box-shadow: -5px 5px 10px rgba(0,0,0,.3);
+        -moz-box-shadow: -5px 5px 10px rgba(0,0,0,.3);
+    align-self: flex-end;
 }
+
 .sub input[type=text],
 .sub input[type=submit] {
     display: inline;
@@ -244,6 +254,7 @@ form {
 .sub input[type=text]{
     width: calc(70% - .2rem);
     padding: 1.1rem .5rem;
+    border-radius: 4px;
 }
 
 .sub input[type=submit] {
@@ -293,7 +304,8 @@ form {
 
     .portal {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-column-gap: 20px;
+        grid-template-columns: calc(50% - 10px) calc(50% - 10px);
         grid-template-rows: auto auto;
     }
 
@@ -322,7 +334,7 @@ form {
         justify-content: space-evenly;
         justify-items: stretch;
         align-items: stretch;
-        padding: 20px;
+        padding: 10px;
     }
 
     .contact,
@@ -350,6 +362,7 @@ form {
     .sub {
         grid-column: 2 / 2;
         grid-row: 1 / 1;
+        padding-bottom: 2rem;
     }
 
     .portal {
@@ -367,17 +380,28 @@ form {
     .info {
       display: grid;
       grid-template-columns: 60% 40%;
+      grid-template-rows: 100%;
       align-items: center;
         justify-content: center;
         grid-gap: 10px;
     }
+
     .info-text,
     .info-text p a {
         text-align: left;
     }
 
+    .info-text p:last-child {
+        padding-top: 1rem;
+    }
+
+    .info-text {
+        padding-left: 1rem;
+    }
     .portal {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .portal button {
@@ -386,6 +410,14 @@ form {
 
     .social-media-footer-hp {
         max-width: none;
+        grid-column: 2 / 2;
+        grid-row: 1 / span 2;
+        padding-top: 0;
+        padding-right: 1rem;
+    }
+
+    .sub form {
+        align-self: flex-end;
     }
 }
 
@@ -432,6 +464,10 @@ form {
         display: none;
     }
 
+    .info-text {
+        padding-left: 0;
+    }
+
     .info-text,
     .info-text p a {
         display: block;
@@ -447,5 +483,6 @@ form {
 
     .social-media-footer-hp {
         align-self: flex-end;
+        padding-right: 0;
     }
 }
