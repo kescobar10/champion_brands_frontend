@@ -168,6 +168,11 @@ button,
   border-radius: 4px;
 }
 
+form {
+    background-color: white;
+    border-radius: 4px;
+}
+
 /* CONTACT */
 .contact, .sub, .portal, .info{
   /* display: flex;
@@ -262,7 +267,7 @@ button,
 
 /* COPYRIGHT */
 .social-media-footer-hp {
-    max-width: 320px;
+    width: 100%;
     margin: auto;
     padding-top: 1rem;
   display: flex;
@@ -327,7 +332,7 @@ button,
         width: 100%;
         padding: 1rem;
         margin: 0;
-        align-self: stretch;
+        /* align-self: stretch; */
     }
 
     .contact {
@@ -362,7 +367,6 @@ button,
     .info {
       display: grid;
       grid-template-columns: 60% 40%;
-      flex-direction: column;
       align-items: center;
         justify-content: center;
         grid-gap: 10px;
