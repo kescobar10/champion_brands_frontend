@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
+main {
+    max-width: 960px;
+    margin: auto;
+}
+
+main h2 {
+    color: #2b3268;
+    padding: 15px 10px;
+}
+
+.main-post img {
+    margin-left: 0;
+}
+
+.main-post-thumb-container {
+    position: relative;
+    color: white;
+}
+
+.cat-over-img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-family: 'Asap';
+}
+
+.title-over-image {
+    position: absolute;
+    bottom: 12px;
+    left: 16px;
+    max-width: 500px;
+}
+
+.main-post h3, .older-post h3 {
+    text-transform: none;
+    font-size: 2em;
+    line-height: 1;
+}
+
+.main-post h4 {
+    font-size: 0.8em;
+}
+
+.main-post img {
+    max-width: 500px;
+}
+
+.date {
+    font-family: 'Zilla Slab';
+    font-weight: 400;
+    color: #726a68;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.main-post p, .older-post p {
+    font-family: 'Asap';
+    color: #726a68;
+    line-height: 1.5;
+    padding: 15px;
+}
+
+button.main-read-more-blog {
+    background-image:
+    linear-gradient(
+       #bb8c08,
+       #d6a51d);
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+    padding: 1em;
+}
+
+.older-thumb-container {
+    position: relative;
+    color: white;
+    margin-top: 50px;
+}
+
+.older-post-category {
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    font-family: 'Asap';
+}
+
+.older-post-image {
+    display: block;
+    margin: auto;
+}
+
+.older-post h3 {
+    padding-left: 15px;
+    color: #2b3268;
+}
+
+.sidebar {
+    background-color: #2b3268;
+    padding: 40px;
+}
+
+.sidebar h3 {
+    color: white;
+    letter-spacing: 5px;
+
+}
