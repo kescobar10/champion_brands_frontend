@@ -2,6 +2,21 @@
     background-image: url('../img/products-hero.png')
 }
 
+.hero-image article {
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+    background-color: rgba(255,255,255,.9);
+    border-radius: 50px;
+    box-shadow: 0 0 20px 20px rgba(255,255,255,.9);
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Zilla Slab', sans-serif;
+    text-align: center;
+}
+
 .toc {
     display: flex;
     flex-direction: row;
@@ -17,7 +32,7 @@
     border-radius: 4px;
     padding: 1.1rem;
     margin: 1rem;
-    width: 17%;
+    width: 100%;
 }
 
 .toc button:hover {
