@@ -1,0 +1,28 @@
+.hero-image {
+
+}
+
+.toc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.toc button {
+    background-image:
+    linear-gradient(
+       #bb8c08,
+       #d6a51d);
+    border-radius: 4px;
+    padding: 1.1rem;
+    margin: 1rem;
+    width: 17%;
+}
+
+.toc button:hover {
+    background-image:
+    linear-gradient(
+       #a67d07,
+       #bf931a);
+}
