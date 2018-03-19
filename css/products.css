@@ -8,7 +8,7 @@
 
 .hero-image article {
     width: 80%;
-    padding: 1rem 1.5rem 1.5rem;
+    padding: 1rem 0 1.5rem;
     margin: 4rem auto 5rem;
     background-color: rgba(255,255,255,.9);
     border-radius: 4rem;
@@ -17,10 +17,19 @@
     border-spacing: 0;
 }
 
+article a {
+    text-shadow: none;
+}
+
+article p {
+    margin: 1rem .5rem 1rem 1rem;
+}
+
 h1 {
     font-size: 2rem;
     font-family: 'Zilla Slab', sans-serif;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .toc {
