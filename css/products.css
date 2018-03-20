@@ -65,3 +65,22 @@ h1 {
 .brands {
     background-color: white;
 }
+h2 {
+    font-size: 1.2rem;
+    color: white;
+    vertical-align: sub;
+    text-align: center;
+    position: relative;
+    left: -2rem;
+}
+.cursive {
+    font-family: 'Barley Script', sans-serif;
+    font-size: 3.6rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #e35e53;
+    z-index: 1;
+    position: relative;
+    left: 2rem;
+    top: -.6rem;
+}
