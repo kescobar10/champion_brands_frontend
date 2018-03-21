@@ -57,11 +57,12 @@ main h2 {
     letter-spacing: 2px;
 }
 
-.main-post p, .older-post p {
+.main-post p, .older-post p, .sidebar p {
     font-family: 'Asap';
     color: #726a68;
     line-height: 1.5;
     padding: 15px;
+    font-size: 1.1em;
 }
 
 button.main-read-more-blog {
@@ -101,11 +102,82 @@ button.main-read-more-blog {
 
 .sidebar {
     background-color: #2b3268;
-    padding: 40px;
+    padding: 40px 50px;
+}
+
+.pagination {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.pagination a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: 'Asap';
+    color: #edbf41;
+    font-weight: 800;
+    text-shadow: -4px 4px 10px rgba(0,0,0,.1);
+}
+
+.pagination a:hover {
+    font-weight: 400;
+    text-decoration: underline;
 }
 
 .sidebar h3 {
     color: white;
     letter-spacing: 5px;
+}
 
+.sidebar ul {
+    list-style-type: none;
+    line-height: 2;
+}
+
+.sidebar input {
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.2em;
+    padding: 5px;
+    font-family: 'Asap';
+    color: #726a68;
+}
+
+.sidebar h2 {
+    background-color: white;
+    color: #2b3268;
+    height: 100px;
+    text-align: center;
+}
+
+.featured-brand {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    border: 20px solid #df4c3f;
+    padding: 15px;
+}
+
+.featured-brand h3 {
+    color: #2b3268;
+    padding-left: 15px;
+}
+
+.featured-brand h4 {
+    font-family: 'Zilla Slab';
+    color: #2b3268;
+    padding-left: 15px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.sidebar button {
+    display: block;
+    margin: auto;
+    background-image:
+    linear-gradient(
+       #bb8c08,
+       #d6a51d);
+       width: 70%;
 }
