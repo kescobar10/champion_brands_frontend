@@ -1,3 +1,8 @@
+main {
+    max-width: 960px;
+    margin: auto;
+}
+
 .breadcrumbs {
     font-family: 'Asap';
     color: #726a68;
