@@ -139,6 +139,10 @@ iframe {
 /****** MAIN LAYOUT MEDIA QUERIES ******/
 
 @media all and (min-width: 800px) {
+  .formsection, form, .formpiece, .formpiece1, textarea, .textme {
+    width: 100%;
+  }
+
   p + p {
     padding-top: 2%;
   }
@@ -196,15 +200,7 @@ iframe {
     width: 30%;
   }
 
-  input[type=text], textarea {
-    width: 70%;
-  }
-
   .radio {
-    width: 150px;
-  }
-
-  .newssub {
-    width: 100%;
+    display: inline-block;
   }
 }
