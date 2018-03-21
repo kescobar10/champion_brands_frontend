@@ -1,8 +1,51 @@
-main {
-    width: 960px;
-    margin: auto;
+.breadcrumbs {
+    font-family: 'Asap';
+    color: #726a68;
+    padding: 20px;
+    text-align: right;
 }
 
-.main-post img {
+.breadcrumbs a {
+    font-weight: 800;
+    color: #edbf41;
+    text-shadow: -4px 4px 10px rgba(0,0,0,.1);
+}
+
+.breadcrumbs a:hover {
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.post img {
     max-width: 500px;
+}
+
+.post h4 {
+    font-family: 'Asap';
+    color: #2b3268;
+    padding: 15px;
+}
+
+.post h3 {
+    color: #2b3268;
+    padding: 0 15px 15px 15px;
+    font-size: 2.3em;
+    text-transform: none;
+}
+
+.post h5 {
+    font-family: 'Zilla Slab';
+    font-weight: 400;
+    color: #726a68;
+    padding: 0 15px 15px 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.post p {
+    font-family: 'Asap';
+    color: #726a68;
+    line-height: 1.5;
+    padding: 15px 15px 5px 15px;
+    font-size: 1.1em;
 }
