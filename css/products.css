@@ -92,3 +92,11 @@ h2 {
     top: -.7rem;
     z-index: 0;
 }
+
+.brands ul li {
+    list-style: none;
+}
+
+.brands ul li img {
+    width: 150px;
+}
