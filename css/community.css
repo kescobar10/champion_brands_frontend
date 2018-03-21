@@ -1,3 +1,60 @@
-.imgheader {
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin:auto;
+  padding: 5% 0 5% 0;
+}
+
+main p, h3 {
+  color: #726a68;
+}
+
+.btn {
+  margin: .75rem auto;
+  box-shadow: -5px 5px 10px rgba(0,0,0,.3);
   width: 100%;
+  font-family: 'Asap', sans-serif;
+  font-weight: 800;
+  color: white;
+  padding: 1.1rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  background-image:
+  linear-gradient(
+     #bb8c08,
+     #d6a51d);
+}
+
+/****** EVENT CARDS ******/
+.eventcard {
+  border: 2px solid #726a68;
+  text-align: center;
+}
+
+.eventcard + .eventcard {
+  margin-top: 5%;
+}
+
+.eventfoot {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 2% 0 2% 0;
+}
+
+.eventfoot span {
+  width: 50%;
+  color: white;
+  font-family: 'Asap', sans-serif;
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-family: 'Zilla Slab', serif;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  font-size: 1.6rem;
+  padding: 6% 0 6% 0;
 }
