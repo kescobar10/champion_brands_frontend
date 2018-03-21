@@ -70,7 +70,7 @@ textarea {
   resize: vertical;
 }
 
-.formpiece {
+.formpiece, .formpiece2 {
   padding-top:5%;
 }
 
@@ -134,4 +134,72 @@ iframe {
 
 .infolabel {
   font-weight: 600;
+}
+
+/****** MAIN LAYOUT MEDIA QUERIES ******/
+
+@media all and (min-width: 800px) {
+  p + p {
+    padding-top: 2%;
+  }
+
+  .contactpage {
+    display: flex;
+    width: 100%;
+    padding-top: 3%;
+  }
+
+  article {
+    padding-top: 25px;
+  }
+
+  .contactinfo {
+    padding-right: 3%;
+    border-right: 2px solid #726a68;
+    order: 0;
+    max-width: 300px;
+  }
+
+  iframe {
+    height: 270px;
+  }
+
+  .formsection {
+    order: 1;
+    padding-left: 3%;
+  }
+
+  article + article {
+    border-top: 0px;
+  }
+
+  #formsubmit {
+    max-width: 200px;
+    float: right;
+  }
+
+  .formpiece, .formpiece1 {
+    display: flex;
+  }
+
+  input[type=text] {
+    padding: 10px;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  label {
+    margin-right: 4%;
+    width: 30%;
+  }
+
+  input[type=text], textarea {
+    width: 70%;
+  }
+
+  .radio {
+    width: 150px;
+  }
 }
