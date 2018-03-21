@@ -102,7 +102,7 @@ button.main-read-more-blog {
 
 .sidebar {
     background-color: #2b3268;
-    padding: 40px 50px;
+    padding: 30px 30px;
 }
 
 .pagination {
@@ -111,7 +111,7 @@ button.main-read-more-blog {
 }
 
 .pagination a {
-    padding: 8px 16px;
+    padding: 5px 10px;
     text-decoration: none;
     font-family: 'Asap';
     color: #edbf41;
