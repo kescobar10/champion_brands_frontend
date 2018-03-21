@@ -65,11 +65,14 @@ h3 {
     display: flex;
     width: 100%;
     box-sizing: border-box;
+    justify-content: space-around;
   }
 
   .eventcard {
-    width: calc(1/3);
-    max-width: 400px;
+    width: calc(100%/3 - 20px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .eventcard + .eventcard {
@@ -78,5 +81,6 @@ h3 {
 
   .eventfoot {
     align-self: flex-end;
+    width: 100%;
   }
 }

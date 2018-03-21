@@ -147,6 +147,7 @@ iframe {
     display: flex;
     width: 100%;
     padding-top: 3%;
+    justify-content: stretch;
   }
 
   article {
@@ -201,5 +202,9 @@ iframe {
 
   .radio {
     width: 150px;
+  }
+
+  .newssub {
+    width: 100%;
   }
 }
