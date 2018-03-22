@@ -1,0 +1,102 @@
+.hero-image {
+    background-image: url('../img/products-hero.png');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: stretch;
+        border-collapse: collapse;
+        border-spacing: 0;
+}
+
+.hero-image article {
+    width: 80%;
+    padding: 1rem 0 1.5rem;
+    margin: 4rem auto 5rem;
+    background-color: rgba(255,255,255,.9);
+    border-radius: 4rem;
+    box-shadow: 0 0 4rem 2rem rgba(255,255,255,.9);
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+article a {
+    text-shadow: none;
+    color: red;
+}
+
+article p {
+    margin: 1rem .5rem 1rem 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Zilla Slab', sans-serif;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.toc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.toc button {
+    background-image:
+    linear-gradient(
+       #bb8c08,
+       #d6a51d);
+    border-radius: 4px;
+    padding: 1.1rem;
+    margin: .5rem;
+    width: 100%;
+}
+
+.toc button:hover {
+    background-image:
+    linear-gradient(
+       #a67d07,
+       #bf931a);
+}
+
+.product-category {
+    background-color: #2b3268;
+}
+
+.brands {
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: white;
+    vertical-align: sub;
+    text-align: center;
+    position: relative;
+    left: -2.5rem;
+    z-index: 1;
+}
+.cursive {
+    font-family: 'Barley Script', sans-serif;
+    font-size: 3.6rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #e35e53;
+    position: relative;
+    left: 2.5rem;
+    top: -.7rem;
+    z-index: 0;
+}
+
+.brands ul li {
+    list-style: none;
+}
+
+.brands ul li img {
+    width: 150px;
+}
