@@ -22,7 +22,9 @@ main {
 }
 
 .post img {
-    max-width: 500px;
+    max-width: 960px;
+    display: block;
+    margin: auto;
 }
 
 .post h4 {
