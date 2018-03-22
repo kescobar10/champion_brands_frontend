@@ -9,6 +9,27 @@ main p, h3 {
   color: #726a68;
 }
 
+h2 {
+    font-size: 1.5rem;
+    color: #24408e;
+    vertical-align: sub;
+    position: relative;
+    left: -2.5rem;
+    z-index: 1000;
+    text-transform: uppercase;
+}
+.cursive {
+    font-family: 'Barley Script', sans-serif;
+    font-size: 4.5rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #e35e53;
+    position: relative;
+    left: 2.5rem;
+    top: -.7rem;
+    z-index: -1000;
+}
+
 .btn {
   margin: .75rem auto;
   box-shadow: -5px 5px 10px rgba(0,0,0,.3);

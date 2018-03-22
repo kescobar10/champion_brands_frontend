@@ -5,6 +5,27 @@
   padding: 5% 0 5% 0;
 }
 
+h2 {
+    font-size: 1.5rem;
+    color: #24408e;
+    vertical-align: sub;
+    position: relative;
+    left: -2.5rem;
+    z-index: 1000;
+    text-transform: uppercase;
+}
+.cursive {
+    font-family: 'Barley Script', sans-serif;
+    font-size: 4.5rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #e35e53;
+    position: relative;
+    left: 2.5rem;
+    top: -.7rem;
+    z-index: -1000;
+}
+
 label, h3 {
   font-family: 'Zilla Slab', serif;
   padding-bottom: 5px;
@@ -61,7 +82,7 @@ article {
 input[type=text], textarea {
   width: 100%;
   border: 1px solid #726a68;
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding: 3%;
 }
 
@@ -139,8 +160,17 @@ iframe {
 /****** MAIN LAYOUT MEDIA QUERIES ******/
 
 @media all and (min-width: 800px) {
-  .formsection, form, .formpiece, .formpiece1, textarea, .textme {
+  .formsection, form, .formpiece, .formpiece1, textarea, .textme, .radiogroup {
     width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contactinfo {
+    width: 40%;
+  }
+
+  section + section {
+    margin-top: 7%;
   }
 
   p + p {
@@ -166,7 +196,7 @@ iframe {
   }
 
   iframe {
-    height: 270px;
+    height: 250px;
   }
 
   .formsection {
@@ -193,14 +223,16 @@ iframe {
 
   textarea {
     width: 100%;
+    height: 350px;
   }
 
   label {
     margin-right: 4%;
-    width: 30%;
+    width: 50%;
   }
 
   .radio {
     display: inline-block;
+    width: calc(100%/3 - 3px);
   }
 }
