@@ -47,7 +47,7 @@ h1 {
     justify-content: space-around;
 }
 
-.toc button {
+.toc-button {
     background-image:
     linear-gradient(
        #bb8c08,
@@ -56,13 +56,22 @@ h1 {
     padding: 1.1rem;
     margin: .5rem;
     width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+    text-shadow: none;
+    vertical-align: middle;
+    align-self: center;
 }
 
-.toc button:hover {
+.toc-button:hover {
     background-image:
     linear-gradient(
        #a67d07,
        #bf931a);
+    text-decoration: none;
+    font-weight: bold;
+    color: #f1f1f1;
 }
 
 .product-category {
@@ -159,6 +168,13 @@ h2 {
     padding-bottom: 3rem;
 }
 
+a.back-to-top {
+    text-align: center;
+    padding: 2rem 0 0;
+    width: 100%;
+    display: inline-block;
+}
+
 @media (min-width: 390px) {
     .toc {
         width: 100%;
@@ -169,7 +185,7 @@ h2 {
         grid-gap: 1rem;
     }
 
-    .toc button {
+    .toc-button {
         margin: 0;
         width: 100%;
     }
