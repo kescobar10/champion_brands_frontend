@@ -166,3 +166,14 @@ h2 {
         margin: 0;
     }
 }
+
+@media (min-width: 450px) {
+    .brands ul {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .brands ul li {
+        display: inline-block;
+        width: 100%;
+    }
+}
