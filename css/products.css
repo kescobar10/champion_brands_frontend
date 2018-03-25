@@ -164,6 +164,7 @@ h2 {
 
     .toc button {
         margin: 0;
+        width: 100%;
     }
 }
 
@@ -175,5 +176,12 @@ h2 {
     .brands ul li {
         display: inline-block;
         width: 100%;
+    }
+}
+
+@media (min-width: 540px) {
+    .toc {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
     }
 }
