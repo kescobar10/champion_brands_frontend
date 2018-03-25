@@ -67,6 +67,8 @@ h1 {
 
 .product-category {
     background-color: #2b3268;
+    padding-bottom: 2rem;
+    margin-bottom: .5rem;
 }
 
 .brands {
@@ -96,7 +98,7 @@ h2 {
     font-size: 5rem;
     font-weight: normal;
     text-transform: capitalize;
-    color: #e35e53;
+    color: white;
     position: relative;
     left: 1.7rem;
     text-shadow: -5px 5px 20px #000000;
@@ -110,7 +112,7 @@ h2 {
     font-family: 'Zilla Slab', sans-serif;
     font-weight: bold;
     font-size: 2rem;
-    color: white;
+    color: #e35e53;
     vertical-align: sub;
     position: relative;
     left: -4.5rem;
@@ -118,7 +120,6 @@ h2 {
     z-index: 1;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    text-shadow: none;
 }
 
 #american-craft h2,
