@@ -151,3 +151,18 @@ h2 {
 #red-bull {
     padding-bottom: 3rem;
 }
+
+@media (min-width: 390px) {
+    .toc {
+        width: 100%;
+        padding: .75rem;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-gap: 1rem;
+    }
+
+    .toc button {
+        margin: 0;
+    }
+}
