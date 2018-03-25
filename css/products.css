@@ -6,6 +6,7 @@ main {
 .hero-image {
     background-image: url('../img/products-hero.png');
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: stretch;
         border-collapse: collapse;
@@ -29,6 +30,7 @@ article a {
 }
 
 article p {
+    font-size: 1.25rem;
     margin: 1rem .5rem 1rem 1rem;
 }
 
@@ -38,6 +40,7 @@ h1 {
     text-align: center;
     margin-bottom: 1rem;
     color: #2b3268;
+    text-transform: uppercase;
 }
 
 .toc {
