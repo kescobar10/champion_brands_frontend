@@ -28,10 +28,11 @@ article p {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'Zilla Slab', sans-serif;
     text-align: center;
     margin-bottom: 1rem;
+    color: #2b3268;
 }
 
 .toc {
@@ -72,6 +73,16 @@ h1 {
     margin: auto;
 }
 
+.brands ul li {
+    width: 80%;
+    margin: auto;
+}
+.brands ul li a img {
+    padding: 1rem;
+    width: 100%;
+    margin: auto;
+}
+
 h2 {
     font-size: 1.2rem;
     color: white;
@@ -80,6 +91,8 @@ h2 {
     position: relative;
     left: -2.5rem;
     z-index: 1;
+    padding: 2rem 0 1.7rem;
+    text-shadow: -5px 5px 30px #000000;
 }
 .cursive {
     font-family: 'Barley Script', sans-serif;
@@ -95,8 +108,4 @@ h2 {
 
 .brands ul li {
     list-style: none;
-}
-
-.brands ul li img {
-    width: 150px;
 }
