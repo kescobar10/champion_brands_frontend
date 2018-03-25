@@ -71,6 +71,8 @@ h1 {
     justify-content: space-around;
     width: 90%;
     margin: auto;
+    border-radius: 4px;
+    box-shadow: -5px 5px 30px #000000;
 }
 
 .brands ul li {
@@ -84,26 +86,62 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2rem;
-    color: white;
-    vertical-align: sub;
-    text-align: center;
-    position: relative;
-    left: -2.5rem;
-    z-index: 1;
-    padding: 2rem 0 1.7rem;
-    text-shadow: -5px 5px 30px #000000;
-}
-.cursive {
     font-family: 'Barley Script', sans-serif;
-    font-size: 3.6rem;
+    font-size: 5rem;
     font-weight: normal;
     text-transform: capitalize;
     color: #e35e53;
     position: relative;
-    left: 2.5rem;
-    top: -.7rem;
+    left: 1.7rem;
+    text-shadow: -5px 5px 20px #000000;
     z-index: 0;
+    text-align: center;
+    margin: auto;
+    padding: 1rem 0 1.7rem;
+}
+
+.block {
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    vertical-align: sub;
+    position: relative;
+    left: -4.5rem;
+    top: -.1rem;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-shadow: none;
+}
+
+#american-craft h2,
+#specialty-imports h2,
+#ciders-gluten-free h2,
+#non-alcoholic h2,
+#regional-craft h2 {
+    left: 0;
+    text-align: center;
+    line-height: 3rem;
+    padding: 2.5rem 0 .3rem;
+
+}
+
+#american-craft .block,
+#specialty-imports .block,
+#ciders-gluten-free .block,
+#non-alcoholic .block,
+#regional-craft .block {
+    left: 0;
+    vertical-align: middle;
+    text-align: center;
+    top: -1.2rem;
+}
+
+#domestic h2,
+#imports h2,
+#red-bull h2 {
+    left: -.5rem;
 }
 
 .brands ul li {
