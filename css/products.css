@@ -1,3 +1,8 @@
+main {
+    max-width: 960px;
+    margin: auto;
+}
+
 .hero-image {
     background-image: url('../img/products-hero.png');
     background-repeat: no-repeat;
@@ -83,6 +88,7 @@ h1 {
     padding: 1rem;
     width: 100%;
     margin: auto;
+    max-width: 200px;
 }
 
 h2 {
@@ -194,5 +200,16 @@ h2 {
 
     .brands ul {
         grid-template-columns: auto auto auto;
+    }
+}
+
+@media (min-width: 900px) {
+    .toc {
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .brands ul {
+        grid-template-columns: auto auto auto auto;
     }
 }
