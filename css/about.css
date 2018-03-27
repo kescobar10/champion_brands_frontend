@@ -1,0 +1,32 @@
+body,
+html {
+    height: 100%;
+}
+.hero-image {
+    background-image: url('../img/about-hero.png');
+    padding-bottom: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Barley Script', sans-serif;
+    font-weight: normal;
+    font-size: 4.5rem;
+    color: red;
+    text-align: center;
+    padding: .5rem;
+}
+
+.block {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: blue;
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 1rem;
+    left: -6rem;
+}
