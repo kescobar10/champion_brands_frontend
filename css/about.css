@@ -2,6 +2,17 @@ body,
 html {
     height: 100%;
 }
+.header-background {
+    background-image: url('../img/texture-red.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-menu ul {
+    background-image: none;
+    background-color: transparent;
+}
 .hero-image {
     background-image: url('../img/about-hero.png');
     padding-bottom: 50%;
@@ -30,3 +41,119 @@ h1 {
     top: 1rem;
     left: -6rem;
 }
+/* Button styling */
+
+.menu-toggle  {
+    color: rgba(255,255,255,.9);
+    text-shadow: -2px 2px 10px rgba(0,0,0,.2);
+    padding: 1rem;
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+}
+
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: #c00;
+}
+
+/*
+ Default styles + Mobile first
+ Offscreen menu style
+*/
+.main-menu {
+  position: absolute;
+  top: -450px;
+  left: 0;
+  overflow-y: visible;
+  overflow-x: visible;
+  transition: top 0.3s ease,
+              box-shadow 0.3s ease;
+  z-index: 999;
+  background-image: url('../img/texture-red.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 2.5em 0 0;
+  /* Hide shadow w/ -8px while 'closed' */
+  -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+     -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+          box-shadow: -8px 0 8px rgba(0,0,0,.5);
+  min-height: 100%;
+  width: 100%;
+}
+
+.main-menu a {
+  display: block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  background: #333;
+  text-decoration: underline;
+}
+
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* hamburger menu interactivity */
+
+ .main-menu:target,
+.main-menu[aria-expanded="true"] {
+  top: 0;
+  outline: none;
+  -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}
+
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+  z-index: 1001;
+}
+
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+  position: relative;
+  z-index: 1000;
+}
+
+/*
+ We could us `.main-menu:target:after`, but
+ it wouldn't be clickable.
+*/
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  cursor: default;
+}
+
+@supports (position: fixed) {
+  .main-menu,
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop {
+    position: fixed;
+  }
+}
+/* END hamburger menu interactivity */
