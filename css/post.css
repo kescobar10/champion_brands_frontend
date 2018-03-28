@@ -33,7 +33,7 @@ main {
     padding: 15px;
 }
 
-.post h3 {
+.post h2 {
     color: #2b3268;
     padding: 0 15px 15px 15px;
     font-size: 2.3em;
@@ -55,4 +55,70 @@ main {
     line-height: 1.5;
     padding: 15px 15px 5px 15px;
     font-size: 1.1em;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 50px 0;
+}
+
+.recent-posts-container {
+    margin-bottom: 75px;
+}
+
+.recent-posts-container h2 {
+    color:#2b3268;
+    padding: 15px;
+    letter-spacing: 3px;
+}
+
+.recent-posts * {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+
+.recent-posts h3 {
+    color: #2b3268;
+    padding-bottom: 10px;
+}
+
+.recent-posts h5 {
+    padding-bottom: 10px;
+}
+
+.date {
+    font-family: 'Zilla Slab';
+    font-weight: 400;
+    color: #726a68;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.recent-posts a {
+    text-decoration: none;
+    color: #726a68;
+    text-shadow: none;
+}
+
+.recent-posts a:hover {
+    text-decoration: none;
+    text-shadow: -4px 4px 10px rgba(0,0,0,.4)
+}
+
+@media all and (min-width: 768px) {
+    .recent-posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+    }
+
+
 }
