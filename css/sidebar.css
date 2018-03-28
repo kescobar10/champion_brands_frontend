@@ -186,12 +186,23 @@ button.main-read-more-blog {
 
 .sidebar input {
     height: 40px;
-    width: 100%;
+    width: 75%;
     margin-top: 20px;
     font-size: 1.2em;
     padding: 5px;
     font-family: 'Asap';
     color: #726a68;
+}
+
+.search-button {
+    width: 20%;
+    height: 40px;
+    margin-top: 20px;
+    float: right;
+    background-image:
+    linear-gradient(
+       #bb8c08,
+       #d6a51d);
 }
 
 .sidebar h2 {
