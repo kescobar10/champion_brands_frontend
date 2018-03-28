@@ -1,0 +1,15 @@
+main {
+    width: 90%;
+    max-width: 960px;
+    margin: auto;
+    padding: 5% 0;
+}
+
+h1 {
+    font-family: 'Barley Script', sans-serif;
+    font-weight: normal;
+    font-size: 4.5rem;
+    color: #df4c3f;
+    text-align: center;
+    padding: .5rem;
+}
