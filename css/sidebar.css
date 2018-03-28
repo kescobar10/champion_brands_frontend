@@ -295,6 +295,10 @@ button.main-read-more-blog {
         font-size: 4rem;
         padding: 10px 0 10px 20px;
     }
+
+    .block {
+        font-size: 2rem;
+    }
 }
 
 @media all and (min-width: 960px) {
@@ -316,6 +320,10 @@ button.main-read-more-blog {
 
     .container h2 {
         padding-left: 0;
+    }
+
+    sidebar .block {
+        font-size: 1.2rem;
     }
 
 
