@@ -7,6 +7,18 @@ main {
     display: none;
 }
 
+.featherlight-inner {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-gap: 1rem;
+    grid-template-rows: auto auto;
+}
+
+.featherlight-content img {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
 .hero-image {
     background-image: url('../img/products-hero.png');
     background-repeat: no-repeat;
