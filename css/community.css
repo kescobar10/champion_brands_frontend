@@ -9,6 +9,14 @@ main p, h3 {
   color: #726a68;
 }
 
+.imgheader {
+  background-image: url(../img/comm1.jpg);
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
 h2 {
     font-size: 1.5rem;
     color: #24408e;
@@ -81,6 +89,14 @@ h3 {
   padding: 6% 0 6% 0;
 }
 
+.eventimg {
+  margin:5%;
+}
+
+.eventimg img {
+  width: 100%;
+}
+
 @media all and (min-width: 700px) {
   .eventgroup {
     display: flex;
@@ -103,5 +119,9 @@ h3 {
   .eventfoot {
     align-self: flex-end;
     width: 100%;
+  }
+
+  .btn {
+    width: 200px;
   }
 }
