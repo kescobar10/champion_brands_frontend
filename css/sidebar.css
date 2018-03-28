@@ -5,18 +5,47 @@ main {
     margin: auto;
 }
 
-main h2 {
+/* main h2 {
     color: #2b3268;
     padding: 15px 10px;
+} */
+
+main h2 {
+    font-family: 'Barley Script', sans-serif;
+    font-size: 5rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: white;
+    position: relative;
+    left: 1.7rem;
+    text-shadow: -5px 5px 20px #000000;
+    z-index: 0;
+    text-align: center;
+    margin: auto;
+    padding: 1rem 0 1.7rem;
 }
 
-.container h2 {
+.block {
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #e35e53;
+    vertical-align: sub;
+    position: relative;
+    left: -4.5rem;
+    top: -.1rem;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+/* .container h2 {
     max-width: 960px;
     display: block;
     margin: auto;
     color: #2b3268;
     padding: 15px 15px;
-}
+} */
 
 .main-post img {
     margin-left: 0;
