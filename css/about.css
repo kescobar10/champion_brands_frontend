@@ -124,6 +124,7 @@ summary::before {
         display: grid;
         grid-template-columns: auto auto;
         align-items: center;
+
         grid-gap: 3rem;
     }
 }

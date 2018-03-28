@@ -3,6 +3,10 @@ main {
     margin: auto;
 }
 
+.featherlight-content {
+    display: none;
+}
+
 .hero-image {
     background-image: url('../img/products-hero.png');
     background-repeat: no-repeat;
