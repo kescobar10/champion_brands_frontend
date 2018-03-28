@@ -10,15 +10,16 @@ main {
     padding: 15px 10px;
 } */
 
-main h2 {
+h2,
+.sidebar h2 {
     font-family: 'Barley Script', sans-serif;
     font-size: 5rem;
     font-weight: normal;
     text-transform: capitalize;
-    color: white;
+    color: #2b3268;
     position: relative;
-    left: 1.7rem;
-    text-shadow: -5px 5px 20px #000000;
+    left: 1.3rem;
+    text-shadow: -5px 5px 20px #898989;
     z-index: 0;
     text-align: center;
     margin: auto;
@@ -28,7 +29,7 @@ main h2 {
 .block {
     font-family: 'Zilla Slab', sans-serif;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: #e35e53;
     vertical-align: sub;
     position: relative;
@@ -194,10 +195,8 @@ button.main-read-more-blog {
 }
 
 .sidebar h2 {
+    left: 0;
     background-color: white;
-    color: #2b3268;
-    height: 100px;
-    text-align: center;
 }
 
 .featured-brand {
@@ -281,6 +280,10 @@ button.main-read-more-blog {
         align-self: start;
     }
 
+    h2.sidebar-title {
+        font-size: 4rem;
+        padding: 10px 0 10px 20px;
+    }
 }
 
 @media all and (min-width: 960px) {
