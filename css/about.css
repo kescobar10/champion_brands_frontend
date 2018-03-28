@@ -26,7 +26,7 @@ h1 {
     font-family: 'Barley Script', sans-serif;
     font-weight: normal;
     font-size: 4.5rem;
-    color: red;
+    color: #df4c3f;
     text-align: center;
     padding: .5rem;
 }
@@ -34,13 +34,29 @@ h1 {
 .block {
     font-size: 1.7rem;
     text-transform: uppercase;
-    color: blue;
+    color: #2b3268;
     font-family: 'Zilla Slab', sans-serif;
     font-weight: bold;
     position: relative;
     top: 1rem;
     left: -6rem;
 }
+ul {
+    list-style-type: none;
+}
+summary {
+    background-color: #d6a51d;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: url(../img/barley-symbol.png);
+}
+
+/* START HAMBURGER MENU */
 /* Button styling */
 
 .menu-toggle  {
