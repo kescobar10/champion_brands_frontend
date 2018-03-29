@@ -9,12 +9,13 @@ main p, h3 {
   color: #726a68;
 }
 
-.imgheader {
-  background-image: url(../img/comm1.jpg);
-  height: 300px;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
+.hero-image {
+    background-image: url('../img/comm1.jpg');
+    padding-bottom: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 h2 {
@@ -123,5 +124,9 @@ h3 {
 
   .btn {
     width: 200px;
+  }
+
+  .hero-image {
+    padding-bottom: 30%;
   }
 }
