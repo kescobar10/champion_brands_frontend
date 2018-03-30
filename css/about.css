@@ -7,6 +7,13 @@ html {
     display: none;
 }
 
+.about,
+.core-values {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+}
+
 .about p,
 .core-values h2,
 .about h2 {
@@ -117,17 +124,17 @@ summary::before {
         display: block;
         width: 75%;
         min-width: 150px;
+        max-width: 300px;
     }
 
     .header-background {
         padding: 1rem;
         display: grid;
-        grid-template-columns: auto auto;
         align-items: center;
-
-        grid-gap: 3rem;
-    }
-}
+        justify-content: flex-end;
+            grid-gap: 1rem;
+            grid-template-columns: 20% calc(80% - 1rem);
+        }
 /* START HAMBURGER MENU */
 /* Button styling */
 
@@ -168,13 +175,17 @@ summary::before {
 .main-menu ul {
   list-style: none;
   margin: 0;
-  padding: 2.5em 0 0;
+  /* padding: 2.5em 0 0; */
   /* Hide shadow w/ -8px while 'closed' */
   -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
      -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
           box-shadow: -8px 0 8px rgba(0,0,0,.5);
   min-height: 100%;
   width: 100%;
+}
+
+.main-menu ul li {
+    display: inline-block;
 }
 
 .main-menu a {
@@ -188,7 +199,7 @@ summary::before {
 
 .main-menu a:hover,
 .main-menu a:focus {
-  background: #333;
+  background: rgba(255,255,255,.9);
   text-decoration: underline;
 }
 
@@ -196,6 +207,10 @@ summary::before {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+#main-menu {
+      align-self: baseline;
 }
 
 /* hamburger menu interactivity */
@@ -246,26 +261,30 @@ summary::before {
 }
 
 @media all and (min-width: 800px) {
+    .header-background {
+                padding-bottom: 0;
+    }
+
     .menu-toggle,
     #main-menu-close {
         display: none;
     }
 
     .main-menu {
-        top: 0;
-        position: relative;
+        position: static;
+
     }
 
     .main-menu ul {
         box-shadow: none;
+        align-self: end;
     }
 
-    .header-background {
-        grid-gap: 10px;
-    }
+
 
     .logo-desktop {
         width: 100%;
+        padding-bottom: 1rem;
     }
 
     a.navlist {
