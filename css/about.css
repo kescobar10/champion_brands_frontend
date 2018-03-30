@@ -244,4 +244,38 @@ summary::before {
     position: fixed;
   }
 }
+
+@media all and (min-width: 800px) {
+    .menu-toggle,
+    #main-menu-close {
+        display: none;
+    }
+
+    .main-menu {
+        top: 0;
+        position: relative;
+    }
+
+    .main-menu ul {
+        box-shadow: none;
+    }
+
+    .header-background {
+        grid-gap: 10px;
+    }
+
+    .logo-desktop {
+        width: 100%;
+    }
+
+    a.navlist {
+        font-size: 1rem;
+    }
+}
+
+@media all and (min-width: 900px) {
+    a.navlist {
+        font-size: 1.2rem;
+    }
+}
 /* END hamburger menu interactivity */
