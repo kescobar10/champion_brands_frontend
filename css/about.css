@@ -183,7 +183,7 @@ summary::before {
 */
 .main-menu {
   position: absolute;
-  top: -358px;
+  top: -332px;
   left: 0;
   overflow-y: visible;
   overflow-x: visible;
@@ -193,10 +193,7 @@ summary::before {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-    display: grid;
-    justify-content: flex-end;
-    align-content: flex-end;
-    align-items: flex-end;
+
 }
 
 .main-menu ul {
@@ -287,7 +284,10 @@ summary::before {
 
     .main-menu {
         position: static;
-
+        display: grid;
+        justify-content: flex-end;
+        align-content: flex-end;
+        align-items: flex-end;
     }
 
     .main-menu ul {
