@@ -49,6 +49,7 @@ details p,
     background-image: none;
     background-color: transparent;
 }
+
 .hero-image {
     background-image: url('../img/about-hero.png');
     padding-bottom: 50%;
@@ -128,19 +129,22 @@ summary::before {
     }
 
     .header-background {
-        padding: 1rem;
+        padding: 1rem 1rem 0;
         display: grid;
-        align-items: center;
-        justify-content: flex-end;
             grid-gap: 1rem;
             grid-template-columns: 20% calc(80% - 1rem);
+        justify-content: flex-end;
         }
 }
 @media (min-width: 800px) {
+    .hero-image {
+        padding-bottom: 25%;
+    }
 
     .core-values {
         margin-bottom: 2rem;
     }
+
     .core-values ul {
         display: grid;
         grid-column-gap: 2rem;
@@ -189,6 +193,10 @@ summary::before {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+    display: grid;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
 }
 
 .main-menu ul {
@@ -200,6 +208,7 @@ summary::before {
      -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
           box-shadow: -8px 0 8px rgba(0,0,0,.5);
   width: 100%;
+
 }
 
 .main-menu a {
@@ -284,9 +293,8 @@ summary::before {
     .main-menu ul {
         box-shadow: none;
         align-self: end;
+        padding-top: 0;
     }
-
-
 
     .logo-desktop {
         width: 100%;
