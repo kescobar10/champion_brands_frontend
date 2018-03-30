@@ -135,7 +135,7 @@ summary::before {
             grid-gap: 1rem;
             grid-template-columns: 20% calc(80% - 1rem);
         }
-
+}
 @media (min-width: 800px) {
 
     .core-values {
@@ -209,6 +209,7 @@ summary::before {
   font-size: 1.2rem;
   color: #fff;
   text-decoration: none;
+  border-radius: 4px 4px 0 0;
 }
 
 .main-menu a:hover,
