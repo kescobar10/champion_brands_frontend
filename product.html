@@ -16,9 +16,36 @@
 
 
         <!-- SCRIPT -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
 
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 500, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
 
         <!-- STYLESHEETS -->
+        <link href="https://cdn.rawgit.com/noelboss/featherlight/1.7.9/release/featherlight.min.css" type="text/css" rel="stylesheet" />
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/contact.css" />
         <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,600,700" rel="stylesheet">
@@ -98,87 +125,507 @@
                     <p><a href="#">Learn more</a> or <a href="contact.html">contact us</a> today!</p>
                 </article>
              </section>
-             <section class="toc">
-                 <button>Local Craft</button>
-                 <button>Regional Craft</button>
-                 <button>National Craft</button>
-                 <button>Domestic</button>
-                 <button>Imports</button>
-                 <button>Specialty Imports</button>
-                 <button>Ciders &amp; Gluten-Free</button>
-                 <button>Flavored Malt</button>
-                 <button>Non-Alcoholic</button>
-                 <button>Red Bull</button>
+             <section class="toc" id="toc">
+                 <a href="#local-craft" class="toc-button">Local Craft</a>
+                 <a href="#regional-craft" class="toc-button">Regional Craft</a>
+                 <a href="#american-craft" class="toc-button">American Craft</a>
+                 <a href="#domestic" class="toc-button">Domestic</a>
+                 <a href="#imports" class="toc-button">Imports</a>
+                 <a href="#specialty-imports" class="toc-button">Specialty Imports</a>
+                 <a href="#ciders-gluten-free" class="toc-button">Ciders &amp; Gluten-Free</a>
+                 <a href="#flavored-malt" class="toc-button">Flavored Malt</a>
+                 <a href="#non-alcoholic" class="toc-button">Non-Alcoholic</a>
+                 <a href="#red-bull" class="toc-button">Red Bull</a>
              </section>
              <section id="local-craft" class="product-category">
-                 <h2><span class="cursive">Local</span>Craft</h2>
+                 <h2>Local <span class="block">Craft</span></h2>
                  <div class="brands">
                      <ul>
-                         <li><a href=""><img src="img/local-brands/aardwolf.png" alt="Aardwolf Brewing Company"></a></li>
-                         <li><a href=""><img src="img/local-brands/atlantic-beach.png" alt="Atlantic Beach Brewing Company"></a></li>
-                         <li><a href=""><img src="img/local-brands/engine-15.png" alt="Engine 15 Ciders and Meads"></a></li>
-                         <li><a href=""><img src="img/local-brands/intuition.png" alt="Intuition Ale Works"></a></li>
-                         <li><a href=""><img src="img/local-brands/pinglehead.png" alt="Pinglehead Brewing Company"></a></li>
-                         <li><a href=""><img src="img/local-brands/ruby-beach.png" alt="Ruby Beach Brewing Company"></a></li>
-                         <li><a href=""><img src="img/local-brands/southern-swells.png" alt="Southern Swells Brewing Company"></a></li>
-                         <li><a href=""><img src="img/local-brands/veterans-united.png" alt="Veteran's United Craft Brewery"></a></li>
+                         <li>
+                             <a href="#" data-featherlight="#local1"><img src="img/local-brands/aardwolf.png" alt="Aardwolf Brewing Company"></a>
+                             <div id="local1" class="featherlight-content">
+                                 <img src="img/local-brands/aardwolf.png" alt="Aardwolf Brewing Company">
+                                 <h3>Aardwolf Brewing Company</h3>
+                                 <p class="brand-place">Jacksonville, FL</p>
+                                 <p>Christened after a small mammal whose name means “earth wolf” (which is also the Latin translation of the word hops), Aardwolf Brewing is a highly creative, small-batch brewery with a huge local presence and a keen sense of humor. Their long list of brews include the sessionable Nonchalant America IPA, the Styrofoam Pony American Stout, and the cherry-lime-hibiscus Gose, the Hipster Popsicle – amongst many, many others.</p>
+                             </div>
+                         </li>
+                         <li>
+                             <a href="#" data-featherlight="#local2"><img src="img/local-brands/atlantic-beach.png" alt="Atlantic Beach Brewing Company"></a>
+                             <div id="local2" class="featherlight-content">
+                                 <img src="img/local-brands/atlantic-beach.png" alt="Atlantic Beach Brewing Company">
+                                 <h3>Atlantic Beach Brewing Company</h3>
+                                 <p class="brand-place">Jacksonville, FL</p>
+                                 <p>Welcome to Atlantic Beach Brewing Company. We are a family-owned brewery whose commitment is simple…pursue our passion for quality craft beer at the beach to please casual drinkers and beer enthusiasts alike. Here’s a little insight into our family, now that we’re sharing!</p>
+                             </div>
+                         </li>
+                         <li>
+                             <a href="#" data-featherlight="#local3"><img src="img/local-brands/engine-15.png" alt="Engine 15 Ciders and Meads"></a>
+                             <div id="local3" class="featherlight-content">
+                                 <img src="img/local-brands/engine-15.png" alt="Engine 15 Ciders and Meads">
+                                 <h3>Engine 15 Ciders and Meads</h3>
+                                 <p class="brand-place">Jacksonville, FL</p>
+                                 <p>Jacksonville-based convivial gastropub offering a wide selection of beers and hearty bar bites, plus brewing classes.</p>
+                             </div>
+                         </li>
+                         <li>
+                             <a href="#" data-featherlight="#local4"><img src="img/local-brands/intuition.png" alt="Intuition Ale Works"></a>
+                             <div id="local4" class="featherlight-content">
+                                 <img src="img/local-brands/intuition.png" alt="Intuition Ale Works">
+                                 <h3>Intuition Ale Works</h3>
+                                 <p class="brand-place">Jacksonville, FL</p>
+                                 <p>Established in 2010, this Jacksonville-based craft brewery specializes in handcrafted small-batch ales in a wide range of styles. Florida’s first craft brewery to can their beers, Intuition Ale Works’ flagship is People’s Pale Ale, an American-style pale ale inspired by the west coast. It features two-row malted barley and two caramel malts, magnum hops for bittering, and traditional Williamette and Cascade hops for crisp, citrus aromas. And that’s just the start of Intuition’s lengthy lineup.</p>
+                             </div>
+                         </li>
+                         <li>
+                             <a href="#" data-featherlight="#local5"><img src="img/local-brands/pinglehead.png" alt="Pinglehead Brewing Company"></a>
+                             <div id="local5" class="featherlight-content">
+                                 <img src="img/local-brands/pinglehead.png" alt="Pinglehead Brewing Company">
+                                 <h3>Pinglehead Brewing Company</h3>
+                                 <p class="brand-place">Jacksonville, FL</p>
+                                 <p>Self-described as “beer with attitude,” the people behind Pinglehead Brewing Company practiced their craft from years inside the walls of Orange Park’s Brewer’s Pizza, testing batch after batch with the pizzeria’s willing customers. Now, the brewery produces dozens of handcrafted beers, with six on their permanent roster. Notables include their flagship Pinglehead American Amber featuring a clear red body, off-white head and a highly drinkable bittersweet taste.</p>
+                             </div>
+                         </li>
+                         <li>
+                             <a href="#" data-featherlight="#local6"><img src="img/local-brands/ruby-beach.png" alt="Ruby Beach Brewing Company"></a>
+                             <div id="local6" class="featherlight-content">
+                                 <img src="img/local-brands/ruby-beach.png" alt="Ruby Beach Brewing Company">
+                                 <h3>Ruby Beach Brewing Company</h3>
+                                 <p class="brand-place">Jacksonville, FL</p>
+                                 <p>Highlighting the rich history of Jacksonville’s beaches, Ruby Beach Brewing company aims to improve the Jacksonville Beach community by providing a new take on the craft beer movement. Ruby Beach Wheat, American Garage IPA and Twin Finn Lager are just a few of their delicious creations.</p>
+                             </div>
+                         </li>
+                         <li>
+                             <a href="#" data-featherlight="#local7"><img src="img/local-brands/southern-swells.png" alt="Southern Swells Brewing Company"></a>
+                             <div id="local7" class="featherlight-content">
+                                 <img src="img/local-brands/southern-swells.png" alt="Southern Swells Brewing Company">
+                                 <h3>Southern Swells Brewing Company</h3>
+                                 <p class="brand-place">Jacksonville, FL</p>
+                                 <p>As avid homebrewers for the better part of a decade, the decision was made to share a passion for craft beer with Jacksonville. Southern Swells is a place where anyone can relax and sip on delicious craft beers while conversing and sharing a laugh with one another. Southern Swells goal is to brew excellent beer while delivering an equally exceptional taproom experience. Cheers!</p>
+                             </div>
+                         </li>
+                         <li>
+                             <a href="#" data-featherlight="#local8"><img src="img/local-brands/veterans-united.png" alt="Veteran&rsquo;s United Craft Brewery"></a>
+                             <div id="local8" class="featherlight-content">
+                                 <img src="img/local-brands/veterans-united.png" alt="Veteran&rsquo;s United Craft Brewery">
+                                 <h3>Veteran&rsquo;s United Craft Brewery</h3>
+                                 <p class="brand-place">Jacksonville, FL</p>
+                                 <p>Founded by a Naval Flight Officer and avid home brewer, Veteran’s United Craft Brewery boasts a focus on high-quality ingredients for Jacksonville’s discerning beer drinkers. Offering three year-round beers, four limited-release brands and a seasonal favorite – amongst multiple small batches – Veteran’s has quickly become a local staple. Year round options include Raging Blonde Ale, a thirst quenching balanced ale with generous late kettle additions of Cascade and Centennial hops. The Hopbanshee India Pale Ale whose “screaming” hop presence inspired the name, and the rich, caramel Scout Dog 44 Amber Ale.</p>
+                             </div>
+                         </li>
                      </ul>
+
                  </div>
+                 <a href="#toc" class="back-to-top">Back to top</a>
              </section>
 
             <section id="regional-craft" class="product-category">
-                <h2><span class="cursive">Regional</span> Craft</h2>
+                <h2>Regional<span class="block"><br>Craft</span></h2>
                 <div class="brands">
-
+                    <ul>
+                        <li>
+                            <a href="#" data-featherlight="#regional1"><img src="img/regional-brands/coppertail.png" alt="Coppertail Brewing Company"></a>
+                            <div id="regional1" class="featherlight-content">
+                                <img src="img/regional-brands/coppertail.png" alt="Coppertail Brewing Company">
+                                <h3>Coppertail Brewing Company</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#regional2"><img src="img/regional-brands/green-man.png" alt="Green Man Brewery"></a>
+                            <div id="regional2" class="featherlight-content">
+                                <img src="img/regional-brands/green-man.png" alt="Green Man Brewery">
+                                <h3>Green Man Brewery</h3>
+                                <p class="brand-place">Asheville, FL</p>
+                                <p>Brewing award-winning ales since 1997, Green Man was founded in downtown Asheville, originally as a brew-pub. In 2010, new ownership and a fresh approach spurred evolutionary change at Green Man.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#regional3"><img src="img/regional-brands/orange-blossom.png" alt="Orange Blossom Brewing Company"></a>
+                            <div id="regional3" class="featherlight-content">
+                                <img src="img/regional-brands/orange-blossom.png" alt="Orange Blossom Brewing Company">
+                                <h3>Orange Blossom Brewing Company</h3>
+                                <p class="brand-place">Orlando, FL</p>
+                                <p>President and founder of Orange Blossom Brewing started brewing in his garage at age 18, launching a lifelong passion for pushing the boundaries of beer. Since 2005, Orange Blossom Pilsner, the flagship beer, has commanded an impressive local draw because of its sessionable, fruity and refreshing taste. The honey beer made with local orange blossom honey reflects the company’s respect for traditional recipes, as well as their curiosity with non-traditional ingredients.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#regional4"><img src="img/regional-brands/saltwater.png" alt="Saltwater Brewery"></a>
+                            <div id="regional4" class="featherlight-content">
+                                <img src="img/regional-brands/saltwater.png" alt="Saltwater Brewery">
+                                <h3>Saltwater Brewery</h3>
+                                <p class="brand-place">Delray Beach, FL</p>
+                                <p>Founded in December 2013 by a team of local Floridians, Saltwater Brewery is Delray Beach's first local production microbrewery, with tasting room and beer garden on sight.
+</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#regional5"><img src="img/regional-brands/tampa-bay.png" alt="Tampa Bay Brewing Company"></a>
+                            <div id="regional5" class="featherlight-content">
+                                <img src="img/regional-brands/tampa-bay.png" alt="Tampa Bay Brewing Company">
+                                <h3>Tampa Bay Brewing Company</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Founded in 1995 at the tail end of the last Micro-Brew boom, Tampa Bay Brewing Company’s philosophy is simple: “Brew beer we love to drink!” Tampa Bay produces core beers such as Reef Donkey American Pale Ale and Old Elephant Foot IPA. TBBC operates a Brewpub in Ybor City and a production brewery in northern Tampa.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#regional6"><img src="img/regional-brands/terrapin.png" alt="Terrapin Beer Co."></a>
+                            <div id="regional6" class="featherlight-content">
+                                <img src="img/regional-brands/terrapin.png" alt="Terrapin Beer Co.">
+                                <h3>Terrapin Beer Co.</h3>
+                                <p class="brand-place">Athens, GA</p>
+                                <p>This Athens, Georgia brewery was established by two beer and Grateful Dead enthusiasts, who eventually named their craft brew business after a Grateful Dead song, Terrapin Station. In October of 2002, their Rye Pale Ale was awarded the American Pale Ale Gold Medal at the Great American Beer Festival in Denver, which launched their impending success. In addition to the Rye Pale Ale, their year-round brews include the HI-5 IPA, RecreationalAle, Hopsecutioner IPA and Golden Ale. Four seasonals round out the portfolio.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#regional7"><img src="img/regional-brands/walking-tree.png" alt="Walking Tree Brewery"></a>
+                            <div id="regional7" class="featherlight-content">
+                                <img src="img/regional-brands/walking-tree.png" alt="Veteran&rsquo;s United Craft Brewery">
+                                <h3>Walking Tree Brewery</h3>
+                                <p class="brand-place">Vero Beach, FL</p>
+                                <p>Based in Vero Beach, Florida, Walking Tree Brewery combines creativity and science to produce a large selection of unique craft beer. In addition to creating great beer, Walking Tree has developed a culture that unites their community. With heavy importance placed on their Florida roots, the Mangrove tree is a symbol of the Walking Tree name. Mangrove trees live with one foot on land and one in the sea, constantly expanding their boundaries. Through the pursuit to produce unforgettable beer, like the Mangrove tree, Walking Tree Brewery will never forsake their home, their community or their roots. </p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+                <a href="#toc" class="back-to-top">Back to top</a>
             </section>
 
-            <section id="national-craft" class="product-category">
-                <h2><span class="cursive">National</span> Craft</h2>
+            <section id="american-craft" class="product-category">
+                <h2>American<span class="block"><br>Craft</span></h2>
                 <div class="brands">
+                    <ul>
+                        <li>
+                            <a href="#" data-featherlight="#american1"><img src="img/american-brands/21st-amendment.png" alt="21st Amendment Brewery"></a>
+                            <div id="american1" class="featherlight-content">
+                                <img src="img/american-brands/21st-amendment.png" alt="21st Amendment Brewery">
+                                <h3>Coppertail Brewing Company</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american2"><img src="img/american-brands/abita.png" alt="Abita Brewing Company"></a>
+                            <div id="american2" class="featherlight-content">
+                                <img src="img/american-brands/abita.png" alt="Abita Brewing Company">
+                                <h3>Coppertail Brewing Company</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american3"><img src="img/american-brands/anchor.png" alt="Anchor Brewing"></a>
+                            <div id="american3" class="featherlight-content">
+                                <img src="img/american-brands/anchor.png" alt="Anchor Brewing">
+                                <h3>Coppertail Brewing Company</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american4"><img src="img/american-brands/ballast-point.png" alt="Ballast Point Brewing &amp; Spirits"></a>
+                            <div id="american4" class="featherlight-content">
+                                <img src="img/american-brands/ballast-point.png" alt="Ballast Point Brewing &amp; Spirits">
+                                <h3>Coppertail Brewing Company</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american5"><img src="img/american-brands/bells.png" alt="Bell&rsquo;s Brewery"></a>
+                            <div id="american5" class="featherlight-content">
+                                <img src="img/american-brands/bells.png" alt="Bell&rsquo;s Brewery">
+                                <h3>Coppertail Brewing Company</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american6"><img src="img/american-brands/blue-moon.png" alt="Blue Moon Brewing Company"></a>
+                            <div id="american6" class="featherlight-content">
+                                <img src="img/american-brands/blue-moon.png" alt="Blue Moon Brewing Company">
+                                <h3>Coppertail Brewing Company</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american7"><img src="img/american-brands/brooklyn.png" alt="Brooklyn Brewery"></a>
+                            <div id="american7" class="featherlight-content">
+                                <img src="img/american-brands/brooklyn.png" alt="Brooklyn Brewery">
+                                <h3>Coppertail Brewing Company</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american8"><img src="img/american-brands/dogfish-head.png" alt="Dogfish Head Craft Brewed Ales"></a>
+                            <div id="american8" class="featherlight-content">
+                                <img src="img/american-brands/dogfish-head.png" alt="Dogfish Head Craft Brewed Ales">
+                                <h3>Coppertail Brewing Company</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american9"><img src="img/american-brands/halvard.png" alt="Halyard Brewing Co."></a>
+                            <div id="american9" class="featherlight-content">
+                                <img src="img/american-brands/halvard.png" alt="Halyard Brewing Co.">
+                                <h3>Coppertail Brewing Company</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american10"><img src="img/american-brands/harpoon.png" alt="Harpoon Brewery"></a>
+                            <div id="american10" class="featherlight-content">
+                                <img src="img/american-brands/harpoon.png" alt="Harpoon Brewery">
+                                <h3>Coppertail Brewing Company</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american11"><img src="img/american-brands/lagunitas.png" alt="Lagunitas Brewing Company"></a>
+                            <div id="american11" class="featherlight-content">
+                                <img src="img/american-brands/lagunitas.png" alt="Lagunitas Brewing Company">
+                                <h3>Coppertail Brewing Company</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american12"><img src="img/american-brands/leinenkugel.png" alt="Leinenkugel&rsquo;s (Jacob Leinenkugel Brewing Company)"></a>
+                            <div id="american12" class="featherlight-content">
+                                <img src="img/american-brands/leinenkugel.png" alt="Leinenkugel&rsquo;s (Jacob Leinenkugel Brewing Company)">
+                                <h3>Leinenkugel&rsquo;s (Jacob Leinenkugel Brewing Company)</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american13"><img src="img/american-brands/magic-hat.png" alt="Magic Hat Brewing Company"></a>
+                            <div id="american13" class="featherlight-content">
+                                <img src="img/american-brands/magic-hat.png" alt="Magic Hat Brewing Company">
+                                <h3>Magic Hat Brewing Company</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american14"><img src="img/american-brands/mississippi.png" alt="Mississippi Brewing Company"></a>
+                            <div id="american14" class="featherlight-content">
+                                <img src="img/american-brands/mississippi.png" alt="Mississippi Brewing Company">
+                                <h3>Mississippi Brewing Company</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american15"><img src="img/american-brands/new-belgium.png" alt="New Belgium Brewing"></a>
+                            <div id="american15" class="featherlight-content">
+                                <img src="img/american-brands/new-belgium.png" alt="New Belgium Brewing">
+                                <h3>New Belgium Brewing</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american16"><img src="img/american-brands/oskar-blues.png" alt="Oskar Blues Brewery"></a>
+                            <div id="american16" class="featherlight-content">
+                                <img src="img/american-brands/oskar-blues.png" alt="Oskar Blues Brewery">
+                                <h3>Oskar Blues Brewery</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american17"><img src="img/american-brands/rogue-nation.png" alt="Rogue Nation"></a>
+                            <div id="american17" class="featherlight-content">
+                                <img src="img/american-brands/rogue-nation.png" alt="Rogue Nation">
+                                <h3>Rogue Nation</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american17b"><img src="img/american-brands/samuel-adams.png" alt="Samuel Adams"></a>
+                            <div id="american17b" class="featherlight-content">
+                                <img src="img/american-brands/samuel-adams.png" alt="Samuel Adams">
+                                <h3>Samuel Adams</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american18"><img src="img/american-brands/shiner.png" alt="Shiner"></a>
+                            <div id="american18" class="featherlight-content">
+                                <img src="img/american-brands/shiner.png" alt="Shiner">
+                                <h3>Shiner</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american19"><img src="img/american-brands/sierra-nevada.png" alt="Sierra Nevada"></a>
+                            <div id="american19" class="featherlight-content">
+                                <img src="img/american-brands/sierra-nevada.png" alt="Sierra Nevada">
+                                <h3>Sierra Nevada</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american20"><img src="img/american-brands/small-town.png" alt="Small Town Brewery"></a>
+                            <div id="american20" class="featherlight-content">
+                                <img src="img/american-brands/small-town.png" alt="Small Town Brewery">
+                                <h3>Small Town Brewery</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american21"><img src="img/american-brands/stone.png" alt="Stone Brewing"></a>
+                            <div id="american21" class="featherlight-content">
+                                <img src="img/american-brands/stone.png" alt="Stone Brewing">
+                                <h3>Stone Brewing</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-featherlight="#american22"><img src="img/american-brands/traveler.png" alt="The Traveler Beer Co."></a>
+                            <div id="american22" class="featherlight-content">
+                                <img src="img/american-brands/traveler.png" alt="The Traveler Beer Co.">
+                                <h3>The Traveler Beer Co.</h3>
+                                <p class="brand-place">Tampa, FL</p>
+                                <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, FL. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+                <a href="#toc" class="back-to-top">Back to top</a>
             </section>
 
             <section id="domestic" class="product-category">
                 <h2>Domestic</h2>
                 <div class="brands">
+                    <ul>
+                        <li><a href="#" data-featherlight="#"><img src="img/domestic-brands/coors-light.png" alt="Coors Light"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/domestic-brands/coors-non-alcoholic.png" alt="Coors Non-Alcoholic"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/domestic-brands/miller-lite.png" alt="Miller Lite"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/domestic-brands/pabst.png" alt="Pabst Brewing Co."></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/domestic-brands/yuengling.png" alt="Yuengling"></a></li>
+                    </ul>
                 </div>
+                <a href="#toc" class="back-to-top">Back to top</a>
             </section>
 
             <section id="imports" class="product-category">
                 <h2>Imports</h2>
                 <div class="brands">
+                    <ul>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/buckler.png" alt="Buckler"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/chang.png" alt="Chang"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/clausthaler.png" alt="Clausthaler Non-Alcoholic"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/dos-equis.png" alt="Dos Equis"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/fosters.png" alt="Foster&rsquo;s"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/guinness.png" alt="Guinness"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/heineken.png" alt="Heineken"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/imperial.png" alt="Imperial"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/killians.png" alt="Killian&rsquo;s Irish Red"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/labatt.png" alt="Labatt"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/molson-coors.png" alt="Molson Coors"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/moosehead.png" alt="Moosehead"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/newcastle.png" alt="Newcastle Brown Ale"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/peroni.png" alt="Peroni Italy"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/pilsner-urquell.png" alt="Pilsner Urquell"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/sapporo.png" alt="Sapporo"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/singha.png" alt="Singha Beer"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/tecate.png" alt="Tecate"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/import-brands/warsteiner.png" alt="Warsteiner"></a></li>
+                    </ul>
                 </div>
+                <a href="#toc" class="back-to-top">Back to top</a>
             </section>
 
             <section id="specialty-imports" class="product-category">
-                <h2><span class="cursive">Specialty</span> Imports</h2>
+                <h2>Specialty<br><span class="block">Imports</span></h2>
                 <div class="brands">
+                    <ul>
+                        <li><a href="#" data-featherlight="#"><img src="img/specialty-import-brands/carlsberg.png" alt="Carlsberg"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/specialty-import-brands/chimay.png" alt="Chimay"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/specialty-import-brands/hacker-pschorr.png" alt="Hacker-Pschorr"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/specialty-import-brands/konig-ludwig-international.png" alt="Konig Ludwig International"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/specialty-import-brands/latis.png" alt="PALM"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/specialty-import-brands/paulaner.png" alt="Paulaner"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/specialty-import-brands/radeberger.png" alt="Radeberger"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/specialty-import-brands/rodenbach.png" alt="Rodenbach"></a></li>
+                    </ul>
                 </div>
+                <a href="#toc" class="back-to-top">Back to top</a>
             </section>
 
             <section id="ciders-gluten-free" class="product-category">
-                <h2><span class="cursive">Ciders</span> &amp; Gluten-Free</h2>
+                <h2>Ciders<br><span class="block">&amp; Gluten-Free</span></h2>
                 <div class="brands">
+                    <ul>
+                        <li><a href="#" data-featherlight="#"><img src="img/cider-brands/angry-orchard.png" alt="Angry Orchard Cider"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/cider-brands/crispin.png" alt="Crispin Cider"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/cider-brands/engine-15.png" alt="Engine 15 Ciders and Meads"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/cider-brands/smith-forge.png" alt="Smith &amp; Forge Cider"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/cider-brands/strongbow.png" alt="Strongbow Cider"></a></li>
+                    </ul>
                 </div>
+                <a href="#toc" class="back-to-top">Back to top</a>
             </section>
 
             <section id="flavored-malt" class="product-category">
-                <h2><span class="cursive">Flavored</span> Malt</h2>
+                <h2>Flavored<span class="block">Malt</span></h2>
                 <div class="brands">
+                    <ul>
+                        <li><a href="#" data-featherlight="#"><img src="img/flavored-malt-brands/cayman-jack.png" alt="Cayman Jack"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/flavored-malt-brands/coney-island.png" alt="Coney Island Brewing Co."></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/flavored-malt-brands/henrys.png" alt="Henry&rsquo;s Hard Soda"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/flavored-malt-brands/mikes.png" alt="Mike&rsquo;s"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/flavored-malt-brands/redds.png" alt="Redd&rsquo;s Apple Ale"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/flavored-malt-brands/smirnoff.png" alt="Smirnoff"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/flavored-malt-brands/twisted-tea.png" alt="Twisted Tea Hard Iced Tea"></a></li>
+                    </ul>
                 </div>
+                <a href="#toc" class="back-to-top">Back to top</a>
             </section>
 
             <section id="non-alcoholic" class="product-category">
-                <h2><span class="cursive">Non-</span>Alcoholic</h2>
+                <h2>Non-<span class="block"><br>Alcoholic</span></h2>
                 <div class="brands">
+                    <ul>
+                        <li><a href="#" data-featherlight="#"><img src="img/non-alcoholic-brands/bold-bean.png" alt="Bold Bean Coffee Roasters"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/non-alcoholic-brands/boxed-water.png" alt="Boxed Water"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/non-alcoholic-brands/essentia.png" alt="Essentia"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/non-alcoholic-brands/evian.png" alt="Evian"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/non-alcoholic-brands/gnarbucha.png" alt="Gnarbucha"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/non-alcoholic-brands/nesquik.png" alt="Nestle Nesquik"></a></li>
+                    </ul>
                 </div>
+                <a href="#toc" class="back-to-top">Back to top</a>
             </section>
 
             <section id="red-bull" class="product-category">
                 <h2>Red Bull</h2>
                 <div class="brands">
+                    <ul>
+                        <li><a href="#" data-featherlight="#"><img src="img/red-bull/red-bull.png" alt="Red Bull Energy Drink"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/red-bull/rb-sugar-free.png" alt="Red Bull Sugar Free"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/red-bull/rb-total-zero.png" alt="Red Bull Total Zero"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/red-bull/rb-blue.png" alt="Blue Edition"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/red-bull/rb-orange.png" alt="Orange Edition"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/red-bull/rb-red.png" alt="Red Edition"></a></li>
+                        <li><a href="#" data-featherlight="#"><img src="img/red-bull/rb-yellow.png" alt="Yellow Edition"></a></li>
+                    </ul>
                 </div>
+                <a href="#toc" class="back-to-top">Back to top</a>
             </section>
 
         </main>
@@ -191,26 +638,26 @@
           <section class="contact">
             <h3>Contact</h3>
             <section class="fla">
-              <h4>Champion Brands - Florida</h4>
+              <h4><span class="upper">Champion Brands</span> - Florida</h4>
               <p>5571 Florida Mining Blvd. S.
               <br>
               Jacksonville, Florida 32257
               <br>
-              Call: <span>904.268.1220</span></p>
+              Call: <span class="phone">904.268.1220</span></p>
             </section>
 
             <section class="ga">
-              <h4>Champion Brands - Georgia</h4>
+              <h4><span class="upper">Champion Brands</span> - Georgia</h4>
               <p>34 Coleman Blvd.
               <br>
               Pooler, Georgia 31322
               <br>
-              Call: <span>912.748.5152</span></p>
+              Call: <span class="phone">912.748.5152</span></p>
             </section>
 
             <section class="email">
-              <h4>Email all inquiries to</h4>
-              <p><a>info@championbrands.net</a></p>
+              <p>Email all inquiries to
+              <a>info@championbrands.net</a></p>
             </section>
 
           </section><!-- contact -->
@@ -218,29 +665,31 @@
           <section class="sub">
             <h3>Subscribe</h3>
             <p>Sign up for news about our beverages, recipes, events and Champion Brands updates directly in your inbox.</p>
-            <input>
-            <button type="button" name="button">
-              Submit
-            </button>
+            <form>
+                <input type="text" name="email-address" placeholder="Email">
+                <input type="submit" value="Submit">
+            </form>
           </section>
 
           <section class="portal">
-            <h3>Portal</h3>
+            <h3>Portals</h3>
 
-            <button type="" name="button">
-              Retailer Portal
+            <button type="button" name="retailer-button">
+              Retailer
             </button>
 
-            <button type="button" name="button">
+            <button type="button" name="employee-button">
               Employee
             </button>
           </section>
 
           <!-- COPYRIGHT -->
           <section class="info">
-            <p>&copy;2018 Champion Brands, Inc.</p>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
+            <section class="info-text">
+                <p><a href="#">Privacy Policy</a><span class="hide-mobile">  |
+                </span><a href="#">Terms & Conditions</a></p>
+                <p>&copy;2018 Champion Brands, Inc.</p>
+            </section>
 
             <!-- SOCIAL MEDIA -->
             <section class="social-media-footer-hp">
@@ -267,20 +716,17 @@
                   <img class="socialicon" src="img/linkedin.png" alt="linkedin" />
                 </a>
               </figure>
+            </section>
+<!-- END SOCIAL MEDIA -->
 
-              <figure class="social">
-                <a href="#">
-                  <img class="socialicon" src="img/search.png" alt="search" />
-                </a>
-              </figure>
-            </section><!-- SOCIAL MEDIA -->
-
-          </section><!-- COPYRIGHT -->
+          </section>
+<!-- END COPYRIGHT -->
 
         </footer>
 
       </div>
-
+      <script src="https://code.jquery.com/jquery-latest.js"></script>
+      <script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.9/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
     </body>
 
 </html>
