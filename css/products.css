@@ -99,6 +99,13 @@ h1 {
     margin-bottom: 2px;
 }
 
+.product-category p {
+    color: #ffffff;
+    width: 87%;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
 .brands {
     background-color: white;
     display:flex;
@@ -248,7 +255,14 @@ a.back-to-top {
         grid-template-columns: auto auto auto auto;
     }
 }
+
+
 /* START NAV STYLES*/
+
+.logo-desktop {
+    display: none;
+}
+
 .header-background {
     background-image: url('../img/texture-red.png');
     background-position: center;
@@ -321,7 +335,7 @@ a.back-to-top {
 .main-menu a:active {
   background: rgba(255,255,255,.9);
   color: #df4c3f;
-  text-shadow: none;
+    text-shadow: none;
 }
 
 .main-menu .menu-close {
@@ -383,6 +397,14 @@ a.back-to-top {
         width: 75%;
         min-width: 150px;
         max-width: 300px;
+    }
+
+    .header-background {
+        padding: 1rem 1rem 0;
+        display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: 20% calc(80% - 1rem);
+        justify-content: flex-end;
     }
 }
 

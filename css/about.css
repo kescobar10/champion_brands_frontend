@@ -3,9 +3,6 @@ html {
     height: 100%;
 }
 
-.logo-desktop {
-    display: none;
-}
 
 .about,
 .core-values {
@@ -104,15 +101,8 @@ summary::before {
     summary {
         margin: 1rem auto;
     }
-
-    .header-background {
-        padding: 1rem 1rem 0;
-        display: grid;
-            grid-gap: 1rem;
-            grid-template-columns: 20% calc(80% - 1rem);
-        justify-content: flex-end;
-        }
 }
+
 @media (min-width: 800px) {
     .hero-image {
         padding-bottom: 25%;
@@ -138,7 +128,14 @@ summary::before {
         margin: 0;
     }
 }
+
+
 /* START NAV STYLES*/
+
+.logo-desktop {
+    display: none;
+}
+
 .header-background {
     background-image: url('../img/texture-red.png');
     background-position: center;
@@ -273,6 +270,14 @@ summary::before {
         width: 75%;
         min-width: 150px;
         max-width: 300px;
+    }
+
+    .header-background {
+        padding: 1rem 1rem 0;
+        display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: 20% calc(80% - 1rem);
+        justify-content: flex-end;
     }
 }
 
