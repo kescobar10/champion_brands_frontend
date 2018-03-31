@@ -248,7 +248,6 @@ a.back-to-top {
         grid-template-columns: auto auto auto auto;
     }
 }
-
 /* START NAV STYLES*/
 .header-background {
     background-image: url('../img/texture-red.png');
@@ -311,12 +310,18 @@ a.back-to-top {
   font-size: 1.2rem;
   color: #fff;
   text-decoration: none;
-  border-radius: 4px 4px 0 0;
+}
+
+.main-menu ul li a {
+    border-radius: 4px 4px 0 0;
 }
 
 .main-menu a:hover,
-.main-menu a:focus {
+.main-menu a:focus,
+.main-menu a:active {
   background: rgba(255,255,255,.9);
+  color: #df4c3f;
+  text-shadow: none;
 }
 
 .main-menu .menu-close {
