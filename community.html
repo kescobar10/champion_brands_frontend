@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/community.css" />
         <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,600,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 
         <!--[if lt IE 9]>
     			<script src="js/html5shiv-printshiv.min.js"></script>
@@ -103,6 +104,13 @@
 
             <article>
               <h3 class="visually-hidden">Partner Logos</h3>
+
+              <div class="your-class">
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+              </div>
+
             </article>
 
             <button class="btn">Request Donation</button>
@@ -265,6 +273,19 @@
           </section><!-- COPYRIGHT -->
 
         </footer>
+
+        <!-- JAVASCRIPT -->
+
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $('.your-class').slick({
+              setting-name: setting-value;
+            });
+          });
+        </script>
 
     </body>
 
