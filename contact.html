@@ -7,6 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- <link rel="shortcut icon" href="images/fav.ico" type="images/png" /> -->
+        <link rel="stylesheet" type="text/css" media="screen" href="form.css" />
+        <script type="text/javascript" src="form_validate.js"> </script>
 
     		<meta name="description" content="Champion Brands | Home">
 
@@ -106,7 +108,7 @@
 
               <article class="formsection"> <!-- Info -->
 
-                <form>
+                <form id="contactform" name="contactform" method="post" action="form.php" onsubmit="return validateForm(this)">
                   <div class="formpiece1">
                     <label>Name:</label>
                       <input type="text" name="name" required>
@@ -135,7 +137,7 @@
                           <input type="radio" name="audience" value="other" class="radiostyle" required> <p>Other</p>
                         </span>
                       </div>
-                      
+
                   </div>
 
                   <div class="formpiece">
