@@ -1,0 +1,83 @@
+:root {
+  --blue: #2b3268;
+}
+
+main, .job--posts, .job {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+}
+
+main {
+  width: 90%;
+  max-width: 960px;
+  grid-gap: 2rem;
+  margin: auto;
+  padding: 5% 0;
+}
+
+h1 {
+  font-family: 'Barley Script', sans-serif;
+  font-weight: normal;
+  font-size: 4.5rem;
+  color: #df4c3f;
+  text-align: center;
+  padding: .5rem;
+}
+
+.title {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.hero-image {
+  width: 100%;
+  background:
+    url("../img/hero.jpg"),
+    rgba(41, 51, 104, 0.70);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2, h3, .hero-image p {
+  font-family: 'Zilla Slab', serif;
+}
+
+h2, .hero-image p {
+  font-weight: 700;
+}
+
+.hero-image p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+h2 {
+  color: var(--blue);
+  font-size: 1.2rem;
+}
+
+h3{
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h4, .job ul, .benefits ul {
+  font-family: 'Asap', sans-serif;
+}
+
+.job p, .job ul li, .benefits p, .benefits ul li, .culture p{
+  font-size: .8rem;
+}
+
+.job ul, .benefits ul {
+  list-style-type: none;
+}
+
+iframe {
+  padding-bottom: 1rem;
+}
