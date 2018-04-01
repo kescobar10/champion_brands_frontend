@@ -47,6 +47,9 @@
 
 	.featherlight .featherlight-content {
 		/* make content container for positioned elements (close button) */
+
+        width: 90%;
+                max-width: 854px;
 		position: relative;
 
 		/* position: centering vertical and horizontal */
@@ -77,6 +80,59 @@
 		/* make sure its visible */
 		display: block;
 	}
+
+    .featherlight-content img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .featherlight h3 {
+        color: #2b3268;
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+    }
+
+    .brand-place,
+    .featherlight p:last-child {
+        color: #726a68;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .brand-place {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+@media (min-width: 800px) {
+    .featherlight .featherlight-inner {
+		/* make sure its visible */
+		display: grid;
+        grid-template-columns: 30% auto;
+        grid-gap: 10px;
+	}
+
+    .featherlight-content img {
+        grid-column: 1 / 1;
+        grid-row: 1 / span 3;
+    }
+
+    .featherlight h3 {
+        align-self: flex-end;
+    }
+
+    .featherlight h3,
+    .brand-place,
+    .featherlight p:last-child {
+        grid-column: 2 / 2;
+    }
+
+    .brand-place,
+    .featherlight p:last-child {
+        align-self: flex-start;
+    }
+}
 
 	/* don't show these though */
 	.featherlight script.featherlight-inner,
