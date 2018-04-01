@@ -51,6 +51,7 @@
         max-width: 854px;
 		position: relative;
         margin: auto;
+        padding-top: 1rem;
 
 		/* position: centering vertical and horizontal */
 		text-align: left;
@@ -108,7 +109,7 @@
     .featherlight .featherlight-inner {
 		/* make sure its visible */
 		display: grid;
-        grid-template-columns: 30% auto;
+        grid-template-columns: 30% 30% calc(40% - 20px);
         grid-gap: 10px;
 	}
 
@@ -123,8 +124,17 @@
 
     .featherlight h3,
     .brand-place,
-    .featherlight p:last-child {
+    .featherlight p {
+        grid-column: 2 / span 2;
+    }
+
+    .get-it-button {
         grid-column: 2 / 2;
+    }
+
+    .back-to-product-category {
+        grid-column: 3 / 3;
+        align-self: center;
     }
 
     .brand-place,
