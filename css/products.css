@@ -7,16 +7,30 @@ main {
     display: none;
 }
 
-.featherlight-inner {
-    display: grid;
-    grid-template-columns: 30% auto;
-    grid-gap: 1rem;
-    grid-template-rows: auto auto;
+.get-it-button,
+.back-to-product-category {
+    display: block;
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+    text-align: center;
 }
 
-.featherlight-content img {
-    grid-column: 1;
-    grid-row: 1 / span 2;
+.get-it-button {
+    color: white;
+    background-color: #bb8c08;
+    background-image:
+    linear-gradient(
+        #bb8c08,
+        #d6a51d);
+    padding: 1.1rem;
+    border-radius: 4px;
+    max-width: 200px;
+    margin: 1rem auto;
+}
+
+.back-to-product-category {
+    color: #d6a51d;
+    margin: 1rem auto;
 }
 
 .hero-image {

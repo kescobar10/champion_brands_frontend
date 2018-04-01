@@ -123,7 +123,7 @@
 		root:           'body',                /* Where to append featherlights */
 		openSpeed:      250,                   /* Duration of opening animation */
 		closeSpeed:     250,                   /* Duration of closing animation */
-		closeOnClick:   'anywhere',          /* Close lightbox on click ('background', 'anywhere' or false) */
+		closeOnClick:   'background',          /* Close lightbox on click ('background', 'anywhere' or false) */
 		closeOnEsc:     true,                  /* Close lightbox when pressing esc */
 		closeIcon:      '&#10005;',            /* Close icon */
 		loading:        '',                    /* Content to show while initial content is loading */
@@ -167,13 +167,19 @@
 			/* close when click on background/anywhere/null or closebox */
 			self.$instance.on(self.closeTrigger+'.'+self.namespace, function(event) {
 				var $target = $(event.target);
+				var backLink = document.getElementsByClassName('back-to-product-category');
 				if( ('background' === self.closeOnClick  && $target.is('.'+self.namespace))
 					|| 'anywhere' === self.closeOnClick
-					|| $target.closest(closeButtonSelector).length ){
+					|| $target.closest(closeButtonSelector).length
+				 	|| $target.closest(backLink).length ){
 					self.close(event);
 					event.preventDefault();
 				}
 			});
+
+			// self.$instance.on(self.closeTrigger+'.'+self.namespace, function(event) {
+			// 	var backLink = document.getElementsByClassName('back-to-product-category');
+			// 	backLink.onClick
 
 			return this;
 		},

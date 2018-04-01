@@ -47,10 +47,10 @@
 
 	.featherlight .featherlight-content {
 		/* make content container for positioned elements (close button) */
-
         width: 90%;
-                max-width: 854px;
+        max-width: 854px;
 		position: relative;
+        margin: auto;
 
 		/* position: centering vertical and horizontal */
 		text-align: left;
@@ -59,12 +59,9 @@
 
 		/* dimensions: cut off images */
 		overflow: auto;
-		padding: 25px 25px 0;
-		border-bottom: 25px solid transparent;
 
 		/* dimensions: handling large content */
-		margin-left: 5%;
-		margin-right: 5%;
+        margin: auto;
 		max-height: 95%;
 
 		/* styling */
@@ -79,11 +76,13 @@
 	.featherlight .featherlight-inner {
 		/* make sure its visible */
 		display: block;
+                margin: auto;
 	}
 
     .featherlight-content img {
         width: 100%;
         max-width: 300px;
+        margin: auto;
     }
 
     .featherlight h3 {
@@ -199,8 +198,6 @@
 @media only screen and (max-width: 1024px) {
 	.featherlight .featherlight-content {
 		/* dimensions: maximize lightbox with for small screens */
-		margin-left: 0;
-		margin-right: 0;
 		max-height: 98%;
 
 		padding: 10px 10px 0;
