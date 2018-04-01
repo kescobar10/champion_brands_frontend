@@ -5,13 +5,55 @@ main {
     margin: auto;
 }
 
-main h2 {
+/* main h2 {
     color: #2b3268;
     padding: 15px 10px;
+} */
+
+h2,
+.sidebar h2 {
+    font-family: 'Barley Script', sans-serif;
+    font-size: 5rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #2b3268;
+    position: relative;
+    left: 1.3rem;
+    text-shadow: -5px 5px 20px #898989;
+    z-index: 0;
+    text-align: center;
+    margin: auto;
+    padding: 1rem 0 1.7rem;
 }
+
+.block {
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #e35e53;
+    vertical-align: sub;
+    position: relative;
+    left: -4.5rem;
+    top: -.1rem;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+/* .container h2 {
+    max-width: 960px;
+    display: block;
+    margin: auto;
+    color: #2b3268;
+    padding: 15px 15px;
+} */
 
 .main-post img {
     margin-left: 0;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
 }
 
 .main-post-thumb-container {
@@ -43,10 +85,6 @@ main h2 {
     font-size: 0.8em;
 }
 
-.main-post img {
-    max-width: 500px;
-}
-
 .date {
     font-family: 'Zilla Slab';
     font-weight: 400;
@@ -71,22 +109,33 @@ button.main-read-more-blog {
        #bb8c08,
        #d6a51d);
     width: 90%;
+    max-width: 400px;
     display: block;
     margin: auto;
     border-radius: 4px;
     padding: 1em;
 }
 
+.older-post {
+    max-width: 500px;
+    margin: auto;
+}
+
 .older-thumb-container {
     position: relative;
     color: white;
+    max-width: 300px;
+    margin: auto;
     margin-top: 50px;
+}
+
+.older-thumb-container h4 {
+    margin-left: 15px;
 }
 
 .older-post-category {
     position: absolute;
     top: 15px;
-    right: 100px;
     font-family: 'Asap';
 }
 
@@ -127,6 +176,7 @@ button.main-read-more-blog {
 .sidebar h3 {
     color: white;
     letter-spacing: 5px;
+    font-size: 1.4em;
 }
 
 .sidebar ul {
@@ -136,7 +186,7 @@ button.main-read-more-blog {
 
 .sidebar input {
     height: 40px;
-    width: 100%;
+    width: 75%;
     margin-top: 20px;
     font-size: 1.2em;
     padding: 5px;
@@ -144,11 +194,20 @@ button.main-read-more-blog {
     color: #726a68;
 }
 
+.search-button {
+    width: 20%;
+    height: 40px;
+    margin-top: 20px;
+    float: right;
+    background-image:
+    linear-gradient(
+       #bb8c08,
+       #d6a51d);
+}
+
 .sidebar h2 {
+    left: 0;
     background-color: white;
-    color: #2b3268;
-    height: 100px;
-    text-align: center;
 }
 
 .featured-brand {
@@ -180,4 +239,92 @@ button.main-read-more-blog {
        #bb8c08,
        #d6a51d);
        width: 70%;
+}
+
+@media all and (min-width: 480px) {
+    sidebar {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "archives categories"
+            "search search"
+            "featured featured"
+    }
+
+    #archives {
+        grid-area: archives;
+    }
+
+    #categories {
+        grid-area: categories;
+    }
+
+    #search {
+        grid-area: search;
+    }
+
+    #featured {
+        grid-area: featured;
+    }
+
+
+@media all and (min-width: 768px) {
+    .main-post h3 {
+        font-size: 3em;
+    }
+
+    .main-post h4 {
+        font-size: 1.1em;
+    }
+
+    .older-posts-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .older-post {
+        padding: 15px;
+        align-self: start;
+    }
+
+    h2.sidebar-title {
+        font-size: 4rem;
+        padding: 10px 0 10px 20px;
+    }
+
+    .block {
+        font-size: 2rem;
+    }
+}
+
+@media all and (min-width: 960px) {
+    sidebar {
+        display: inline;
+        margin-bottom: 20px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+    }
+
+    .older-post-image {
+        max-width: 275px;
+    }
+
+    .container h2 {
+        padding-left: 0;
+    }
+
+    sidebar .block {
+        font-size: 1.2rem;
+    }
+
+
 }
