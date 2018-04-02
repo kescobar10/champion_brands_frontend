@@ -1,7 +1,7 @@
 /****** HOMEPAGE BODY ******/
 .carousel,.brand {
-  padding: 1.5% 12%;
-  line-height: 2;
+  padding: 1rem;
+  line-height: 2rem;
 }
 
 .carousel-hero {
@@ -29,13 +29,23 @@
     background-color: rgba(102, 102, 102, 0.70);
 }
 
-.carousel-text h2{
+.carousel-text h2,
+.brand h2 {
   color: #df4c3f;
   font-family: 'Barley Script', sans-serif;
   position: relative;
-  top: -1.5rem;
   text-transform: capitalize;
   font-size: 4rem;
+}
+
+.carousel-text h2 {
+  top: -1.5rem;
+}
+
+.brand h2 {
+    text-align: center;
+    letter-spacing: -.1rem;
+    margin: 1rem auto;
 }
 
 .carousel-text p {
@@ -51,6 +61,11 @@
     letter-spacing: .2rem;
     font-size: 1.5rem;
     top: -1.35rem;
+}
+
+.brand .block {
+    top: .9rem;
+    left: -2.5rem;
 }
 
 .card--team,
@@ -98,6 +113,17 @@ nav ul {
 
 .card--brewers {
     background-image: url("../img/bluecard3.jpg");
+}
+
+.our-brands {
+    display: flex;
+    width: 100%;
+}
+.our-brands div img {
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+    padding: 0 1rem;
 }
 
 /* MEDIA QUERIES */
