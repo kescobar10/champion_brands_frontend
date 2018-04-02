@@ -81,8 +81,7 @@
 
 .blue-cards section{
   background-size: cover;
-  padding: 1rem;
-  height: 33vh;
+  padding: 2rem 1rem;
 }
 
 nav ul {
@@ -128,12 +127,20 @@ nav ul {
     .carousel-text {
         width: 60%;
         margin: 1rem;
+        max-width: 480px;
     }
-}
-@media all and (min-width: 800px) {
+
     .blue-cards {
-      display: flex;
-      flex-direction: row;
+        display: grid;
+        grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+        height: auto;
+        grid-gap: .5rem;
+        max-width: 960px;
+        margin: auto;
+    }
+
+    .blue-cards section {
+        justify-content: flex-start;
     }
 }
 
