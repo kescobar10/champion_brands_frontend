@@ -35,7 +35,7 @@ label, h3 {
   font-size: 1.3rem;
 }
 
-h4 {
+main h4 {
   display: inline-block;
   font-family: 'Zilla Slab', serif;
   text-transform: uppercase;
@@ -75,7 +75,7 @@ article + article {
 
 /****** CONTACT FORM ******/
 
-article {
+main article {
   padding: 7% 0 7% 0;
 }
 
@@ -107,12 +107,12 @@ textarea {
   padding-left: 2%;
 }
 
-input[type=radio] {
+.container input[type=radio] {
   background-color: white;
   border-radius: 50%;
 }
 
-input[type=submit] {
+.container input[type=submit] {
   cursor: pointer;
 }
 
@@ -178,11 +178,11 @@ iframe {
     width: 40%;
   }
 
-  section + section {
+  .container section + section {
     margin-top: 7%;
   }
 
-  p + p {
+  .container p + p {
     padding-top: 2%;
   }
 
@@ -193,7 +193,7 @@ iframe {
     justify-content: stretch;
   }
 
-  article {
+  .container article {
     padding-top: 25px;
   }
 
@@ -213,7 +213,7 @@ iframe {
     padding-left: 3%;
   }
 
-  article + article {
+  .container article + article {
     border-top: 0px;
   }
 
@@ -226,16 +226,16 @@ iframe {
     display: flex;
   }
 
-  input[type=text] {
+  .container input[type=text] {
     padding: 10px;
   }
 
-  textarea {
+  .container textarea {
     width: 100%;
     height: 350px;
   }
 
-  label {
+  .container label {
     margin-right: 4%;
     width: 50%;
   }
@@ -325,12 +325,6 @@ iframe {
   background: rgba(255,255,255,.9);
   color: #df4c3f;
     text-shadow: none;
-}
-
-a.current-nav {
-    background: white;
-    color: #df4c3f;
-      text-shadow: none;
 }
 
 .main-menu .menu-close {
