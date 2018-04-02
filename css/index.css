@@ -1,5 +1,5 @@
 /****** HOMEPAGE BODY ******/
-.carousel,.brand {
+.carousel, .blue-cards, .brand {
   padding: 1.5% 12%;
   line-height: 2;
 }
@@ -25,12 +25,10 @@
     background-color: rgba(102, 102, 102, 0.70);
 }
 
-.blue-cards, .blue-cards section {
+.blue-cards {
   color: white;
-  display: grid;
-  grid-template-rows: auto;
-  grid-gap: 1px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .carousel-img {
@@ -40,9 +38,8 @@
 .blue-cards section{
   background-size: cover;
   padding: 2%;
-  width: 100%;
-  grid-gap: 1rem;
-  height: 33vh;
+  max-width: 400px;
+  margin: 2%;
 }
 
 nav ul {
