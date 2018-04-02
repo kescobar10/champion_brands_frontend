@@ -5,8 +5,17 @@
   padding: 5% 0 5% 0;
 }
 
-main p, h3 {
+main p,
+.cr,
+.cr a {
   color: #726a68;
+}
+
+.btn,
+.eventfoot span,
+.cr,
+.cr a {
+    font-family: 'Asap', sans-serif;
 }
 
 .hero-image {
@@ -18,6 +27,11 @@ main p, h3 {
     position: relative;
 }
 
+.partnerlogos img {
+    padding: 0 2rem;
+    max-width: 180px;
+}
+
 h2 {
     font-size: 1.5rem;
     color: #24408e;
@@ -27,6 +41,7 @@ h2 {
     z-index: 1000;
     text-transform: uppercase;
 }
+
 .cursive {
     font-family: 'Barley Script', sans-serif;
     font-size: 4.5rem;
@@ -43,55 +58,15 @@ h2 {
   margin: .75rem auto;
   box-shadow: -5px 5px 10px rgba(0,0,0,.3);
   width: 100%;
-  font-family: 'Asap', sans-serif;
   font-weight: 800;
   color: white;
   padding: 1.1rem;
   font-size: 1.2rem;
   border-radius: 4px;
   background-image:
-  linear-gradient(
-     #bb8c08,
-     #d6a51d);
-}
-
-.btn:hover {
-    background-image:
-    linear-gradient(
-       #a67d07,
-       #bf931a);
-}
-
-.partnerlogos {
-  padding-top: 4%;
-  padding-bottom: 2%;
-  margin: auto;
-  text-align: center;
-}
-
-.partnerlogos img {
-  max-width: 100px;
-  display: inline-block;
-}
-
-#dctf {
-  max-width: 200px;
-}
-
-.cr {
-  text-align: right;
-  font-size: 0.7rem;
-  line-height: 1.5;
-  color: #726a68;
-}
-
-.cr a {
-  color: #726a68;
-  text-decoration: underline;
-}
-
-.container section + section {
-  margin-top: 3%;
+      linear-gradient(
+         #bb8c08,
+         #d6a51d);
 }
 
 /****** EVENT CARDS ******/
@@ -115,11 +90,10 @@ h2 {
 .eventfoot span {
   width: 50%;
   color: white;
-  font-family: 'Asap', sans-serif;
   font-size: 1.3rem;
 }
 
-main h3 {
+h3.eventtitle {
   font-family: 'Zilla Slab', serif;
   padding-bottom: 5px;
   text-transform: uppercase;
@@ -137,6 +111,17 @@ main h3 {
   width: 100%;
 }
 
+.cr,
+.cr a {
+    font-size: .7rem;
+}
+
+.cr a {
+    text-decoration: underline;
+    text-shadow: none;
+    font-weight: normal;
+}
+
 @media all and (min-width: 700px) {
   .eventgroup {
     display: flex;
@@ -150,21 +135,6 @@ main h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .partnerlogos {
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
-    justify-content: space-around;
-    align-items: baseline;
-    flex-wrap: wrap;
-  }
-
-  .partnerlogos img, #dctf {
-    box-sizing: border-box;
-    max-height: 150px;
-    max-width: 300px;;
   }
 
   .eventcard + .eventcard {
