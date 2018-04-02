@@ -57,6 +57,22 @@ main {
     font-size: 1.1em;
 }
 
+.nextprev a {
+    font-weight: 800;
+    font-family: 'Asap';
+    color: #edbf41;
+    text-shadow: -4px 4px 10px rgba(0,0,0,.1);
+    margin: 15px;
+}
+
+.left-previous {
+    float:left;
+}
+
+.right-next {
+    float: right;
+}
+
 hr {
     border: 0;
     height: 0;
