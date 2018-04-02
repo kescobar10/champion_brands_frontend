@@ -41,6 +41,7 @@ h2 {
     left: -2.5rem;
     z-index: 1000;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .cursive {

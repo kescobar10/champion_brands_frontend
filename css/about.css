@@ -4,7 +4,13 @@ html {
 }
 
 
-.about,
+.about {
+    width: 90%;
+    max-width: 960px;
+    margin: auto;
+}
+
+
 .core-values {
     width: 90%;
     max-width: 700px;

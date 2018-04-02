@@ -39,6 +39,7 @@ h1 {
   background-attachment: fixed;
   background-repeat: no-repeat;
   object-fit: cover;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
