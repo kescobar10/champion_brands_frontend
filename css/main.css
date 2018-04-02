@@ -37,6 +37,7 @@ IMPORTANT ******/
         -moz-text-transform: uppercase;
 }
 
+.footer-button,
 button,
 input[type=submit] {
     cursor: pointer;
@@ -168,7 +169,7 @@ footer{
   padding: 10px;
 }
 
-
+.footer-button,
 button,
 .sub input[type=submit] {
   color: white;
@@ -181,13 +182,20 @@ button,
   border-radius: 4px;
 }
 
+.footer-button:hover,
 button:hover {
   background-image:
       linear-gradient(
         #a12822,
         #c34136);
+    text-decoration: none;
     }
 
+.footer-button {
+    text-shadow: none;
+    text-align: center;
+    max-width: 240px;
+}
 form {
     background-color: white;
     border-radius: 4px;
@@ -295,7 +303,7 @@ form {
 }
 
 /* PORTAL */
-
+.footer-button,
 .portal button {
     margin: .75rem auto;
     box-shadow: -5px 5px 10px rgba(0,0,0,.3);
@@ -345,6 +353,7 @@ form {
         grid-row: 1 / 1;
     }
 
+    .footer-button,
     .portal button {
         grid-row: 2 / 2;
     }
@@ -435,6 +444,7 @@ form {
         justify-content: space-between;
     }
 
+    .footer-button,
     .portal button {
         margin: 1rem auto;
     }
@@ -470,6 +480,7 @@ form {
         align-items: stretch;
     }
 
+    .footer-button,
     .portal button {
         width: 100%;
     }
