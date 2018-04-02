@@ -327,6 +327,12 @@ iframe {
     text-shadow: none;
 }
 
+a.current-nav {
+    background: white;
+    color: #df4c3f;
+      text-shadow: none;
+}
+
 .main-menu .menu-close {
   position: absolute;
   right: 0;
