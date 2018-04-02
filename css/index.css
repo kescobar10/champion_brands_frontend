@@ -160,6 +160,7 @@ nav ul {
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 0;
+        height: 50vh;
 
     }
 
@@ -168,6 +169,8 @@ nav ul {
         padding: 2rem 1rem;
         display: flex;
         justify-content: flex-end;
+        height: inherit;
+
     }
 
     .carousel-text {
