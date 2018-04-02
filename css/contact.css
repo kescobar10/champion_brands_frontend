@@ -319,7 +319,7 @@ iframe {
 }
 
 a.current-nav {
-    background: rgba(255,255,255,.9);
+    background: white;
     color: #df4c3f;
       text-shadow: none;
 }
