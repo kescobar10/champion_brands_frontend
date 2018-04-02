@@ -36,7 +36,9 @@ h1 {
   background:
     url("../img/hero.jpg"),
     rgba(41, 51, 104, 0.70);
-  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  object-fit: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,6 +78,10 @@ main p, main ul {
     color: #726a68;
 }
 
+.benefits p {
+  padding-top: 1.2rem;
+}
+
 .job p, .job ul li, .benefits p, .benefits ul li, .culture p{
   font-size: .9rem;
   font-size: 1.1rem;
@@ -85,14 +91,36 @@ main p, main ul {
   list-style-type: none;
 }
 
+.job ul li:before, .benefits ul li:before {
+  content: "";
+  border-color: transparent #df4c3f;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -0.8em;
+  top: 1.1em;
+  position: relative;
+}
+
 iframe {
   padding-bottom: 1rem;
+}
+
+.job--posts {
+  grid-gap: 5rem
 }
 
 /* MEDIA QUERIES */
 @media all and (min-width: 600px) {
     .job--posts {
         width: 70%;
-        grid-gap: 5rem;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .job--posts button {
+        width: 30%;
     }
 }
