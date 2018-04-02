@@ -71,7 +71,7 @@ h4, .job ul, .benefits ul {
 }
 
 .job p, .job ul li, .benefits p, .benefits ul li, .culture p{
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 .job ul, .benefits ul {
@@ -80,4 +80,12 @@ h4, .job ul, .benefits ul {
 
 iframe {
   padding-bottom: 1rem;
+}
+
+/* MEDIA QUERIES */
+@media all and (min-width: 600px) {
+    .job--posts {
+        width: 70%;
+        grid-gap: 5rem;
+    }
 }
