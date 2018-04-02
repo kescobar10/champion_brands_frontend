@@ -113,15 +113,6 @@ hr {
     text-shadow: -4px 4px 10px rgba(0,0,0,.4)
 }
 
-@media all and (min-width: 768px) {
-    .recent-posts {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 10px;
-    }
-
-
-}
 
 /* START NAV STYLES*/
 
@@ -314,3 +305,11 @@ hr {
     }
 }
 /* END NAV STYLES*/
+
+@media all and (min-width: 768px) {
+    .recent-posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+    }
+}
