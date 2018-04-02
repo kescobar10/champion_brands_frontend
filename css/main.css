@@ -37,7 +37,7 @@ IMPORTANT ******/
         -moz-text-transform: uppercase;
 }
 
-.footer-button,
+button,
 input[type=submit] {
     cursor: pointer;
 }
@@ -54,7 +54,7 @@ h3, h4  {
   font-weight: 600;
 }
 
-p, .footer-button, section a, .info a, .contact h4, .sub input {
+p, button, section a, .info a, .contact h4, .sub input {
   font-family: 'Asap', sans-serif;
 }
 
@@ -69,7 +69,7 @@ p, section a, .info a {
 section a,
 footer p a,
 .phone,
-.footer-button,
+button,
 .info a,
 .sub input[type=submit] {
   font-weight: 800;
@@ -169,7 +169,7 @@ footer{
 }
 
 
-.footer-button,
+button,
 .sub input[type=submit] {
   color: white;
   background-image:
@@ -179,17 +179,14 @@ footer{
   padding: 1.1rem;
   font-size: 1.2rem;
   border-radius: 4px;
-  max-width: 200px;
-  text-shadow: none;
 }
 
-.footer-button:hover {
+button:hover {
   background-image:
       linear-gradient(
         #a12822,
         #c34136);
-    text-decoration: none;
-}
+    }
 
 form {
     background-color: white;
@@ -208,6 +205,11 @@ form {
   line-height: 1.75;
   color: white;
 }
+
+/* .contact > *, .sub > *, .portal  > *, .info  > *, button {
+  margin-top: .5rem;
+} */
+
 .contact > h3, .sub > h3, .portal  > h3, .info  > h3 {
   /* margin-top: 1%; */
   color: rgba(255,255,255,.68);
@@ -294,7 +296,7 @@ form {
 
 /* PORTAL */
 
-.footer-button {
+.portal button {
     margin: .75rem auto;
     box-shadow: -5px 5px 10px rgba(0,0,0,.3);
     width: 100%;
@@ -343,7 +345,7 @@ form {
         grid-row: 1 / 1;
     }
 
-    .footer-button {
+    .portal button {
         grid-row: 2 / 2;
     }
 
@@ -433,9 +435,8 @@ form {
         justify-content: space-between;
     }
 
-    .footer-button {
+    .portal button {
         margin: 1rem auto;
-        text-align: center;
     }
 
     .social-media-footer-hp {
@@ -469,7 +470,7 @@ form {
         align-items: stretch;
     }
 
-    .footer-button {
+    .portal button {
         width: 100%;
     }
 

@@ -8,21 +8,22 @@
 
         <!-- <link rel="shortcut icon" href="images/fav.ico" type="images/png" /> -->
 
-    		<meta name="description" content="Champion Brands | Community">
+    		<meta name="description" content="Champion Brands | Home">
 
-        <title>Champion Brands, Inc. | Community</title>
+        <title>Champion Brands, Inc.</title>
 
         <!-- TYPE -->
 
 
         <!-- SCRIPT -->
 
-
         <!-- STYLESHEETS -->
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/community.css" />
+        <link rel="stylesheet" href="css/nav.css" />
         <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,600,700" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <link href="https://use.fontawesome.com/facf9fa52c.css" media="all" rel="stylesheet">
 
         <!--[if lt IE 9]>
     			<script src="js/html5shiv-printshiv.min.js"></script>
@@ -31,58 +32,38 @@
 
     <body>
 
-        <header>
-          <!-- SOCIAL MEDIA -->
-          <section class="social-media-top-hp">
-            <figure class="social">
-              <a href="#">
-                <img class="socialicon" src="img/facebook.png" alt="facebook" />
+      <!-- LOGO AND NAVIGATION -->
+      <header>
+        <div class="header-background">
+            <a href="index.html"><img src="img/logo-white.png" alt="Champion Brands" class="logo-desktop"></a>
+          <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
+            <span class="visually-hidden">Open main menu</span>
+            <span class="fa fa-bars fa-2x"></span>
+          </a>
+
+          <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
+              <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu">
+                  <span class="visually-hidden">Close main menu</span>
+                  <span class="fa fa-close fa-2x"></span>
               </a>
-            </figure>
-
-            <figure class="social">
-              <a href="#">
-                <img class="socialicon" src="img/instagram.png" alt="instagram" />
-              </a>
-            </figure>
-
-            <figure class="social">
-              <a href="#">
-                <img class="socialicon" src="img/twitter.png" alt="twitter" />
-              </a>
-            </figure>
-
-            <figure class="social">
-              <a href="#">
-                <img class="socialicon" src="img/linkedin.png" alt="linkedin" />
-              </a>
-            </figure>
-
-            <figure class="social">
-              <a href="#">
-                <img class="socialicon" src="img/search.png" alt="search" />
-              </a>
-            </figure>
-          </section><!-- SOCIAL MEDIA -->
-
-          <!-- LOGO AND NAVIGATION -->
-          <h1 class="visually-hidden">Champion Brands</h1>
-          <figure class="headerlogo">
-            <img src="img/champion-logo.png" alt="Champion Brands" class="logo" />
-          </figure>
-
-          <nav>
               <ul>
                   <li><a href="index.html" class="navlist">Home</a></li>
                   <li><a href="about.html" class="navlist">About</a></li>
-                  <li><a href="community.html" class="navlist">Community</a></li>
+                  <li><a href="community.html" class="navlist current-nav">Community</a></li>
                   <li><a href="product.html" class="navlist">Products</a></li>
                   <li><a href="careers.html" class="navlist">Careers</a></li>
                   <li><a href="post.html" class="navlist">Blog</a></li>
                   <li><a href="contact.html" class="navlist">Contact</a></li>
               </ul>
           </nav>
-        </header><!-- <header> -->
+          <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+        </div>
+      <h1 class="visually-hidden">Champion Brands</h1>
+      <figure class="headerlogo">
+        <a href="index.html"><img src="img/champion-logo.png" alt="Champion Brands" class="logo logo-mobile" /></a>
+
+      </figure>
+      </header><!-- <header> -->
 
 
 
@@ -94,26 +75,29 @@
 
 
         <section>
-          <div class="hero-image clearfix"></div>
+          <div class="hero-image clearfix" alt="Community Header"></div>
+            <p class="cr">Photo by <a href="https://unsplash.com/photos/UErWoQEoMrc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Wil Stewart</a> on <a href="https://unsplash.com/search/photos/beer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
         </section>
 
         <main class="container">
           <section>
             <h2><span class="cursive">Community</span> Matters</h2>
-            <p>At Champion Brands, our community drives everything we do. Uptae sus velia cus alistis eos vit repel idi raerum eici cuptatibus con nusanti simpero vitissimus ne con perit quaecae idita dolorer eptatquat odis earum aut fugitas aperaectur repro te maximus dit fugiasinis suntio moluptatum fuga. Hiliquias cum nientur, eum et faccustrum doluptiae venet exerciento odi conectius sapellis est, similignim liquunt veruptaturis aut atiorem eos il illaboria dolore sam, qui consendel idio quae invero et quassinis nihicime late laborro quam am, aut es-simpo rrovid eumquatquam lit, conseque ea seditiae cum asit ratemquati a esti cone net qui dolum, ea nobitio ssimaios demporem sinveligni velit, cus.</p>
+            <p>At Champion Brands, our community drives everything we do. We aim to be more than a business in the community, but to be a community business. You can come find us at our hosted events, or you can invite us to yours! We also want to give back to the community that we call home. We are happy to donate time, bodies, and beverage to local nonprofits to help them achieve their missions and goals. Please click the below button to send us a donation request and we will do our best to help! Here are a few of our partners: </p>
 
             <article>
               <h3 class="visually-hidden">Partner Logos</h3>
 
-              <div class="your-class">
-                <div>your content</div>
-                <div>your content</div>
-                <div>your content</div>
+              <div class="partnerlogos">
+                <img src="img/partner-logos/rclogo.jpg" alt="Red Cross Logo"/>
+                <img src="img/partner-logos/wwplogo.jpg" alt="Wounded Warrior Project Logo"/>
+                <img src="img/partner-logos/ffplogo.jpg" alt="Food For The Poor Logo"/>
+                <img src="img/partner-logos/fclogo.jpg" alt="First Coast Logo"/>
+                <img src="img/partner-logos/dclogo.jpg" alt="The Dream Come True Foundation Logo" id="dctf"/>
               </div>
 
             </article>
 
-            <button class="btn">Request Donation</button>
+            <a href="contact.html"><button class="btn">Request Donation</button></a>
           </section>
 
           <section>
@@ -124,7 +108,8 @@
               <article class="eventcard">
                 <div>
                   <figure class="eventimg" >
-                    <img src="img/brewfest.jpg" />
+                    <img src="img/brewfest.jpg" alt="Jax Brewfest" />
+                    <figcaption class="cr">Photo by <a href="https://unsplash.com/photos/KWooSfRaYGw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brandon Morgan</a> on <a href="https://unsplash.com/search/photos/beer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
                   </figure>
                   <h3 class="eventtitle">JAX BREWFEST</h3>
                 </div>
@@ -140,7 +125,8 @@
               <article class="eventcard">
                 <div>
                   <figure class="eventimg" >
-                    <img src="img/trivianight.jpg" />
+                    <img src="img/trivianight.jpg"  alt="Trivia Night"/>
+                    <figcaption class="cr">Photo by <a href="https://unsplash.com/@priscilladupreez">Priscilla Du Preez</a> on <a href="https://unsplash.com/search/photos/beer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
                   </figure>
                   <h3 class="eventtitle">TRIVIA NIGHT</h3>
                 </div>
@@ -156,7 +142,8 @@
               <article class="eventcard">
                 <div>
                   <figure class="eventimg" >
-                    <img src="img/clientappreciation.jpg" />
+                    <img src="img/clientappreciation.jpg" alt="Client Appreciation"/>
+                    <figcaption class="cr">Photo by <a href="https://unsplash.com/@outdoor_junkiez">Drew Farwell</a> on <a href="https://unsplash.com/search/photos/beer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
                   </figure>
                   <h3 class="eventtitle">CLIENT APPRECIATION</h3>
                 </div>
@@ -171,6 +158,17 @@
           </section>
         </main>
 
+
+
+
+
+
+
+
+
+
+
+
         <!-- FOOTER -->
         <footer>
           <h2 class="visually-hidden">Footer</h2>
@@ -184,7 +182,7 @@
               <br>
               Jacksonville, Florida 32257
               <br>
-              Call: <span class="phone">904.268.1220</span></p>
+              Call: <span class="phone">(904) 268-1220</span></p>
             </section>
 
             <section class="ga">
@@ -198,7 +196,7 @@
 
             <section class="email">
               <p>Email all inquiries to
-              <a href="mailto:info@championbrands.net">info@championbrands.net</a></p>
+              <a>info@championbrands.net</a></p>
             </section>
 
           </section><!-- contact -->
@@ -215,53 +213,51 @@
           <section class="portal">
             <h3>Portals</h3>
 
-            <a href="https://championbrands.elliportal.com/" class="footer-button" name="retailer-button">
+            <button type="button" name="retailer-button">
               Retailer
-            </a>
+            </button>
 
-            <a href="https://apps.vtinfo.com/retailer-portal/login" class="footer-button" name="employee-button">
+            <button type="button" name="employee-button">
               Employee
-            </a>
+            </button>
           </section>
 
           <!-- COPYRIGHT -->
           <section class="info">
             <section class="info-text">
-                <p><a href="https://www.championbrands.net/privacy-policy/">Privacy Policy</a><span class="hide-mobile">  |
-                </span><a href="https://www.championbrands.net/terms-conditions/">Terms &amp; Conditions</a></p>
                 <p>&copy;2018 Champion Brands, Inc.</p>
+                <p><a href="#">Privacy Policy</a><span class="hide-mobile">  |
+                </span><a href="#">Terms & Conditions</a></p>
             </section>
 
             <!-- SOCIAL MEDIA -->
             <section class="social-media-footer-hp">
               <figure class="social">
-                <a href="https://www.facebook.com/pages/Champion-Brands-Inc/152755478079234">
+                <a href="#">
                   <img class="socialicon" src="img/facebook.png" alt="facebook" />
                 </a>
               </figure>
 
               <figure class="social">
-                <a href="https://instagram.com/championbrands/">
+                <a href="#">
                   <img class="socialicon" src="img/instagram.png" alt="instagram" />
                 </a>
               </figure>
 
               <figure class="social">
-                <a href="https://twitter.com/championbrands">
+                <a href="#">
                   <img class="socialicon" src="img/twitter.png" alt="twitter" />
                 </a>
               </figure>
 
               <figure class="social">
-                <a href="https://www.linkedin.com/company/champion-brands-inc?trk=top_nav_home">
+                <a href="#">
                   <img class="socialicon" src="img/linkedin.png" alt="linkedin" />
                 </a>
               </figure>
-            </section>
-<!-- END SOCIAL MEDIA -->
+            </section><!-- SOCIAL MEDIA -->
 
-          </section>
-<!-- END COPYRIGHT -->
+          </section><!-- COPYRIGHT -->
 
         </footer>
 
@@ -269,14 +265,6 @@
 
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="slick/slick.min.js"></script>
-
-        <script type="text/javascript">
-          $(document).ready(function(){
-            $('.your-class').slick({
-              setting-name: setting-value;
-            });
-          });
-        </script>
 
     </body>
 
