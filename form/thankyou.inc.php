@@ -1,0 +1,569 @@
+<style>
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin:auto;
+  padding: 5% 0 5% 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #24408e;
+    vertical-align: sub;
+    position: relative;
+    left: -2.5rem;
+    z-index: 1000;
+    text-transform: uppercase;
+}
+.cursive {
+    font-family: 'Barley Script', sans-serif;
+    font-size: 4.5rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #e35e53;
+    position: relative;
+    left: 2.5rem;
+    top: -.7rem;
+    z-index: -1000;
+}
+
+.container p, h3, h4 {
+  color: #726a68;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+/****** IMPORTANT
+
+This page defines sections that can be found on all pages. ie header & footer
+
+IMPORTANT ******/
+
+
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
+:root {
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    display: none;
+  }
+
+.upper {
+    text-transform: uppercase;
+        -webkit-text-transform: uppercase;
+        -moz-text-transform: uppercase;
+}
+
+button,
+input[type=submit] {
+    cursor: pointer;
+}
+
+/****** FONTS ******/
+
+h2, h3{
+  font-family: 'Zilla Slab', serif;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+h3, h4  {
+  font-weight: 600;
+}
+
+p, button, section a, .info a, .contact h4, .sub input {
+  font-family: 'Asap', sans-serif;
+}
+
+p, section a, .info a {
+  font-weight: 400;
+}
+
+* a{
+  text-decoration: none;
+}
+
+section a,
+footer p a,
+.phone,
+button,
+.info a,
+.sub input[type=submit] {
+  font-weight: 800;
+  color: #edbf41;
+}
+
+section a:hover,
+footer p a:hover,
+.info a:hover {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+section a, footer p a, .info a, .navlist {
+  text-shadow: -4px 4px 10px rgba(0,0,0,.4);
+}
+/****** HEADER ******/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* SOCIAL ICONS */
+.social-media-top-hp {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social {
+  padding: 1%;
+  display: inline-block;
+}
+
+.socialicon {
+  max-width: 35px;
+}
+
+/* LOGO */
+
+.headerlogo {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+.logo {
+  margin: auto;
+  max-width: 300px;
+}
+/* NAV LIST */
+nav{
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  background-image: url('../img/texture-red.png');
+  background-color: #df4c3f;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.navlist {
+  text-decoration: none;
+  color: white;
+  font-family: 'Zilla Slab', serif;
+  font-weight: 700;
+  display: inline-block;
+}
+
+a.navlist{
+  width: 100%;
+  padding: 1rem;
+}
+
+a.navlist:hover
+a.navlist:active {
+  color: #df4c3f;
+  background-color: rgba(255,255,255,.9);
+  text-shadow: none;
+}
+
+
+/****** FOOTER ******/
+footer{
+  background-color: grey;
+  background-image: url('../img/texture-brown.png');
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+
+button,
+.sub input[type=submit] {
+  color: white;
+  background-image:
+  linear-gradient(
+     #b52d26,
+     #db493d);
+  padding: 1.1rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-image:
+      linear-gradient(
+        #a12822,
+        #c34136);
+    }
+
+form {
+    background-color: white;
+    border-radius: 4px;
+}
+
+/* CONTACT */
+.contact, .sub, .portal, .info{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin: .5rem;
+  padding: 1.5rem;
+  line-height: 1.75;
+  color: white;
+}
+
+/* .contact > *, .sub > *, .portal  > *, .info  > *, button {
+  margin-top: .5rem;
+} */
+
+.contact > h3, .sub > h3, .portal  > h3, .info  > h3 {
+  /* margin-top: 1%; */
+  color: rgba(255,255,255,.68);
+  letter-spacing: .2rem;
+  font-size: 1.3rem;
+}
+
+.fla,
+.ga,
+.email {
+    display: inline-block;
+}
+
+.fla {
+    padding: 1rem 2rem 1rem 0;
+}
+
+.ga,
+.email {
+    padding: 1rem 0 ;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+.info-text,
+.info-text p a {
+    display: block;
+    text-align: center;
+}
+
+.info-text p a {
+    padding: .5rem 0;
+}
+
+/* SUBSCRIBE */
+.sub {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub p {
+    padding-top: .75rem;
+    padding-bottom: 1.5rem;
+}
+
+.sub form {
+    width: 100%;
+    padding: .8rem auto;
+    box-shadow: -5px 5px 10px rgba(0,0,0,.3);
+        -webkit-box-shadow: -5px 5px 10px rgba(0,0,0,.3);
+        -moz-box-shadow: -5px 5px 10px rgba(0,0,0,.3);
+    align-self: flex-end;
+}
+
+.sub input[type=text],
+.sub input[type=submit] {
+    display: inline;
+    font-size: 1rem;
+}
+
+.sub input[type=text]{
+    width: calc(70% - .2rem);
+    padding: 1.1rem .5rem;
+    border-radius: 4px;
+}
+
+.sub input[type=submit] {
+    background-image:
+    linear-gradient(
+       #bb8c08,
+       #d6a51d);
+    width: calc(30% - .05rem);
+    border-radius: 0 4px 4px 0;
+    padding: 1.1rem .1rem;
+}
+
+.sub input[type=submit]:hover {
+    background-image:
+    linear-gradient(
+       #a67d07,
+       #bf931a);
+}
+
+/* PORTAL */
+
+.portal button {
+    margin: .75rem auto;
+    box-shadow: -5px 5px 10px rgba(0,0,0,.3);
+    width: 100%;
+}
+
+/* COPYRIGHT */
+.social-media-footer-hp {
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+    padding-top: 1rem;
+  display: flex;
+  align-self: normal;
+  /* ^^^ to make the icon space out correctly */
+  justify-content: space-between;
+}
+
+/* .socialicon:hover {
+    max-width: 36px;
+} */
+/* MEDIA QUERIES */
+
+@media all and (min-width: 365px) {
+    .info p a {
+        display: inline-block;
+    }
+    .info p a:first-child {
+        padding: 0 .7rem 0 0;
+    }
+    .info p a:last-child {
+        padding: 0 0 0 .7rem;
+    }
+    .hide-mobile {
+        display: inline-block;
+    }
+
+    .portal {
+        display: grid;
+        grid-column-gap: 20px;
+        grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+        grid-template-rows: auto auto;
+    }
+
+    .portal h3 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 1;
+    }
+
+    .portal button {
+        grid-row: 2 / 2;
+    }
+
+}
+
+@media all and (min-width: 800px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    footer {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3 - 20px);
+        justify-content: space-evenly;
+        justify-items: stretch;
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    .contact,
+    .sub,
+    .portal,
+    .info {
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+        /* align-self: stretch; */
+    }
+
+    .contact {
+        grid-column: 1 / 1;
+        grid-row: 1 / span 2;
+    }
+
+    .fla,
+    .ga,
+    .email {
+        display: block;
+        padding: 1rem 0;
+    }
+
+    .sub {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+        padding-bottom: 2rem;
+    }
+
+    .portal {
+        grid-column: 3 / 3;
+        grid-row: 1 / 1;
+    }
+
+    .info {
+        grid-column: 2 / span 2;
+        grid-row: 2 / 2;
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+
+    .info {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      grid-template-rows: 100%;
+      align-items: center;
+        justify-content: center;
+        grid-gap: 10px;
+    }
+
+    .info-text,
+    .info-text p a {
+        text-align: left;
+    }
+
+    .info-text p:last-child {
+        padding-top: 1rem;
+    }
+
+    .info-text {
+        padding-left: 1rem;
+    }
+    .portal {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .portal button {
+        margin: 1rem auto;
+    }
+
+    .social-media-footer-hp {
+        max-width: none;
+        grid-column: 2 / 2;
+        grid-row: 1 / span 2;
+        padding-top: 0;
+        padding-right: 1rem;
+    }
+
+    .sub form {
+        align-self: flex-end;
+    }
+}
+
+@media all and (min-width: 1300px) {
+    footer {
+        grid-template-columns: calc(40%) calc(22%) calc(18% - 30px) calc(22% - 30px);
+        grid-template-rows: 94%;
+        grid-gap: 10px;
+    }
+
+    .contact {
+        grid-row: 1 / 1;
+    }
+
+    .info {
+        grid-row: 1 / 1;
+        grid-column: 4 / 4;
+        display: flex;
+        align-items: stretch;
+    }
+
+    .portal button {
+        width: 100%;
+    }
+
+    .fla,
+    .ga {
+        display: inline-block;
+    }
+
+    .fla {
+        padding: 1rem 2rem 1rem 0;
+    }
+
+    .ga {
+        padding: 1rem 0 ;
+    }
+
+    .email {
+        padding: 1rem 0;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .info-text {
+        padding-left: 0;
+    }
+
+    .info-text,
+    .info-text p a {
+        display: block;
+        text-align: center;
+    }
+
+    .info-text p a:first-child {
+        padding: 1.5rem 0 .5rem 0;
+    }
+    .info-text p a:last-child {
+        padding: .5rem 0;
+    }
+
+    .social-media-footer-hp {
+        align-self: flex-end;
+        padding-right: 0;
+    }
+}
+
+</style>
+
+  <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,600,700" rel="stylesheet">
+
+<div class="container">
+
+  <article>
+    <h2><span class="cursive">Thank You</span> For Your Message</h2>
+      <p>We will be in touch with you within the next three business days.</p>
+  </article>
+
+</div>

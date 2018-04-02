@@ -1,0 +1,61 @@
+form{
+    padding: 0;
+    
+}
+.formrequiredincomplete {
+	background: #FF9999;
+	color: #000000;
+	border: #FF0000 2px solid;
+}
+.label_input_wrap{
+
+    margin:10px 0 10px 0;
+}
+input{
+    padding:3px;
+    font-size:.85em;
+    border:1px solid #666;
+}
+input.hidden{
+    display:none;
+    
+}
+    input.radio_button, input.checkbox{
+        border:none;
+        display:block;
+        text-align:left;
+        padding:0px 30px 0 0px;
+   		float:left;
+   		margin:0 10px 0 0;
+      
+       
+    }
+    
+label{
+    font-size:.9em;
+    font-weight:bold;
+    color:#666;
+    display:block;
+    margin:5px 7px 5px 0;
+}
+label.checkboxes, label.radio_button{
+padding:0 0 0 10px;
+}
+textarea{
+   
+  
+    display:block;
+    font-size:.9em;
+    padding:3px;
+}
+
+input.submit{
+  
+    padding:5px;
+    
+}
+    input.submit:hover{
+        cursor:pointer;
+        background:#f6f6f6;
+    }
+
