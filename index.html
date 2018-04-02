@@ -16,9 +16,14 @@
 
 
         <!-- SCRIPT -->
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script src="js/age-verification.js"></script>
 
 
         <!-- STYLESHEETS -->
+        <link href="css/age-verification.css" rel="stylesheet">
+        <link href="https://use.fontawesome.com/facf9fa52c.css" media="all" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/index.css" />
         <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,400i,600,700" rel="stylesheet">
@@ -33,63 +38,77 @@
       <div class="container">
 
         <header>
-          <!-- SOCIAL MEDIA -->
-          <section class="social-media-top-hp">
-            <figure class="social">
-              <a href="https://www.facebook.com/pages/Champion-Brands-Inc/152755478079234">
-                <img class="socialicon" src="img/facebook.png" alt="facebook" />
-              </a>
-            </figure>
 
-            <figure class="social">
-              <a href="https://instagram.com/championbrands/">
-                <img class="socialicon" src="img/instagram.png" alt="instagram" />
-              </a>
-            </figure>
+            <!-- LOGO AND NAVIGATION -->
+                      <div class="header-background">
+                          <!-- SOCIAL MEDIA -->
+                          <section class="social-media-top-hp">
+                            <figure class="social">
+                              <a href="file:///C:/Users/Caity/GitHub/champion_brands_frontend/index.html#">
+                                <img class="socialicon" src="img/facebook.png" alt="facebook" />
+                              </a>
+                            </figure>
 
-            <figure class="social">
-              <a href="https://twitter.com/championbrands">
-                <img class="socialicon" src="img/twitter.png" alt="twitter" />
-              </a>
-            </figure>
+                            <figure class="social">
+                              <a href="file:///C:/Users/Caity/GitHub/champion_brands_frontend/index.html#">
+                                <img class="socialicon" src="img/instagram.png" alt="instagram" />
+                              </a>
+                            </figure>
 
-            <figure class="social">
-              <a href="https://www.linkedin.com/company/champion-brands-inc?trk=top_nav_home">
-                <img class="socialicon" src="img/linkedin.png" alt="linkedin" />
-              </a>
-            </figure>
+                            <figure class="social">
+                              <a href="file:///C:/Users/Caity/GitHub/champion_brands_frontend/index.html#">
+                                <img class="socialicon" src="img/twitter.png" alt="twitter" />
+                              </a>
+                            </figure>
 
-            <!-- <figure class="social">
-              <a href="">
-                <img class="socialicon" src="img/search.png" alt="search" />
-              </a>
-            </figure> -->
-          </section><!-- SOCIAL MEDIA -->
+                            <figure class="social">
+                              <a href="file:///C:/Users/Caity/GitHub/champion_brands_frontend/index.html#">
+                                <img class="socialicon" src="img/linkedin.png" alt="linkedin" />
+                              </a>
+                            </figure>
 
-          <!-- LOGO AND NAVIGATION -->
-          <h1 class="visually-hidden">Champion Brands</h1>
-          <figure class="headerlogo">
-            <img src="img/champion-logo.png" alt="Champion Brands" class="logo" />
-          </figure>
+                            <!-- <figure class="social">
+                              <a href="#">
+                                <img class="socialicon" src="img/search.png" alt="search" />
+                              </a>
+                            </figure> -->
+                          </section>
+                          <!-- SOCIAL MEDIA -->
+                          <h1 class="visually-hidden">Champion Brands</h1>
+                          <figure class="headerlogo">
+                            <img src="img/champion-logo.png" alt="Champion Brands" class="logo" />
+                          </figure>
+                        <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
+                          <span class="visually-hidden">Open main menu</span>
+                          <span class="fa fa-bars fa-3x"></span>
+                        </a>
 
-          <nav>
-              <ul>
-                  <li><a href="index.html" class="navlist">Home</a></li>
-                  <li><a href="about.html" class="navlist">About</a></li>
-                  <li><a href="community.html" class="navlist">Community</a></li>
-                  <li><a href="product.html" class="navlist">Products</a></li>
-                  <li><a href="careers.html" class="navlist">Careers</a></li>
-                  <li><a href="blog.html" class="navlist">Blog</a></li>
-                  <li><a href="contact.html" class="navlist">Contact</a></li>
-              </ul>
-          </nav>
-        </header><!-- <header> -->
+                        <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
+                            <a href="#" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu">
+                                <span class="visually-hidden">Close main menu</span>
+                                <span class="fa fa-close fa-2x"></span>
+                            </a>
+                            <ul>
+                                <li><a href="index.html" class="navlist">Home</a></li>
+                                <li><a href="about.html" class="navlist">About</a></li>
+                                <li><a href="community.html" class="navlist">Community</a></li>
+                                <li><a href="product.html" class="navlist">Products</a></li>
+                                <li><a href="careers.html" class="navlist">Careers</a></li>
+                                <li><a href="blog.html" class="navlist">Blog</a></li>
+                                <li><a href="contact.html" class="navlist">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+                      </div>
+                    </header><!-- <header> -->
 
         <main>
           <!-- CAROUSEL -->
           <section class="carousel">
             <section class="carousel--images">
+              <!-- <img src="img/kegs_homepage.jpg" alt="Champion Brands" class="carousel-img" /> -->
             </section>
+            <!-- logo is a placeholder -->
             <section class="carousel-text">
                 <h2><span>The</span> Best Beverages</h2>
                 <p>Serving Florida and Georgia customers and suppliers, Champion Brands is a Jacksonville-based premier beverage sales company. Since 1985, we've worked to become the preferred choice of every customer we serve.</p>
@@ -171,7 +190,7 @@
 
             <section class="email">
               <p>Email all inquiries to
-              <a href="mailto:info@championbrands.net">info@championbrands.net</a></p>
+              <a>info@championbrands.net</a></p>
             </section>
 
           </section><!-- contact -->
@@ -188,53 +207,53 @@
           <section class="portal">
             <h3>Portals</h3>
 
-            <a href="https://championbrands.elliportal.com/" class="footer-button" name="retailer-button">
+            <button type="button" name="retailer-button">
               Retailer
-            </a>
+            </button>
 
-            <a href="https://apps.vtinfo.com/retailer-portal/login" class="footer-button" name="employee-button">
+            <button type="button" name="employee-button">
               Employee
-            </a>
+            </button>
           </section>
 
           <!-- COPYRIGHT -->
           <section class="info">
             <section class="info-text">
-                <p><a href="https://www.championbrands.net/privacy-policy/">Privacy Policy</a><span class="hide-mobile">  |
-                </span><a href="https://www.championbrands.net/terms-conditions/">Terms &amp; Conditions</a></p>
+                <p><a href="#">Privacy Policy</a><span class="hide-mobile">  |
+                </span><a href="#">Terms & Conditions</a></p>
                 <p>&copy;2018 Champion Brands, Inc.</p>
             </section>
 
             <!-- SOCIAL MEDIA -->
             <section class="social-media-footer-hp">
               <figure class="social">
-                <a href="https://www.facebook.com/pages/Champion-Brands-Inc/152755478079234">
+                <a href="#">
                   <img class="socialicon" src="img/facebook.png" alt="facebook" />
                 </a>
               </figure>
 
               <figure class="social">
-                <a href="https://instagram.com/championbrands/">
+                <a href="#">
                   <img class="socialicon" src="img/instagram.png" alt="instagram" />
                 </a>
               </figure>
 
               <figure class="social">
-                <a href="https://twitter.com/championbrands">
+                <a href="#">
                   <img class="socialicon" src="img/twitter.png" alt="twitter" />
                 </a>
               </figure>
 
               <figure class="social">
-                <a href="https://www.linkedin.com/company/champion-brands-inc?trk=top_nav_home">
+                <a href="#">
                   <img class="socialicon" src="img/linkedin.png" alt="linkedin" />
                 </a>
               </figure>
             </section>
-    <!-- END SOCIAL MEDIA -->
+<!-- END SOCIAL MEDIA -->
 
           </section>
-    <!-- END COPYRIGHT -->
+<!-- END COPYRIGHT -->
 
         </footer>
 
