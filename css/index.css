@@ -15,14 +15,18 @@
   flex-direction: row;
 }
 
-.carousel-text {
+.carousel-text,
+.blue-cards p {
     color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.carousel-text {
     padding: 1rem 1rem 0;
     width: 100%;
     align-self: flex-end;
     background-color: rgba(102, 102, 102, 0.70);
-    font-size: 1rem;
-      line-height: 1.5rem;
 }
 
 .carousel-text h2{
@@ -31,7 +35,7 @@
   position: relative;
   top: -1.5rem;
   text-transform: capitalize;
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 
 .carousel-text p {
@@ -45,9 +49,8 @@
     position: relative;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    font-size: 2rem;
-    top: -1rem;
-
+    font-size: 1.5rem;
+    top: -1.35rem;
 }
 
 .card--team,
@@ -57,6 +60,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.card--team h3,
+.card--brewers h3,
+.card--retail h3 {
+    font-size: 1.5rem;
+    letter-spacing: .15rem;
+    margin-bottom: 1rem;
 }
 
 .blue-cards, .blue-cards section {
@@ -70,9 +81,7 @@
 
 .blue-cards section{
   background-size: cover;
-  padding: 2%;
-  width: 100%;
-  grid-gap: 1rem;
+  padding: 1rem;
   height: 33vh;
 }
 
