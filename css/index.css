@@ -78,17 +78,17 @@
     grid-column: 1 / span 2;
     justify-content: space-around;
     padding: 1rem;
-    background-color: rgba(102, 102, 102, .3);
+    background-color: rgba(102, 102, 102, .2);
 }
 
 .headerlogo {
     width: 100%;
-    max-width: 300px;
     grid-row: 2 / 2;
 }
 
 .logo {
     width: 100%;
+    max-width: 360px;
 }
 
 .fa-bars {
@@ -123,7 +123,7 @@
 
 .main-menu {
   position: absolute;
-  top: -332px;
+  top: -336px;
   left: 0;
   overflow-y: visible;
   overflow-x: visible;
@@ -156,11 +156,6 @@
   color: #fff;
   text-decoration: none;
 }
-
-.main-menu ul li a {
-    border-radius: 4px 4px 0 0;
-}
-
 .main-menu a:hover,
 .main-menu a:focus,
 .main-menu a:active {
@@ -203,7 +198,7 @@
   display: block;
   content: "";
   left: 0;
-  top: 0;
+  top: 72;
   width: 100%;
   height: 100%;
   z-index: 998;
@@ -219,27 +214,30 @@
 }
 
 @media all and (min-width: 420px) {
-    .logo-mobile {
-        display: none;
-    }
-
-    .logo-desktop {
-        display: block;
-        width: 75%;
-        min-width: 150px;
-        max-width: 300px;
-    }
-
     .header-background {
-        padding: 1rem 1rem 0;
-        display: grid;
-            grid-gap: 1rem;
-            grid-template-columns: 20% calc(80% - 1rem);
+        grid-gap: 0;
+            grid-template-columns: 80% 20%;
         justify-content: flex-end;
     }
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 500px) {
+    .header-background {
+        grid-template-columns: 60% 40%;
+    }
+    .social-media-top-hp {
+        background-color: transparent;
+        padding-bottom: 0;
+        grid-column: 1 / span 2;
+        justify-content: flex-end;
+    }
+}
+
+@media all and (min-width: 700px) {
+    .header-background {
+        display: block;
+    }
+
     .header-background {
                 padding-bottom: 0;
     }
@@ -251,16 +249,18 @@
 
     .main-menu {
         position: static;
-        display: grid;
-        justify-content: flex-end;
-        align-content: flex-end;
-        align-items: flex-end;
     }
 
     .main-menu ul {
         box-shadow: none;
         align-self: end;
         padding-top: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: no-wrap;
+        justify-content: space-between;
+        max-width: 810px;
+        margin: auto;
     }
 
     .logo-desktop {
@@ -269,13 +269,8 @@
     }
 
     a.navlist {
-        font-size: 1rem;
-    }
-}
-
-@media all and (min-width: 900px) {
-    a.navlist {
-        font-size: 1.2rem;
+        padding: 1.5rem .75rem;
+        margin: 0;
     }
 }
 /* END NAV STYLES*/
