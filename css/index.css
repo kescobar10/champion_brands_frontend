@@ -61,11 +61,23 @@
     }
 }
 
+/* START NAV STYLES*/
+.header-background {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+}
 
-/* HEADER */
-.logo {
+.social-media-top-hp {
+    grid-row: 1 / 1;
+    grid-column: 1 / span 2;
+}
+
+.headerlogo {
     width: 100%;
     max-width: 300px;
+    grid-row: 2 / 2;
 }
 
 .fa-bars {
@@ -74,14 +86,9 @@
 
 .menu-toggle {
     align-self: center;
+    grid-row: 2 / 2;
 }
 
-
-/* START NAV STYLES*/
-.header-background {
-    display: grid;
-    grid-template-columns: auto auto;
-}
 
 .main-menu ul {
     background-image: none;
