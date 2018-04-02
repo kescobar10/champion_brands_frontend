@@ -26,7 +26,7 @@ h2 {
     z-index: -1000;
 }
 
-label, h3 {
+label {
   font-family: 'Zilla Slab', serif;
   padding-bottom: 5px;
   text-transform: uppercase;
@@ -35,7 +35,7 @@ label, h3 {
   font-size: 1.3rem;
 }
 
-h4 {
+.contactinfo section h4 {
   display: inline-block;
   font-family: 'Zilla Slab', serif;
   text-transform: uppercase;
@@ -57,15 +57,15 @@ label {
   color: #726a68;
 }
 
-p {
+.container section p {
   line-height: 1.5em;
 }
 
-p + p {
+.container section p + .container section p {
   padding-top: 5%;
 }
 
-h4 + p {
+h4 + .container section p {
   display: inline-block;
 }
 
@@ -79,11 +79,14 @@ article {
   padding: 7% 0 7% 0;
 }
 
-input[type=text], textarea {
+.formpiece1 input[type=text],
+.formpiece input[type=text],
+.formpiece2 input[type=text],
+#contactform div span textarea,
+.contactinfo section form input[type=text] {
   width: 100%;
   border: 1px solid #726a68;
   font-size: 1.3rem;
-  padding: 3%;
 }
 
 textarea {
@@ -169,11 +172,11 @@ iframe {
     width: 40%;
   }
 
-  section + section {
+  .container section + .container section {
     margin-top: 7%;
   }
 
-  p + p {
+  .container p + .container p {
     padding-top: 2%;
   }
 
@@ -217,7 +220,11 @@ iframe {
     display: flex;
   }
 
-  input[type=text] {
+  .formpiece1 input[type=text],
+  .formpiece input[type=text],
+  .formpiece2 input[type=text],
+  #contactform div span textarea,
+  .contactinfo section form input[type=text] {
     padding: 10px;
   }
 

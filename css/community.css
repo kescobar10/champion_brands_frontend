@@ -80,7 +80,7 @@ h2 {
   font-size: 1.3rem;
 }
 
-h3 {
+h3.eventtitle {
   font-family: 'Zilla Slab', serif;
   padding-bottom: 5px;
   text-transform: uppercase;
