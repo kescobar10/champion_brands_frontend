@@ -57,6 +57,22 @@ main {
     font-size: 1.1em;
 }
 
+.nextprev a {
+    font-weight: 800;
+    font-family: 'Asap';
+    color: #edbf41;
+    text-shadow: -4px 4px 10px rgba(0,0,0,.1);
+    margin: 15px;
+}
+
+.left-previous {
+    float:left;
+}
+
+.right-next {
+    float: right;
+}
+
 hr {
     border: 0;
     height: 0;
@@ -113,6 +129,15 @@ hr {
     text-shadow: -4px 4px 10px rgba(0,0,0,.4)
 }
 
+@media all and (min-width: 768px) {
+    .recent-posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+    }
+
+
+}
 
 /* START NAV STYLES*/
 
@@ -305,11 +330,3 @@ hr {
     }
 }
 /* END NAV STYLES*/
-
-@media all and (min-width: 768px) {
-    .recent-posts {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 10px;
-    }
-}
