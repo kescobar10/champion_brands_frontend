@@ -36,13 +36,12 @@ h1 {
   background:
     url("../img/hero.jpg"),
     rgba(41, 51, 104, 0.70);
-  background-attachment: fixed;
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding-bottom: 30%;
+  background-position: center;
+  position: relative;
 }
 
 h2, h3, .hero-image p {
