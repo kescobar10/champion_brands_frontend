@@ -63,15 +63,21 @@ h2 {
 
 h3{
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  color: #2b3268;
 }
 
 h4, .job ul, .benefits ul {
   font-family: 'Asap', sans-serif;
 }
 
+main p, main ul {
+    line-height: 1.5;
+    color: #726a68;
+}
+
 .job p, .job ul li, .benefits p, .benefits ul li, .culture p{
-  font-size: .8rem;
+  font-size: 1.1rem;
 }
 
 .job ul, .benefits ul {
