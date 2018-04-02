@@ -15,15 +15,39 @@
   flex-direction: row;
 }
 
-.carousel h2{
-  color: #2b3268;
-}
-
 .carousel-text {
-    padding: 1rem;
+    color: #ffffff;
+    padding: 1rem 1rem 0;
     width: 100%;
     align-self: flex-end;
     background-color: rgba(102, 102, 102, 0.70);
+    font-size: 1rem;
+      line-height: 1.5rem;
+}
+
+.carousel-text h2{
+  color: #df4c3f;
+  font-family: 'Barley Script', sans-serif;
+  position: relative;
+  top: -1.5rem;
+  text-transform: capitalize;
+  font-size: 4.5rem;
+}
+
+.carousel-text p {
+    position: relative;
+    top: -1.5rem;
+}
+
+.block {
+    color: #2b3268;
+    font-family: 'Zilla Slab', sans-serif;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 2rem;
+    top: -1rem;
+
 }
 
 .blue-cards, .blue-cards section {
