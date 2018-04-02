@@ -50,11 +50,17 @@
 
 }
 
+.card--team,
+.card--brewers,
+.card--retail {
+    margin: .5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .blue-cards, .blue-cards section {
   color: white;
-  display: grid;
-  grid-template-rows: auto;
-  grid-gap: 1px;
   width: 100%;
 }
 
