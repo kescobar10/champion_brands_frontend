@@ -102,6 +102,34 @@ nav ul {
 }
 
 /* MEDIA QUERIES */
+
+@media all and (min-width: 600px) {
+
+    .carousel-hero {
+        padding: 0;
+    }
+
+    .carousel-hero-desktop {
+        background-color: #a9a4a3;
+        background-image: url("../img/kegs-homepage.jpg");
+        background-position: center left;
+        background-repeat: no-repeat;
+        z-index: 0;
+
+    }
+
+    .carousel-hero-gradient {
+        background: linear-gradient(to left, white, transparent);
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .carousel-text {
+        width: 60%;
+        margin: 1rem;
+    }
+}
 @media all and (min-width: 800px) {
     .blue-cards {
       display: flex;
