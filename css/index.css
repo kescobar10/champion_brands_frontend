@@ -4,7 +4,8 @@
   line-height: 2;
 }
 
-.carousel {
+.carousel-hero {
+    padding-bottom: 50%;
   background-color: #a9a4a3;
   background-image: url("../img/kegs-homepage.jpg");
   background-position: center left;
@@ -20,7 +21,7 @@
 
 .carousel-text {
     padding: 1rem;
-    width: 66%;
+    width: 100%;
     align-self: flex-end;
     background-color: rgba(102, 102, 102, 0.70);
 }
