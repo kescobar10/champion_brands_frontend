@@ -116,11 +116,6 @@ iframe {
 }
 
 /* MEDIA QUERIES */
-@media all and (min-width: 600px) {
-    .job--posts {
-        width: 70%;
-    }
-}
 
 @media all and (min-width: 800px) {
     .job--posts button {
