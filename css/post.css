@@ -25,6 +25,7 @@ main {
 
 .post img {
     max-width: 960px;
+    width: 100%;
     display: block;
     margin: auto;
 }
