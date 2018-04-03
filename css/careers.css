@@ -14,6 +14,8 @@ main {
   grid-gap: 2rem;
   margin: auto;
   padding: 5% 0;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -113,14 +115,39 @@ iframe {
   padding-bottom: 1rem;
 }
 
+.vid--mid, .vid--desktop{
+  display: none;
+}
+
 .job--posts {
   grid-gap: 5rem
 }
 
 /* MEDIA QUERIES */
 
+@media all and (min-width: 600px) {
+
+    .vid--mobile, .vid--desktop {
+      display: none;
+    }
+
+    .vid--mid {
+      display: inline;
+
+    }
+
+
 @media all and (min-width: 800px) {
     .job--posts button {
         width: 30%;
+    }
+
+    .vid--mobile, .vid--mid  {
+      display: none;
+    }
+
+    .vid--desktop {
+      display: inline;
+
     }
 }
