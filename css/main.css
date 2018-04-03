@@ -179,6 +179,7 @@ footer{
 .footer-button,
 button,
 .sub input[type=submit] {
+    display: block;
   color: white;
   background-image:
   linear-gradient(
