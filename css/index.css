@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Barley Script";
-    src: url("../fonts/barleyscript-regular.otf") format("otf"),     url("..fonts/barleyscript-regular.woff") format("woff"),    url("..fonts/barleyscript-regular.woff2") format("woff2"), url("..fonts/barleyscript-regular.ttf") format("truetype");
+    src: url("../fonts/barleyscript-regular.otf") format("otf"),     url("../fonts/barleyscript-regular.woff") format("woff"),    url("../fonts/barleyscript-regular.woff2") format("woff2"), url("../fonts/barleyscript-regular.ttf") format("truetype");
 }
 
 @import url('https://fonts.googleapis.com/css?family=Cookie');
@@ -40,6 +40,7 @@
 .brand h2 {
   color: #df4c3f;
   font-family: 'Barley Script', 'Cookie', cursive;
+  font-weight: normal;
   position: relative;
   text-transform: capitalize;
   font-size: 4rem;
@@ -51,7 +52,6 @@
 
 .brand h2 {
     text-align: center;
-    letter-spacing: -.1rem;
     margin: 1rem auto;
 }
 
@@ -85,6 +85,7 @@
     letter-spacing: .2rem;
     font-size: 1.5rem;
     top: -1.35rem;
+    font-weight: bold;
 }
 
 .brand .block {
