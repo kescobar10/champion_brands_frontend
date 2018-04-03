@@ -80,6 +80,7 @@ main p, main ul {
   padding-top: 1.2rem;
 }
 
+.benefits ul,
 .job--req ul,
 .job--qual ul {
     padding-left: 1rem;
