@@ -1,8 +1,7 @@
-main {
+.product-wrapper {
     max-width: 960px;
     margin: auto;
 }
-
 .featherlight-content {
     display: none;
 }
@@ -45,6 +44,7 @@ main {
 
 .hero-image article {
     width: 80%;
+    max-width: 600px;
     padding: 1rem 0 1.5rem;
     margin: 4rem auto 5rem;
     background-color: rgba(255,255,255,.9);

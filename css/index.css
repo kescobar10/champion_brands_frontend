@@ -1,9 +1,4 @@
-@font-face {
-    font-family: "Barley Script";
-    src: url("../fonts/barleyscript-regular.otf") format("otf"),     url("../fonts/barleyscript-regular.woff") format("woff"),    url("../fonts/barleyscript-regular.woff2") format("woff2"), url("../fonts/barleyscript-regular.ttf") format("truetype");
-}
 
-@import url('https://fonts.googleapis.com/css?family=Cookie');
 
 /****** HOMEPAGE BODY ******/
 .carousel,.brand {
