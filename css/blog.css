@@ -26,6 +26,10 @@ h2,
     padding: 1rem 0 1.7rem;
 }
 
+.sidebar h2 {
+    font-size: 3.2rem;
+}
+
 .block {
     font-family: 'Zilla Slab', sans-serif;
     font-weight: bold;
@@ -206,7 +210,10 @@ button.main-read-more-blog {
 }
 
 .sidebar h2 {
-    left: 0;
+    left: 15;
+}
+
+.sidebar-title-container {
     background-color: white;
 }
 
