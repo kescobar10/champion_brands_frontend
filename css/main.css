@@ -3,7 +3,12 @@
 This page defines sections that can be found on all pages. ie header & footer
 
 IMPORTANT ******/
+@font-face {
+    font-family: "Barley Script";
+    src: url("../fonts/barleyscript-regular.otf") format("otf"),     url("../fonts/barleyscript-regular.woff") format("woff"),    url("../fonts/barleyscript-regular.woff2") format("woff2"), url("../fonts/barleyscript-regular.ttf") format("truetype");
+}
 
+@import url('https://fonts.googleapis.com/css?family=Cookie');
 
 @import url('https://fonts.googleapis.com/css?family=Asap');
 
