@@ -41,7 +41,7 @@ h2 {
     vertical-align: sub;
     position: relative;
     left: -2.5rem;
-    z-index: 1000;
+    /* z-index: 1000; */
     text-transform: uppercase;
     text-align: center;
 }
