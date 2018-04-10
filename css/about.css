@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
+body,
+html {
+    height: 100%;
+}
+
+
+.about {
+    width: 90%;
+    max-width: 960px;
+    margin: auto;
+}
+
+
+.core-values {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.about p,
+.core-values h2,
+.about h2 {
+    font-size: 1.2rem;
+}
+
+details p,
+.about p,
+.core-values h2,
+.about h2 {
+    color: #726a68;
+    line-height: 1.8rem;
+}
+
+h2 {
+    margin: 2rem .5rem 0;
+}
+
+details p,
+.core-values p,
+.about p {
+    margin: 1rem .5rem;
+}
+
+.hero-image {
+    background-image: url('../img/about-hero.png');
+    padding-bottom: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Barley Script', sans-serif;
+    font-weight: normal;
+    font-size: 4.5rem;
+    color: #df4c3f;
+    text-align: center;
+    padding: .5rem;
+}
+
+.block {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: #2b3268;
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 1rem;
+    left: -6rem;
+}
+ul {
+    list-style-type: none;
+}
+
+details p {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+summary {
+    background-color: #d6a51d;
+    margin: 1rem .5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Zilla Slab', sans-serif;
+    color: white;
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-column-gap: 1rem;
+    padding: .2rem 0 .2rem .5rem;
+    align-items: center;
+    cursor: pointer;
+    max-width: 420px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: url(../img/barley-symbol-35x75.png);
+}
+
+
+@media (min-width: 420px) {
+    summary {
+        margin: 1rem auto;
+    }
+}
+
+@media (min-width: 800px) {
+    .hero-image {
+        padding-bottom: 25%;
+    }
+
+    .core-values {
+        margin-bottom: 2rem;
+    }
+
+    .core-values ul {
+        display: grid;
+        grid-column-gap: 2rem;
+        grid-row-gap: 1rem;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+
+    .core-values ul li {
+        display: block;
+    }
+
+    summary {
+        margin: 0;
+    }
+}

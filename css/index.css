@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
+/****** HOMEPAGE BODY ******/
+.carousel,.brand {
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+.carousel-hero {
+    padding-bottom: 50%;
+  background-color: #a9a4a3;
+  background-image: url("../img/kegs-homepage.jpg");
+  background-position: center left;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.carousel-text,
+.blue-cards p {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.carousel-text {
+    padding: 1rem 1rem 0;
+    width: 100%;
+    align-self: flex-end;
+    background-color: rgba(102, 102, 102, 0.70);
+}
+
+.carousel-text h2,
+.brand h2 {
+  color: #df4c3f;
+  font-family: 'Barley Script', 'Cookie', cursive;
+  font-weight: normal;
+  position: relative;
+  text-transform: capitalize;
+  font-size: 4rem;
+}
+
+.carousel-text h2 {
+  top: -1.5rem;
+}
+
+.brand h2 {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.brand {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.our-brands {
+  padding-top: 4%;
+  padding-bottom: 2%;
+  margin: auto;
+  text-align: center;
+}
+
+.our-brands div img {
+    padding: 0 2rem;
+    min-width: 200px;
+}
+
+.carousel-text p {
+    position: relative;
+    top: -1.5rem;
+}
+
+.block {
+    color: #2b3268;
+    font-family: 'Zilla Slab', sans-serif;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
+    top: -1.35rem;
+    font-weight: bold;
+}
+
+.brand .block {
+    top: .9rem;
+    left: -2.5rem;
+}
+
+.card--team,
+.card--brewers,
+.card--retail {
+    margin: .5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card--team h3,
+.card--brewers h3,
+.card--retail h3 {
+    font-size: 1.5rem;
+    letter-spacing: .15rem;
+    margin-bottom: 1rem;
+}
+
+.blue-cards, .blue-cards section {
+  color: white;
+  width: 100%;
+}
+
+.carousel-img {
+    margin: auto;
+}
+
+.blue-cards section{
+  background-size: cover;
+  padding: 2rem 1rem;
+}
+
+nav ul {
+    background-color: #df4c3f;
+}
+
+.card--team {
+    background-image: url("../img/bluecard1.jpg");
+}
+
+.card--retail {
+    background-image: url("../img/bluecard2.jpg");
+}
+
+.card--brewers {
+    background-image: url("../img/bluecard3.jpg");
+}
+
+.our-brands {
+  padding-top: 4%;
+  padding-bottom: 2%;
+  margin: auto;
+  text-align: center;
+}
+
+.our-brands img {
+  max-width: 200px;
+  display: inline-block;
+}
+
+
+/* MEDIA QUERIES */
+
+@media all and (min-width: 600px) {
+
+    .carousel-hero {
+        padding: 0;
+    }
+
+    .carousel-hero-desktop {
+        background-color: #a9a4a3;
+        background-image: url("../img/kegs-homepage.jpg");
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+        height: 50vh;
+
+    }
+
+    .carousel-hero-gradient {
+        background: linear-gradient(to left, white, transparent);
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: flex-end;
+        height: inherit;
+
+    }
+
+    .carousel-text {
+        width: 60%;
+        margin: 1rem;
+        max-width: 480px;
+    }
+
+    .blue-cards {
+        display: grid;
+        grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+        height: auto;
+        grid-gap: .5rem;
+        max-width: 960px;
+        margin: auto;
+        min-height: 250px;
+    }
+
+    .blue-cards section {
+        justify-content: flex-start;
+    }
+
+    .brand {
+      width:90%;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .our-brands {
+      display: flex;
+      width: 100%;
+      box-sizing: border-box;
+      justify-content: space-around;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    .our-brands div img {
+      box-sizing: border-box;
+      max-width: 200px;
+    }
+}
+
+
+/* START NAV STYLES*/
+.header-background {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+}
+
+.social-media-top-hp {
+    grid-row: 1 / 1;
+    grid-column: 1 / span 2;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: rgba(102, 102, 102, .2);
+}
+
+.headerlogo {
+    width: 100%;
+    grid-row: 2 / 2;
+}
+
+.logo {
+    width: 100%;
+    max-width: 360px;
+}
+
+.fa-bars {
+        color: #db493d;
+}
+
+.menu-toggle {
+    align-self: center;
+    grid-row: 2 / 2;
+}
+
+
+.main-menu ul {
+    background-image: none;
+    background-color: transparent;
+}
+
+
+.menu-toggle  {
+    color: rgba(255,255,255,.9);
+    text-shadow: -2px 2px 10px rgba(0,0,0,.2);
+    padding: 1rem;
+    text-align: right;
+    display: inline-block;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: #dddddd;
+  text-shadow: none;
+}
+
+.main-menu {
+  position: absolute;
+  top: -336px;
+  left: 0;
+  overflow-y: visible;
+  overflow-x: visible;
+  transition: top 0.3s ease;
+  z-index: 999;
+  background-image: url('../img/texture-red.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 2.5em 0 0;
+  /* Hide shadow w/ -8px while 'closed' */
+  -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+     -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+          box-shadow: -8px 0 8px rgba(0,0,0,.5);
+  width: 100%;
+
+}
+
+.main-menu a {
+  display: block;
+  padding: .75rem 15px;
+  line-height: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+.main-menu a:hover,
+.main-menu a:focus,
+.main-menu a:active {
+  background: rgba(255,255,255,.9);
+  color: #df4c3f;
+    text-shadow: none;
+}
+
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* hamburger menu interactivity */
+
+.main-menu:target,
+.main-menu[aria-expanded="true"] {
+  top: 0;
+}
+
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+  z-index: 1001;
+}
+
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+  position: relative;
+  z-index: 1000;
+}
+
+/*
+ We could us `.main-menu:target:after`, but
+ it wouldn't be clickable.
+*/
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  top: 72;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  cursor: default;
+}
+
+@supports (position: fixed) {
+  .main-menu,
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop {
+    position: fixed;
+  }
+}
+
+@media all and (min-width: 420px) {
+    .header-background {
+        grid-gap: 0;
+            grid-template-columns: 80% 20%;
+        justify-content: flex-end;
+    }
+}
+
+@media all and (min-width: 500px) {
+    .header-background {
+        grid-template-columns: 60% 40%;
+    }
+    .social-media-top-hp {
+        background-color: transparent;
+        padding-bottom: 0;
+        grid-column: 1 / span 2;
+        justify-content: flex-end;
+    }
+}
+
+@media all and (min-width: 700px) {
+    .header-background {
+        display: block;
+    }
+
+    .header-background {
+                padding-bottom: 0;
+    }
+
+    .menu-toggle,
+    #main-menu-close {
+        display: none;
+    }
+
+    .main-menu {
+        position: static;
+    }
+
+    .main-menu ul {
+        box-shadow: none;
+        align-self: end;
+        padding-top: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: no-wrap;
+        justify-content: space-between;
+        max-width: 810px;
+        margin: auto;
+    }
+
+    .logo-desktop {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    a.navlist {
+        padding: 1.5rem .75rem;
+        margin: 0;
+    }
+}
+/* END NAV STYLES*/

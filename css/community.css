@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin:auto;
+  padding: 5% 0 5% 0;
+}
+
+main p,
+.cr,
+.cr a,
+h3.eventtitle {
+  color: #726a68;
+}
+
+main p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.btn,
+.eventfoot span,
+.cr,
+.cr a {
+    font-family: 'Asap', sans-serif;
+}
+
+.hero-image {
+    background-image: url('../img/comm1.jpg');
+    padding-bottom: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.partnerlogos img {
+    padding: 0 2rem;
+    max-width: 180px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #24408e;
+    vertical-align: sub;
+    position: relative;
+    left: -2.5rem;
+    /* z-index: 1000; */
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cursive {
+    font-family: 'Barley Script', sans-serif;
+    font-size: 3.4rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #e35e53;
+    position: relative;
+    left: 2.5rem;
+    top: -.7rem;
+    z-index: -1000;
+}
+
+.btn {
+  margin: .75rem auto;
+  box-shadow: -5px 5px 10px rgba(0,0,0,.3);
+  width: 100%;
+  font-weight: 800;
+  color: white;
+  padding: 1.1rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  background-image:
+      linear-gradient(
+         #bb8c08,
+         #d6a51d);
+}
+
+/****** EVENT CARDS ******/
+.eventcard {
+  border: 2px solid #726a68;
+  text-align: center;
+}
+
+.eventcard + .eventcard {
+  margin-top: 5%;
+}
+
+.eventfoot {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 2% 0 2% 0;
+  background-color: #726a68;
+}
+
+.eventfoot span {
+  width: 50%;
+  color: white;
+  font-size: 1.3rem;
+}
+
+h3.eventtitle {
+  font-family: 'Zilla Slab', serif;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  font-size: 1.6rem;
+  padding: 6% 0 6% 0;
+}
+
+.eventimg {
+  margin:5%;
+}
+
+.eventimg img {
+  width: 100%;
+}
+
+.cr,
+.cr a {
+    font-size: .7rem;
+}
+
+.cr a {
+    text-decoration: underline;
+    text-shadow: none;
+    font-weight: normal;
+}
+
+@media all and (min-width: 700px) {
+  .eventgroup {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-around;
+  }
+
+  .eventcard {
+    width: calc(100%/3 - 20px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .eventcard + .eventcard {
+    margin-top: 0px;
+  }
+
+  .eventfoot {
+    align-self: flex-end;
+    width: 100%;
+  }
+
+  .btn {
+    width: 200px;
+  }
+
+  .hero-image {
+    padding-bottom: 30%;
+  }
+
+  .cursive {
+      font-size: 4.5rem;
+  }
+}

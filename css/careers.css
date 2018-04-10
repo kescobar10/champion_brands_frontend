@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
 :root {
   --blue: #2b3268;
 }
@@ -14,6 +16,8 @@ main {
   grid-gap: 2rem;
   margin: auto;
   padding: 5% 0;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -27,8 +31,6 @@ h1 {
 
 .title {
   width: 100%;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
 }
 
 .hero-image {
@@ -36,10 +38,12 @@ h1 {
   background:
     url("../img/hero.jpg"),
     rgba(41, 51, 104, 0.70);
+  background-repeat: no-repeat;
+  object-fit: cover;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding-bottom: 30%;
+  background-position: center;
+  position: relative;
 }
 
 h2, h3, .hero-image p {
@@ -63,21 +67,89 @@ h2 {
 
 h3{
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  color: #2b3268;
 }
 
 h4, .job ul, .benefits ul {
   font-family: 'Asap', sans-serif;
 }
 
+main p, main ul {
+    line-height: 1.7rem;
+    color: #726a68;
+}
+
+.benefits p {
+  padding-top: 1.2rem;
+}
+
+.benefits ul,
+.job--req ul,
+.job--qual ul {
+    padding-left: 1rem;
+}
 .job p, .job ul li, .benefits p, .benefits ul li, .culture p{
-  font-size: .8rem;
+  font-size: .9rem;
+  font-size: 1.1rem;
 }
 
 .job ul, .benefits ul {
   list-style-type: none;
 }
 
+.job ul li:before, .benefits ul li:before {
+  content: "";
+  border-color: transparent #df4c3f;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: inline-block;
+  height: 0.75rem;
+  width: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+.job ul li, .benefits ul li{
+  text-indent: 0.1em;
+}
+
 iframe {
   padding-bottom: 1rem;
+}
+
+.vid--mid, .vid--desktop{
+  display: none;
+}
+
+.job--posts {
+  grid-gap: 5rem
+}
+
+/* MEDIA QUERIES */
+
+@media all and (min-width: 600px) {
+
+    .vid--mobile, .vid--desktop {
+      display: none;
+    }
+
+    .vid--mid {
+      display: inline;
+
+    }
+
+
+@media all and (min-width: 800px) {
+    .job--posts button {
+        width: 30%;
+    }
+
+    .vid--mobile, .vid--mid  {
+      display: none;
+    }
+
+    .vid--desktop {
+      display: inline;
+
+    }
 }
