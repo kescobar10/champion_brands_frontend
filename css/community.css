@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
 .container {
   width: 90%;
   max-width: 960px;
@@ -5,8 +7,23 @@
   padding: 5% 0 5% 0;
 }
 
-main p, h3 {
+main p,
+.cr,
+.cr a,
+h3.eventtitle {
   color: #726a68;
+}
+
+main p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.btn,
+.eventfoot span,
+.cr,
+.cr a {
+    font-family: 'Asap', sans-serif;
 }
 
 .hero-image {
@@ -18,18 +35,25 @@ main p, h3 {
     position: relative;
 }
 
+.partnerlogos img {
+    padding: 0 2rem;
+    max-width: 180px;
+}
+
 h2 {
     font-size: 1.5rem;
     color: #24408e;
     vertical-align: sub;
     position: relative;
     left: -2.5rem;
-    z-index: 1000;
+    /* z-index: 1000; */
     text-transform: uppercase;
+    text-align: center;
 }
+
 .cursive {
     font-family: 'Barley Script', sans-serif;
-    font-size: 4.5rem;
+    font-size: 3.4rem;
     font-weight: normal;
     text-transform: capitalize;
     color: #e35e53;
@@ -43,16 +67,15 @@ h2 {
   margin: .75rem auto;
   box-shadow: -5px 5px 10px rgba(0,0,0,.3);
   width: 100%;
-  font-family: 'Asap', sans-serif;
   font-weight: 800;
   color: white;
   padding: 1.1rem;
   font-size: 1.2rem;
   border-radius: 4px;
   background-image:
-  linear-gradient(
-     #bb8c08,
-     #d6a51d);
+      linear-gradient(
+         #bb8c08,
+         #d6a51d);
 }
 
 /****** EVENT CARDS ******/
@@ -76,7 +99,6 @@ h2 {
 .eventfoot span {
   width: 50%;
   color: white;
-  font-family: 'Asap', sans-serif;
   font-size: 1.3rem;
 }
 
@@ -96,6 +118,17 @@ h3.eventtitle {
 
 .eventimg img {
   width: 100%;
+}
+
+.cr,
+.cr a {
+    font-size: .7rem;
+}
+
+.cr a {
+    text-decoration: underline;
+    text-shadow: none;
+    font-weight: normal;
 }
 
 @media all and (min-width: 700px) {
@@ -128,5 +161,9 @@ h3.eventtitle {
 
   .hero-image {
     padding-bottom: 30%;
+  }
+
+  .cursive {
+      font-size: 4.5rem;
   }
 }

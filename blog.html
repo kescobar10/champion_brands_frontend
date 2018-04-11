@@ -6,7 +6,8 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- <link rel="shortcut icon" href="images/fav.ico" type="images/png" /> -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     		<meta name="description" content="Champion Brands | Home">
 
@@ -21,6 +22,8 @@
         <!-- STYLESHEETS -->
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/blog.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link href="https://use.fontawesome.com/facf9fa52c.css" media="all" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,600,700" rel="stylesheet">
 
         <!--[if lt IE 9]>
@@ -32,43 +35,8 @@
 
       <div class="container">
 
+        <!-- LOGO AND NAVIGATION -->
         <header>
-          <!-- SOCIAL MEDIA -->
-          <!-- <section class="social-media-top-hp">
-            <figure class="social">
-              <a href="#">
-                <img class="socialicon" src="img/facebook.png" alt="facebook" />
-              </a>
-            </figure>
-
-            <figure class="social">
-              <a href="#">
-                <img class="socialicon" src="img/instagram.png" alt="instagram" />
-              </a>
-            </figure>
-
-            <figure class="social">
-              <a href="#">
-                <img class="socialicon" src="img/twitter.png" alt="twitter" />
-              </a>
-            </figure>
-
-            <figure class="social">
-              <a href="#">
-                <img class="socialicon" src="img/linkedin.png" alt="linkedin" />
-              </a>
-            </figure>
-
-            <figure class="social">
-              <a href="#">
-                <img class="socialicon" src="img/search.png" alt="search" />
-              </a>
-            </figure>
-          </section> --> <!-- SOCIAL MEDIA -->
-
-          <!-- LOGO AND NAVIGATION -->
-
-          <header>
             <div class="header-background">
                 <a href="index.html"><img src="img/logo-white.png" alt="Champion Brands" class="logo-desktop"></a>
               <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
@@ -87,7 +55,7 @@
                       <li><a href="community.html" class="navlist">Community</a></li>
                       <li><a href="product.html" class="navlist">Products</a></li>
                       <li><a href="careers.html" class="navlist">Careers</a></li>
-                      <li><a href="blog.html" class="navlist">Blog</a></li>
+                      <li><a href="blog.html" class="navlist current-nav">Blog</a></li>
                       <li><a href="contact.html" class="navlist">Contact</a></li>
                   </ul>
               </nav>
@@ -117,7 +85,7 @@
                           <h3 class="main-post-title title-over-image">A day in the life of a Champion beverage</h3>
                       </div>
                       <h5 class="date">Feb. 28, 2018</h5>
-                      <p class="main-post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis diam quam, a lobortis leo convallis sed. Maecenas consectetur auctor vestibulum. Curabitur...</p>
+                      <p class="main-post-excerpt">At Champion Brands, our truck drivers transport our beverages on a daily basis, and their role is more than merely “throwing cases.” In a given day, they are...</p>
                       <button class="main-read-more-blog">Read More</button>
                   </a>
               </div>
@@ -132,7 +100,7 @@
                           </div>
                           <h5 class="date">Feb. 28, 2018</h5>
                           <h3 class="older-post-title">Redbull recipes to try this weekend</h3>
-                          <p class="older-post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis diam quam, a lobortis leo convallis sed. Maecenas consectetur auctor vestibulum. Curabitur...</p>
+                          <p class="older-post-excerpt">Spring is around the corner, and with the weather heating up, the Champion Brands team wants to share with you three drink recipes using Redbull, this month's featured...</p>
                       </a>
                   </div>
 
@@ -145,7 +113,7 @@
                           </div>
                           <h5 class="date">Feb. 28, 2018</h5>
                           <h3 class="older-post-title">Solar energy: This is why we're in</h3>
-                          <p class="older-post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis diam quam, a lobortis leo convallis sed. Maecenas consectetur auctor vestibulum. Curabitur...</p>
+                          <p class="older-post-excerpt">We strive to become industry leaders when it comes to environmental awareness and action. As such, we will contribute whenever we can to sustainable...</p>
                       </a>
                   </div>
 
@@ -170,7 +138,7 @@
               <!-- sidebar -->
               <sidebar>
                   <section class="sidebar" id="archives">
-                      <h3 class="sidebar-title">Archives</h3>
+                          <h3 class="sidebar-title">Archives</h3>
                       <ul>
                           <li><a class="" href="">February 2018</a></li>
                           <li><a class="" href="">January 2018</a></li>
@@ -200,11 +168,13 @@
               </section>
 
               <section class="sidebar featured-box" id="featured">
-                  <h2 class="sidebar-title">Featured <span class="block">Brand</span></h2>
+                  <div class="sidebar-title-container">
+                      <h2 class="sidebar-title">Featured <span class="block">Brand</span></h2>
+                  </div>
                   <div class="featured-brand">
                       <h3>Coppertail Brewing Co.</h3>
                       <h4>Tampa Bay</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis diam quam, a lobortis leo convallis sed. Maecenas consectetur auctor vestibulum</p>
+                      <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, Florida. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
                       <button>More</button>
                   </div>
               </section>
@@ -241,7 +211,7 @@
 
             <section class="email">
               <p>Email all inquiries to
-              <a>info@championbrands.net</a></p>
+              <a href="mailto:info@championbrands.net">info@championbrands.net</a></p>
             </section>
 
           </section><!-- contact -->
@@ -258,53 +228,53 @@
           <section class="portal">
             <h3>Portals</h3>
 
-            <button type="button" name="retailer-button">
+            <a href="https://championbrands.elliportal.com/" class="footer-button" name="retailer-button">
               Retailer
-            </button>
+            </a>
 
-            <button type="button" name="employee-button">
+            <a href="https://apps.vtinfo.com/retailer-portal/login" class="footer-button" name="employee-button">
               Employee
-            </button>
+            </a>
           </section>
 
           <!-- COPYRIGHT -->
           <section class="info">
             <section class="info-text">
-                <p><a href="#">Privacy Policy</a><span class="hide-mobile">  |
-                </span><a href="#">Terms & Conditions</a></p>
+                <p><a href="https://www.championbrands.net/privacy-policy/">Privacy Policy</a><span class="hide-mobile">  |
+                </span><a href="https://www.championbrands.net/terms-conditions/">Terms &amp; Conditions</a></p>
                 <p>&copy;2018 Champion Brands, Inc.</p>
             </section>
 
             <!-- SOCIAL MEDIA -->
             <section class="social-media-footer-hp">
               <figure class="social">
-                <a href="#">
+                <a href="https://www.facebook.com/pages/Champion-Brands-Inc/152755478079234">
                   <img class="socialicon" src="img/facebook.png" alt="facebook" />
                 </a>
               </figure>
 
               <figure class="social">
-                <a href="#">
+                <a href="https://instagram.com/championbrands/">
                   <img class="socialicon" src="img/instagram.png" alt="instagram" />
                 </a>
               </figure>
 
               <figure class="social">
-                <a href="#">
+                <a href="https://twitter.com/championbrands">
                   <img class="socialicon" src="img/twitter.png" alt="twitter" />
                 </a>
               </figure>
 
               <figure class="social">
-                <a href="#">
+                <a href="https://www.linkedin.com/company/champion-brands-inc?trk=top_nav_home">
                   <img class="socialicon" src="img/linkedin.png" alt="linkedin" />
                 </a>
               </figure>
             </section>
-<!-- END SOCIAL MEDIA -->
+    <!-- END SOCIAL MEDIA -->
 
           </section>
-<!-- END COPYRIGHT -->
+    <!-- END COPYRIGHT -->
 
         </footer>
 

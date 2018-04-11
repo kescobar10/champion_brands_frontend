@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
 /****** HOMEPAGE BODY ******/
 .carousel,.brand {
-  padding: 1.5% 12%;
-  line-height: 2;
+  padding: 1rem;
+  line-height: 2rem;
 }
 
-.carousel {
+.carousel-hero {
+    padding-bottom: 50%;
   background-color: #a9a4a3;
   background-image: url("../img/kegs-homepage.jpg");
   background-position: center left;
@@ -14,22 +17,96 @@
   flex-direction: row;
 }
 
-.carousel h2{
-  color: #2b3268;
+.carousel-text,
+.blue-cards p {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 .carousel-text {
-    padding: 1rem;
-    width: 66%;
+    padding: 1rem 1rem 0;
+    width: 100%;
     align-self: flex-end;
     background-color: rgba(102, 102, 102, 0.70);
 }
 
+.carousel-text h2,
+.brand h2 {
+  color: #df4c3f;
+  font-family: 'Barley Script', 'Cookie', cursive;
+  font-weight: normal;
+  position: relative;
+  text-transform: capitalize;
+  font-size: 4rem;
+}
+
+.carousel-text h2 {
+  top: -1.5rem;
+}
+
+.brand h2 {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.brand {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.our-brands {
+  padding-top: 4%;
+  padding-bottom: 2%;
+  margin: auto;
+  text-align: center;
+}
+
+.our-brands div img {
+    padding: 0 2rem;
+    min-width: 200px;
+}
+
+.carousel-text p {
+    position: relative;
+    top: -1.5rem;
+}
+
+.block {
+    color: #2b3268;
+    font-family: 'Zilla Slab', sans-serif;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
+    top: -1.35rem;
+    font-weight: bold;
+}
+
+.brand .block {
+    top: .9rem;
+    left: -2.5rem;
+}
+
+.card--team,
+.card--brewers,
+.card--retail {
+    margin: .5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card--team h3,
+.card--brewers h3,
+.card--retail h3 {
+    font-size: 1.5rem;
+    letter-spacing: .15rem;
+    margin-bottom: 1rem;
+}
+
 .blue-cards, .blue-cards section {
   color: white;
-  display: grid;
-  grid-template-rows: auto;
-  grid-gap: 1px;
   width: 100%;
 }
 
@@ -39,10 +116,7 @@
 
 .blue-cards section{
   background-size: cover;
-  padding: 2%;
-  width: 100%;
-  grid-gap: 1rem;
-  height: 33vh;
+  padding: 2rem 1rem;
 }
 
 .card--team {
@@ -57,12 +131,88 @@
     background-image: url("../img/bluecard3.jpg");
 }
 
+.our-brands {
+  padding-top: 4%;
+  padding-bottom: 2%;
+  margin: auto;
+  text-align: center;
+}
+
+.our-brands img {
+  max-width: 200px;
+  display: inline-block;
+}
+
+
 /* MEDIA QUERIES */
-@media all and (min-width: 800px) {
+
+@media all and (min-width: 600px) {
+
+    .carousel-hero {
+        padding: 0;
+    }
+
+    .carousel-hero-desktop {
+        background-color: #a9a4a3;
+        background-image: url("../img/kegs-homepage.jpg");
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+        height: 50vh;
+
+    }
+
+    .carousel-hero-gradient {
+        background: linear-gradient(to left, white, transparent);
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: flex-end;
+        height: inherit;
+
+    }
+
+    .carousel-text {
+        width: 60%;
+        margin: 1rem;
+        max-width: 480px;
+    }
+
     .blue-cards {
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+        height: auto;
+        grid-gap: .5rem;
+        max-width: 960px;
+        margin: auto;
+        min-height: 250px;
+    }
+
+    .blue-cards section {
+        justify-content: flex-start;
+    }
+
+    .brand {
+      width:90%;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .our-brands {
+      display: flex;
+      width: 100%;
+      box-sizing: border-box;
+      justify-content: space-around;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    .our-brands div img {
+      box-sizing: border-box;
+      max-width: 200px;
     }
 }
+
 
 /* START NAV STYLES*/
 .header-background {

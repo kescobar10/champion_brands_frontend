@@ -1,0 +1,26 @@
+{
+  "name": "champion_brands_frontend",
+  "version": "1.0.0",
+  "description": "Browser Sync and Concatenate & Minify js files",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kescobar10/champion_brands_frontend.git"
+  },
+  "author": "Shock Creative Agency",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kescobar10/champion_brands_frontend/issues"
+  },
+  "homepage": "https://github.com/kescobar10/champion_brands_frontend#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}

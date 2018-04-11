@@ -3,7 +3,14 @@
 This page defines sections that can be found on all pages. ie header & footer
 
 IMPORTANT ******/
+@font-face {
+    font-family: "Barley Script";
+    src: url("../fonts/barleyscript-regular.otf") format("otf"),     url("../fonts/barleyscript-regular.woff") format("woff"),    url("../fonts/barleyscript-regular.woff2") format("woff2"), url("../fonts/barleyscript-regular.ttf") format("truetype");
+}
 
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:400,600,700');
+
+@import url('https://fonts.googleapis.com/css?family=Cookie');
 
 @import url('https://fonts.googleapis.com/css?family=Asap');
 
@@ -31,12 +38,93 @@ IMPORTANT ******/
     display: none;
   }
 
+  /*    loader    */
+/*
+  .loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff6347;
+  z-index: 999999;
+  }
+
+
+  .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50px;
+  height: 10px;
+  background: #3498DB;
+  border-radius: 5px;
+  -webkit-animation: load 1.8s ease-in-out infinite;
+          animation: load 1.8s ease-in-out infinite;
+}
+.loader:before, .loader:after {
+  position: absolute;
+  display: block;
+  content: "";
+  -webkit-animation: load 1.8s ease-in-out infinite;
+          animation: load 1.8s ease-in-out infinite;
+  height: 10px;
+  border-radius: 5px;
+}
+.loader:before {
+  top: -20px;
+  left: 10px;
+  width: 40px;
+  background: #EF4836;
+}
+.loader:after {
+  bottom: -20px;
+  width: 35px;
+  background: #F5AB35;
+}
+
+@-webkit-keyframes load {
+  0% {
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px);
+  }
+  50% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  100% {
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px);
+  }
+}
+
+@keyframes load {
+  0% {
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px);
+  }
+  50% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  100% {
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px);
+  }
+}
+*/
+  /*    loader    */
+
+
 .upper {
     text-transform: uppercase;
         -webkit-text-transform: uppercase;
         -moz-text-transform: uppercase;
 }
 
+.footer-button,
 button,
 input[type=submit] {
     cursor: pointer;
@@ -91,6 +179,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-x: hidden;
+
 }
 
 /* SOCIAL ICONS */
@@ -167,9 +257,10 @@ footer{
   padding: 10px;
 }
 
-
+.footer-button,
 button,
 .sub input[type=submit] {
+    display: block;
   color: white;
   background-image:
   linear-gradient(
@@ -180,13 +271,20 @@ button,
   border-radius: 4px;
 }
 
+.footer-button:hover,
 button:hover {
   background-image:
       linear-gradient(
         #a12822,
         #c34136);
+    text-decoration: none;
     }
 
+.footer-button {
+    text-shadow: none;
+    text-align: center;
+    max-width: 240px;
+}
 form {
     background-color: white;
     border-radius: 4px;
@@ -294,7 +392,7 @@ form {
 }
 
 /* PORTAL */
-
+.footer-button,
 .portal button {
     margin: .75rem auto;
     box-shadow: -5px 5px 10px rgba(0,0,0,.3);
@@ -344,6 +442,7 @@ form {
         grid-row: 1 / 1;
     }
 
+    .footer-button,
     .portal button {
         grid-row: 2 / 2;
     }
@@ -434,6 +533,7 @@ form {
         justify-content: space-between;
     }
 
+    .footer-button,
     .portal button {
         margin: 1rem auto;
     }
@@ -469,6 +569,7 @@ form {
         align-items: stretch;
     }
 
+    .footer-button,
     .portal button {
         width: 100%;
     }

@@ -6,7 +6,8 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- <link rel="shortcut icon" href="images/fav.ico" type="images/png" /> -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     		<meta name="description" content="Champion Brands | Careers">
 
@@ -21,6 +22,8 @@
         <!-- STYLESHEETS -->
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/careers.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link href="https://use.fontawesome.com/facf9fa52c.css" media="all" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,600,700" rel="stylesheet">
 
         <!--[if lt IE 9]>
@@ -32,67 +35,47 @@
 
       <div class="container">
 
-        <header>
-          <!-- SOCIAL MEDIA -->
-          <section class="social-media-top-hp">
-            <figure class="social">
-              <a href="#">
-                <img class="socialicon" src="img/facebook.png" alt="facebook" />
-              </a>
-            </figure>
-
-            <figure class="social">
-              <a href="#">
-                <img class="socialicon" src="img/instagram.png" alt="instagram" />
-              </a>
-            </figure>
-
-            <figure class="social">
-              <a href="#">
-                <img class="socialicon" src="img/twitter.png" alt="twitter" />
-              </a>
-            </figure>
-
-            <figure class="social">
-              <a href="#">
-                <img class="socialicon" src="img/linkedin.png" alt="linkedin" />
-              </a>
-            </figure>
-
-            <figure class="social">
-              <a href="#">
-                <img class="socialicon" src="img/search.png" alt="search" />
-              </a>
-            </figure>
-          </section><!-- SOCIAL MEDIA -->
-
           <!-- LOGO AND NAVIGATION -->
+          <header>
+            <div class="header-background">
+                <a href="index.html"><img src="img/logo-white.png" alt="Champion Brands" class="logo-desktop"></a>
+              <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
+                <span class="visually-hidden">Open main menu</span>
+                <span class="fa fa-bars fa-2x"></span>
+              </a>
+
+              <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
+                  <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu">
+                      <span class="visually-hidden">Close main menu</span>
+                      <span class="fa fa-close fa-2x"></span>
+                  </a>
+                  <ul>
+                      <li><a href="index.html" class="navlist">Home</a></li>
+                      <li><a href="about.html" class="navlist">About</a></li>
+                      <li><a href="community.html" class="navlist">Community</a></li>
+                      <li><a href="product.html" class="navlist">Products</a></li>
+                      <li><a href="careers.html" class="navlist current-nav">Careers</a></li>
+                      <li><a href="blog.html" class="navlist">Blog</a></li>
+                      <li><a href="contact.html" class="navlist">Contact</a></li>
+                  </ul>
+              </nav>
+              <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+            </div>
           <h1 class="visually-hidden">Champion Brands</h1>
           <figure class="headerlogo">
-            <img src="img/champion-logo.png" alt="Champion Brands" class="logo" />
-          </figure>
+            <a href="index.html"><img src="img/champion-logo.png" alt="Champion Brands" class="logo logo-mobile" /></a>
 
-          <nav>
-              <ul>
-                  <li><a href="index.html" class="navlist">Home</a></li>
-                  <li><a href="about.html" class="navlist">About</a></li>
-                  <li><a href="community.html" class="navlist">Community</a></li>
-                  <li><a href="product.html" class="navlist">Products</a></li>
-                  <li><a href="careers.html" class="navlist">Careers</a></li>
-                  <li><a href="post.html" class="navlist">Blog</a></li>
-                  <li><a href="contact.html" class="navlist">Contact</a></li>
-              </ul>
-          </nav>
+          </figure>
         </header><!-- <header> -->
+
+          <!-- hero -->
+           <div class="hero-image clearfix"></div>
 
         <main>
 
-            <!-- hero -->
-            <section class="title">
-              <h1>Careers</h1>
-                <article class="hero-image">
-                    <p>Join our family of elites.</p>
-                </article>
+             <!-- title -->
+             <section class="title">
+                 <h1>Careers</h1>
              </section>
 
              <!-- culture -->
@@ -107,8 +90,6 @@
              <section class="benefits">
                <h2>Benefits</h2>
 
-               <p>In addition to our competitive benefits package, Champion Brands employees enjoy a team-focused, supportive environment where learning, leadership and trust come first.</p>
-
                <ul>
                  <li>Vacation</li>
                  <li>Paid time off</li>
@@ -121,15 +102,31 @@
                  <li>Training opportunities</li>
                </ul>
 
+               <p>In addition to our competitive benefits package, Champion Brands employees enjoy a team-focused, supportive environment where learning, leadership and trust come first.</p>
+
              </section> <!-- benefits -->
 
              <!-- videos -->
              <section class="videos">
 
                <h2>Hear From Current Employees</h2>
-               <iframe src="https://player.vimeo.com/video/230942628?title=0&byline=0&portrait=0" width="360" height="203" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+               <div class="videos vid--mobile">
+                 <iframe src="https://player.vimeo.com/video/230942628?title=0&byline=0&portrait=0" width="250" height="141" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-               <iframe src="https://player.vimeo.com/video/231560412?title=0&byline=0&portrait=0" width="360" height="203" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                 <iframe src="https://player.vimeo.com/video/231560412?title=0&byline=0&portrait=0" width="250" height="141" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+               </div>
+
+               <div class="videos vid--mid">
+                 <iframe src="https://player.vimeo.com/video/230942628?title=0&byline=0&portrait=0" width="350" height="197" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                 <iframe src="https://player.vimeo.com/video/231560412?title=0&byline=0&portrait=0" width="350" height="197" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+               </div>
+
+               <div class="videos vid--desktop">
+                 <iframe src="https://player.vimeo.com/video/230942628?title=0&byline=0&portrait=0" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                 <iframe src="https://player.vimeo.com/video/231560412?title=0&byline=0&portrait=0" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+               </div>
              </section>
 
              <!-- job posts -->
@@ -146,52 +143,80 @@
                    <h4>Date Posted</h4>
                  </article>
 
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                 <p>We are looking for experienced CDL Delivery Drivers to deliver products from our Distribution Center to the retail outlets, accessing orders from the load on the truck, loading the individual orders onto the hand- truck, and transferring the order into the retailer's cooler, and unloading the order.</p>
 
                 <article class="job--req job--1">
-                   <h3>Requirements</h3>
+                   <h3>Responsibilities</h3>
 
                    <ul>
-                      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                      <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                      <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-                      <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                      <li>Deliver Champion Brands products to stores within in the assigned area.</li>
+                      <li>Greet and maintain a professional relationship with customer while providing excellent customer service.</li>
+                      <li>Obtain copies of orders to be delivered.</li>
+                      <li>Operated hand-truck in a safe manner with order into cooler.</li>
                  </ul>
                </article>
 
-                 <button type="button" name="APPLY NOW">APPLY NOW</button>
+               <article class="job--qual job--1">
+                  <h3>Qualifications</h3>
+
+                  <ul>
+                     <li>High School Diploma or GED required</li>
+                     <li>21 years of age or older</li>
+                     <li>Valid Commercial Driver's License (CDL) and driver’s license</li>
+                     <li>Ability to lift, and carry up to 50 pounds or more</li>
+                     <li>Ability to push and pull several 100 pounds on a hand and/or platform truck</li>
+                     <li>Able to work flexible work schedule</li>
+                </ul>
+              </article>
+
+               <p>Champion Brands provides equal employment opportunities to all applicants for employment without regard to race, color, religion, sex, national origin, age, disability, gender, genetics, gender identity, disabled veterans, or sexual orientation.</p>
+
+                 <button type="button" name="apply now">Apply Now</button>
 
                </section><!-- job 1 -->
 
-              <!-- job 2 -->
-               <section class="job job-2">
-                 <article class="job--about job-2">
-                   <h2>Delivery Driver</h2>
+                <!-- job 2 -->
+                <section class="job job--2">
 
-                   <h3>Georgia</h3>
+                  <article class="job--about job--2">
+                    <h2>Delivery Driver</h2>
 
-                   <h4>Date Posted</h4>
-                 </article>
+                    <h3>Florida</h3>
 
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h4>Date Posted</h4>
+                  </article>
 
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p>We are looking for experienced CDL Delivery Drivers to deliver products from our Distribution Center to the retail outlets, accessing orders from the load on the truck, loading the individual orders onto the hand- truck, and transferring the order into the retailer's cooler, and unloading the order.</p>
 
-                <article class="job--req job-2">
-                   <h3>Requirements</h3>
+                 <article class="job--req job--2">
+                    <h3>Responsibilities</h3>
+
+                    <ul>
+                       <li>Deliver Champion Brands products to stores within in the assigned area.</li>
+                       <li>Greet and maintain a professional relationship with customer while providing excellent customer service.</li>
+                       <li>Obtain copies of orders to be delivered.</li>
+                       <li>Operated hand-truck in a safe manner with order into cooler.</li>
+                  </ul>
+                </article>
+
+                <article class="job--qual job--2">
+                   <h3>Qualifications</h3>
 
                    <ul>
-                      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                      <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                      <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-                      <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                      <li>High School Diploma or GED required</li>
+                      <li>21 years of age or older</li>
+                      <li>Valid Commercial Driver's License (CDL) and driver’s license</li>
+                      <li>Ability to lift, and carry up to 50 pounds or more</li>
+                      <li>Ability to push and pull several 100 pounds on a hand and/or platform truck</li>
+                      <li>Able to work flexible work schedule</li>
                  </ul>
                </article>
 
-                 <button type="button" name="APPLY NOW">APPLY NOW</button>
-               </section><!-- job 2-->
+                <p>Champion Brands provides equal employment opportunities to all applicants for employment without regard to race, color, religion, sex, national origin, age, disability, gender, genetics, gender identity, disabled veterans, or sexual orientation.</p>
+
+                  <button type="button" name="apply now">Apply Now</button>
+
+                </section><!-- job 2 -->
 
               </section> <!-- job posts -->
 
@@ -224,7 +249,7 @@
 
             <section class="email">
               <p>Email all inquiries to
-              <a>info@championbrands.net</a></p>
+              <a href="mailto:info@championbrands.net">info@championbrands.net</a></p>
             </section>
 
           </section><!-- contact -->
@@ -241,45 +266,45 @@
           <section class="portal">
             <h3>Portals</h3>
 
-            <button type="button" name="retailer-button">
+            <a href="https://championbrands.elliportal.com/" class="footer-button" name="retailer-button">
               Retailer
-            </button>
+            </a>
 
-            <button type="button" name="employee-button">
+            <a href="https://apps.vtinfo.com/retailer-portal/login" class="footer-button" name="employee-button">
               Employee
-            </button>
+            </a>
           </section>
 
           <!-- COPYRIGHT -->
           <section class="info">
             <section class="info-text">
-                <p><a href="#">Privacy Policy</a><span class="hide-mobile">  |
-                </span><a href="#">Terms &amp; Conditions</a></p>
+                <p><a href="https://www.championbrands.net/privacy-policy/">Privacy Policy</a><span class="hide-mobile">  |
+                </span><a href="https://www.championbrands.net/terms-conditions/">Terms &amp; Conditions</a></p>
                 <p>&copy;2018 Champion Brands, Inc.</p>
             </section>
 
             <!-- SOCIAL MEDIA -->
             <section class="social-media-footer-hp">
               <figure class="social">
-                <a href="#">
+                <a href="https://www.facebook.com/pages/Champion-Brands-Inc/152755478079234">
                   <img class="socialicon" src="img/facebook.png" alt="facebook" />
                 </a>
               </figure>
 
               <figure class="social">
-                <a href="#">
+                <a href="https://instagram.com/championbrands/">
                   <img class="socialicon" src="img/instagram.png" alt="instagram" />
                 </a>
               </figure>
 
               <figure class="social">
-                <a href="#">
+                <a href="https://twitter.com/championbrands">
                   <img class="socialicon" src="img/twitter.png" alt="twitter" />
                 </a>
               </figure>
 
               <figure class="social">
-                <a href="#">
+                <a href="https://www.linkedin.com/company/champion-brands-inc?trk=top_nav_home">
                   <img class="socialicon" src="img/linkedin.png" alt="linkedin" />
                 </a>
               </figure>

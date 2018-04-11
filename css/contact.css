@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
 .container {
   width: 90%;
   max-width: 960px;
@@ -11,8 +13,8 @@ h2 {
     vertical-align: sub;
     position: relative;
     left: -2.5rem;
-    z-index: 1000;
     text-transform: uppercase;
+    text-align: center;
 }
 .cursive {
     font-family: 'Barley Script', sans-serif;
@@ -35,7 +37,7 @@ label {
   font-size: 1.3rem;
 }
 
-.contactinfo section h4 {
+main h4 {
   display: inline-block;
   font-family: 'Zilla Slab', serif;
   text-transform: uppercase;
@@ -65,7 +67,7 @@ label {
   padding-top: 5%;
 }
 
-h4 + .container section p {
+main h4 + p {
   display: inline-block;
 }
 
@@ -127,6 +129,7 @@ input[type=submit] {
   font-size: 1.1rem;
   float: right;
   padding-top: 1%;
+  border: none;
 }
 
 #formsubmit {
@@ -143,6 +146,14 @@ input[type=submit] {
   linear-gradient(
      #bb8c08,
      #d6a51d);
+  border:none;
+}
+
+#formsubmit:hover {
+    background-image:
+    linear-gradient(
+       #a67d07,
+       #bf931a);
 }
 
 /****** CONTACT INFO ******/
@@ -172,11 +183,11 @@ iframe {
     width: 40%;
   }
 
-  .container section + .container section {
+  .container section + section {
     margin-top: 7%;
   }
 
-  .container p + .container p {
+  .container p + p {
     padding-top: 2%;
   }
 
@@ -187,7 +198,7 @@ iframe {
     justify-content: stretch;
   }
 
-  article {
+  .container article {
     padding-top: 25px;
   }
 
@@ -207,7 +218,7 @@ iframe {
     padding-left: 3%;
   }
 
-  article + article {
+  .container article + article {
     border-top: 0px;
   }
 
@@ -220,20 +231,16 @@ iframe {
     display: flex;
   }
 
-  .formpiece1 input[type=text],
-  .formpiece input[type=text],
-  .formpiece2 input[type=text],
-  #contactform div span textarea,
-  .contactinfo section form input[type=text] {
+  .container input[type=text] {
     padding: 10px;
   }
 
-  textarea {
+  .container textarea {
     width: 100%;
     height: 350px;
   }
 
-  label {
+  .container label {
     margin-right: 4%;
     width: 50%;
   }
