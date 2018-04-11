@@ -5,7 +5,19 @@
   max-width: 960px;
   margin:auto;
   padding: 5% 0 5% 0;
+  grid-gap: 5rem;
 }
+
+.container, .community, .events {
+  display: grid;
+}
+
+.community {
+  grid-template-rows: 103px auto auto 103px;
+  grid-gap: 2rem;
+  align-items: center;
+}
+
 
 main p,
 .cr,
@@ -33,6 +45,15 @@ main p {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.partnerlogos{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 180px);
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 2.9rem;
 }
 
 .partnerlogos img {
@@ -78,6 +99,9 @@ h2 {
          #d6a51d);
 }
 
+.events {
+  grid-gap: 1rem;
+}
 /****** EVENT CARDS ******/
 .eventcard {
   border: 2px solid #726a68;
@@ -165,5 +189,11 @@ h3.eventtitle {
 
   .cursive {
       font-size: 4.5rem;
+  }
+
+  @media all and (min-width: 1050px) {
+    .partnerlogos {
+      grid-gap: 0.9rem;
+    }
   }
 }
