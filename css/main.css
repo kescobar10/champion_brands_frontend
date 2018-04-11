@@ -375,7 +375,8 @@ form {
     border-radius: 4px;
 }
 
-.sub input[type=submit] {
+.sub input[type=submit],
+input[type=button]  {
     background-image:
     linear-gradient(
        #bb8c08,
@@ -385,7 +386,8 @@ form {
     padding: 1.1rem .1rem;
 }
 
-.sub input[type=submit]:hover {
+.sub input[type=submit]:hover,
+input[type=button]:hover  {
     background-image:
     linear-gradient(
        #a67d07,
