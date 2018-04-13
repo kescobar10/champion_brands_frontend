@@ -5,5 +5,25 @@ jQuery(document).ready(function() {
         {
             $("loader-wrapper").fadeOut("slow");
         }
+
+        var screen = $(window);
+        if (screen.width() > 700)
+        {
+            $('#menuCheckbox').attr('checked', true);
+        }
+        else {
+            $('#menuCheckbox').attr('checked', false);
+        }
     });
+});
+
+jQuery(document).resize(function() {
+    var screen = $(window);
+    if (screen.width() > 700)
+    {
+        $('#menuCheckbox').attr('checked', true);
+    }
+    else {
+        $('#menuCheckbox').attr('checked', false);
+    }
 });

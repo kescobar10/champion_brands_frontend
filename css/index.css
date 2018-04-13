@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Asap');
 
+body {
+    overflow-x:hidden;
+}
+
 /****** HOMEPAGE BODY ******/
 
 .carousel,.brand {
@@ -173,7 +177,6 @@
         background-position: center left;
         background-repeat: no-repeat;
         background-size: cover;
-        z-index: 0;
         height: 50vh;
 
     }
@@ -232,23 +235,18 @@
 /* START NAV STYLES*/
 .header-background {
     width: 100%;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-gap: 10px;
 }
 
 .social-media-top-hp {
-    grid-row: 1 / 1;
-    grid-column: 1 / span 2;
     justify-content: space-around;
     padding: 1rem;
     background-color: rgba(102, 102, 102, .2);
 }
 
 .headerlogo {
-    width: 100%;
-    grid-row: 2 / 2;
+    width: 80%;
+    float: left;
+    clear: both;
 }
 
 .logo {
@@ -260,145 +258,217 @@
         color: #db493d;
 }
 
-.menu-toggle {
-    align-self: center;
-    grid-row: 2 / 2;
-}
-
-
 .main-menu ul {
     background-image: none;
     background-color: transparent;
 }
 
 
-.menu-toggle  {
-    color: rgba(255,255,255,.9);
-    text-shadow: -2px 2px 10px rgba(0,0,0,.2);
-    padding: 1rem;
-    text-align: right;
-    display: inline-block;
+#main-menu-toggle {
+    display: block;
+    position: absolute;
+    top: 120px;
+    right: 12px;
+
+    z-index: 2;
+
+    -webkit-user-select: none;
+    user-select: none;
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  color: #dddddd;
-  text-shadow: none;
+#main-menu-toggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 3; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
 }
 
+#main-menu-toggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #df4c3f;
+  border-radius: 3px;
+
+  z-index: 2;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#main-menu-toggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#main-menu-toggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#main-menu-toggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #ffffff;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#main-menu-toggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+ #main-menu-toggle input:checked ~ span:nth-last-child(2) {
+     opacity: 1;
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+ #menu {
+   position: absolute;
+   width: 100vw;
+   margin: -4.5rem 0 0 0;
+   padding: 2rem 1rem 1rem 2rem;
+   right: -1rem;
+
+    overflow-y: visible;
+   background: #df4c3f;
+   background-image: url('../img/texture-red.png');
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+
+   transform-origin: 0% 0%;
+   transform: translate(100%, 0);
+
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+/*
 .main-menu {
   position: absolute;
-  top: -336px;
-  left: 0;
+  top: 177px;
+  right: -100vw;
+  width: 0;
   overflow-y: visible;
   overflow-x: visible;
-  transition: top 0.3s ease;
-  z-index: 999;
+  transition: right 0.3s ease;
+  transition: width 0.3s ease;
+      -webkit-transition: width 0.3s ease;
   background-image: url('../img/texture-red.png');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-
-}
-
-.main-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 2.5em 0 0;
-  /* Hide shadow w/ -8px while 'closed' */
-  -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-     -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-          box-shadow: -8px 0 8px rgba(0,0,0,.5);
-  width: 100%;
-
-}
-
-.main-menu a {
-  display: block;
-  padding: .75rem 15px;
-  line-height: 1rem;
-  font-size: 1.2rem;
-  color: #fff;
-  text-decoration: none;
-}
-.main-menu a:hover,
-.main-menu a:focus,
-.main-menu a:active {
-  background: rgba(255,255,255,.9);
-  color: #df4c3f;
-    text-shadow: none;
-}
-
-.main-menu .menu-close {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/* hamburger menu interactivity */
-
-.main-menu:target,
-.main-menu[aria-expanded="true"] {
-  top: 0;
-}
-
-.main-menu:target .menu-close,
-.main-menu[aria-expanded="true"] .menu-close {
-  z-index: 1001;
-}
-
-.main-menu:target ul,
-.main-menu[aria-expanded="true"] ul {
-  position: relative;
-  z-index: 1000;
-}
+} */
 
 /*
- We could us `.main-menu:target:after`, but
- it wouldn't be clickable.
-*/
-.main-menu:target + .backdrop,
-.main-menu[aria-expanded="true"] + .backdrop {
-  position: absolute;
-  display: block;
-  content: "";
-  left: 0;
-  top: 72;
-  width: 100%;
-  height: 100%;
-  z-index: 998;
-  cursor: default;
+ * And let's fade it in from the left
+ */
+#main-menu-toggle input:checked ~ ul {
+  transform: scale(1.0, 1.0);
+  opacity: 1;
 }
 
-@supports (position: fixed) {
-  .main-menu,
-  .main-menu:target + .backdrop,
-  .main-menu[aria-expanded="true"] + .backdrop {
-    position: fixed;
-  }
+a.navlist {
+        width: 50%;
 }
+
+a.navlist:hover {
+    text-shadow: none;
+    color: #df4c3f;
+    background-color: rgba(255,255,255,.9);
+
+}
+
 
 @media all and (min-width: 420px) {
     .header-background {
-        grid-gap: 0;
-            grid-template-columns: 80% 20%;
         justify-content: flex-end;
     }
 }
 
 @media all and (min-width: 500px) {
-    .header-background {
-        grid-template-columns: 60% 40%;
-    }
     .social-media-top-hp {
         background-color: transparent;
         padding-bottom: 0;
-        grid-column: 1 / span 2;
         justify-content: flex-end;
+    }
+    .headerlogo {
+        float: none;
+    }
+    #main-menu-toggle {
+        top: 1.9rem;
+        left: 1.5rem;
+    }
+    #menu {
+        transform-origin: 100% 0%;
+        transform: translate(-100%, 0);
+    }
+    .navlist {
+        text-align: center;
     }
 }
 
 @media all and (min-width: 700px) {
+    #main-menu-toggle {
+        display: block;
+        position: static;
+        -webkit-user-select: none;
+        user-select: none;
+        background: #df4c3f;
+        background-image: url('../img/texture-red.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+    #main-menu-toggle span {
+        display: none;
+    }
+    #menu {
+      position: relative;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 100%;
+      padding: 0 1rem;
+      overflow-y: visible;
+      overflow-x: visible;
+      transform: translate(0, 0);
+    }
+    a.navlist {
+        display: inline-block;
+        padding: 1rem 1rem 1.1rem;
+        width: 100%;
+        margin: 0;
+    }
+
     .header-background {
         display: block;
     }
@@ -431,11 +501,6 @@
     .logo-desktop {
         width: 100%;
         padding-bottom: 1rem;
-    }
-
-    a.navlist {
-        padding: 1.5rem .75rem;
-        margin: 0;
     }
 }
 /* END NAV STYLES*/
