@@ -2,6 +2,13 @@
     display: none;
 }
 
+.logo-mobile {
+    display: block;
+    width: 100%;
+    min-width: 150px;
+    max-width: 300px;
+}
+
 .header-background {
     background-image: url('../img/texture-red.png');
     background-position: center;
@@ -133,10 +140,10 @@ a.current-nav {
 }
 
 @media all and (min-width: 420px) {
+
     .logo-mobile {
         display: none;
     }
-
     .logo-desktop {
         display: block;
         width: 75%;
