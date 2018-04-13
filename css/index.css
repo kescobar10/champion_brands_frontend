@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Asap');
 
 /****** HOMEPAGE BODY ******/
+
 .carousel,.brand {
   padding: 1rem;
   line-height: 2rem;
@@ -91,10 +92,11 @@
 .card--team,
 .card--brewers,
 .card--retail {
-    margin: .5rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
 }
 
 .card--team h3,
@@ -112,6 +114,12 @@
 
 .carousel-img {
     margin: auto;
+}
+
+.blue-cards {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
 }
 
 .blue-cards section{
@@ -148,6 +156,13 @@
 
 @media all and (min-width: 600px) {
 
+    main {
+      display: grid;
+      grid-template-rows: 1fr 1fr 350px;
+      grid-gap: 2.5rem;
+    }
+
+
     .carousel-hero {
         padding: 0;
     }
@@ -180,16 +195,16 @@
 
     .blue-cards {
         display: grid;
-        grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
-        height: auto;
+        grid-template-columns:1fr 1fr 1fr;
+        height: 100%;
         grid-gap: .5rem;
-        max-width: 960px;
+        /*max-width: 960px;*/
         margin: auto;
         min-height: 250px;
     }
 
     .blue-cards section {
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .brand {
