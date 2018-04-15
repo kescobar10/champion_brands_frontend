@@ -13,11 +13,11 @@ var browserSync = require('browser-sync').create();
 
 
 // Concatenate JS
-gulp.task('scripts', function() {
-    return gulp.src('js/*.js')
-        .pipe(concat('all.js'))
-        .pipe(gulp.dest('js/'));
-});
+//gulp.task('scripts', function() {
+//    return gulp.src('js/*.js')
+//        .pipe(concat('all.js'))
+//        .pipe(gulp.dest('js/'));
+//});
 
 
 ////////
@@ -29,10 +29,10 @@ gulp.task('serve', function() {
     });
 
     gulp.watch("**/*.css").on('change', browserSync.reload);
-    gulp.watch('js/*.js', ['scripts']);
+    gulp.watch('js/*.js');
     gulp.watch("**/*.html").on('change', browserSync.reload);
 });
 /////////
 
 // Default Task
-gulp.task('default', ['scripts', 'serve']);
+gulp.task('default', ['serve']);
