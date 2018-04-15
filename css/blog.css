@@ -188,6 +188,17 @@ button.main-read-more-blog {
     line-height: 2;
 }
 
+.sidebar ul li::before {
+    content: "";
+    border-color: transparent #df4c3f;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: inline-block;
+    height: 0.75rem;
+    width: 0.75rem;
+    margin-right: 0.5rem;
+}
+
 .sidebar input {
     height: 40px;
     width: 75%;
