@@ -154,8 +154,8 @@
 		/* position: centering vertical and horizontal */
 		position: absolute;
 		z-index: 9999;
-		top: 0;
-		right: 0;
+		top: 1rem;
+		right: 1rem;
 
 		/* dimensions: 25px x 25px */
 		line-height: 25px;

@@ -144,6 +144,8 @@ h3, h4  {
 
 p, button, section a, .info a, .contact h4, .sub input {
   font-family: 'Asap', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
 }
 
 p, section a, .info a {
