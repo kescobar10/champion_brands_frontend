@@ -259,7 +259,8 @@ footer{
 
 .footer-button,
 button,
-.sub input[type=submit] {
+.sub input[type=submit],
+input[type=button] {
     display: block;
   color: white;
   background-image:
