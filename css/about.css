@@ -43,6 +43,12 @@ details p,
     margin: 1rem .5rem;
 }
 
+#instructions {
+    font-style: italic;
+    text-align: center;
+    margin: 0 0 1rem;
+}
+
 .hero-image {
     background-image: url('../img/about-hero.png');
     padding-bottom: 50%;
@@ -53,23 +59,25 @@ details p,
 }
 
 h1 {
+    position: relative;
+    left: 1.5rem;
     font-family: 'Barley Script', sans-serif;
     font-weight: normal;
     font-size: 4.5rem;
     color: #df4c3f;
     text-align: center;
-    padding: .5rem;
+    padding: 2rem 0 1rem;
 }
 
 .block {
-    font-size: 1.7rem;
+    font-size: 2rem;
     text-transform: uppercase;
     color: #2b3268;
     font-family: 'Zilla Slab', sans-serif;
     font-weight: bold;
     position: relative;
     top: 1rem;
-    left: -6rem;
+    left: -3rem;
 }
 ul {
     list-style-type: none;
