@@ -99,10 +99,19 @@ h2 {
          #d6a51d);
 }
 
+/* overrides main submit styling */
+input[type=button] {
+  width: inherit;
+  padding: 1.1rem;
+}
+
 .button a  {
   display: block
   text-align: center;
+}
 
+.button a:hover{
+  text-decoration: none;
 }
 
 .events {
