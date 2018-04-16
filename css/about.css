@@ -32,7 +32,8 @@ details p,
 .core-values h2,
 .about h2,
 .environment p,
-.environment h3 {
+.environment h3,
+#instructions {
     color: #726a68;
     line-height: 1.5;
 }
