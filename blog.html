@@ -86,7 +86,7 @@
                       </div>
                       <h5 class="date">Feb. 28, 2018</h5>
                       <p class="main-post-excerpt">At Champion Brands, our truck drivers transport our beverages on a daily basis, and their role is more than merely “throwing cases.” In a given day, they are...</p>
-                      <button class="main-read-more-blog">Read More</button>
+                      <input type="button" class="main-read-more-blog" value="Read More">
                   </a>
               </div>
 
@@ -163,8 +163,13 @@
 
               <section class="sidebar" id="search">
                   <h3 class="sidebar-title">Search</h3>
-                      <input class="search-sidebar" />
-                      <a href="#" class="search-button"> </a>
+                      <!--<input class="search-sidebar" value="search"/>
+                      <a href="#" class="search-button"> </a>-->
+                  <form>
+                    <input type="text" name="search" placeholder="Search" class="search-sidebar">
+                    <input type="button" value="Search">
+                  </form>
+
               </section>
 
               <section class="sidebar featured-box" id="featured">
@@ -175,7 +180,7 @@
                       <h3>Coppertail Brewing Co.</h3>
                       <h4>Tampa Bay</h4>
                       <p>Coppertail Brewing Co is an independently owned production brewery and tasting room in the Ybor neighborhood of Tampa, Florida. It was founded on the desire to bring more quality, Florida-brewed beer to the thirsty masses. Florida Inspired. Tampa Brewed.</p>
-                      <button>More</button>
+                      <button class="more">More</button>
                   </div>
               </section>
 
