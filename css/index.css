@@ -4,6 +4,8 @@ body {
     overflow-x:hidden;
 }
 
+
+
 /****** HOMEPAGE BODY ******/
 
 .carousel,.brand {
@@ -484,3 +486,15 @@ a.navlist:hover {
     }
 }
 /* END NAV STYLES*/
+
+#menu li a[href="index.html"] {
+    text-shadow: none;
+    color: rgba(43,50,104,.8);
+}
+
+#menu li a[href="index.html"]:hover {
+    text-shadow: none;
+    color: rgba(43,50,104,.8);
+    background-color: transparent;
+    cursor: default;
+}
