@@ -142,7 +142,7 @@ h3, h4  {
   font-weight: 600;
 }
 
-p, button, section a, .info a, .contact h4, .sub input {
+p, button, section a, .info a, .contact h4, .sub input, input[type=button] {
   font-family: 'Asap', sans-serif;
 }
 
@@ -387,7 +387,7 @@ input[type=button]  {
 }
 
 .sub input[type=submit]:hover,
-input[type=button]:hover  {
+button:hover  {
     background-image:
     linear-gradient(
        #a67d07,
