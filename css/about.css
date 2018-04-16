@@ -112,6 +112,9 @@ summary::before {
     content: url(../img/barley-symbol-35x75.png);
 }
 
+.cd-timeline {
+    background-color: #eeeeee;
+}
 
 @media (min-width: 420px) {
     summary {
