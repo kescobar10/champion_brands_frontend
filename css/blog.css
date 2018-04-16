@@ -107,7 +107,7 @@ h2,
     font-size: 1.1em;
 }
 
-button.main-read-more-blog {
+input.main-read-more-blog{
     background-image:
     linear-gradient(
        #bb8c08,
@@ -115,9 +115,16 @@ button.main-read-more-blog {
     width: 90%;
     max-width: 400px;
     display: block;
-    margin: auto;
+    margin: 0 auto;
     border-radius: 4px;
     padding: 1em;
+}
+
+input.main-read-more-blog:hover, button.more:hover  {
+    background-image:
+    linear-gradient(
+       #a67d07,
+       #bf931a);
 }
 
 .older-post {
@@ -208,7 +215,7 @@ button.main-read-more-blog {
     font-family: 'Asap';
     color: #726a68;
 }
-
+/*
 .search-button {
     width: 20%;
     height: 40px;
@@ -218,6 +225,51 @@ button.main-read-more-blog {
     linear-gradient(
        #bb8c08,
        #d6a51d);
+}
+*/
+
+#search input[type=submit],
+#search input[type=button] {
+    display: block;
+  color: white;
+  background-image:
+  linear-gradient(
+     #b52d26,
+     #db493d);
+  padding: 1.1rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+}
+
+
+#search input[type=text],
+#search input[type=submit] {
+    display: inline;
+    font-size: 1rem;
+}
+
+#search input[type=text]{
+    width: calc(70% - .2rem);
+    padding: 1.1rem .5rem;
+    border-radius: 4px;
+}
+
+#search input[type=button]  {
+    background-image:
+    linear-gradient(
+       #bb8c08,
+       #d6a51d);
+    width: calc(30% - .05rem);
+    border-radius: 0 4px 4px 0;
+    padding: 1.1rem .1rem;
+    cursor: pointer;
+}
+
+#search button:hover  {
+    background-image:
+    linear-gradient(
+       #a67d07,
+       #bf931a);
 }
 
 .sidebar h2 {
