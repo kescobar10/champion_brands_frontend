@@ -1,500 +1,502 @@
-@import url('https://fonts.googleapis.com/css?family=Asap');
+.home--page {
 
-body {
-    overflow-x:hidden;
-}
-
-
-
-/****** HOMEPAGE BODY ******/
-
-.carousel,.brand {
-  padding: 1rem;
-  line-height: 2rem;
-}
-
-.carousel-hero {
-    padding-bottom: 50%;
-  background-color: #a9a4a3;
-  background-image: url("../img/kegs-homepage.jpg");
-  background-position: center left;
-  background-repeat: no-repeat;
-  color: white;
-  display: flex;
-  flex-direction: row;
-}
-
-.carousel-text,
-.blue-cards p {
-    color: #ffffff;
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
-
-.carousel-text {
-    padding: 1rem 1rem 0;
-    width: 100%;
-    align-self: flex-end;
-    background-color: rgba(102, 102, 102, 0.70);
-}
-
-.carousel-text h2,
-.brand h2 {
-  color: #df4c3f;
-  font-family: 'Barley Script', 'Cookie', cursive;
-  font-weight: normal;
-  position: relative;
-  text-transform: capitalize;
-  font-size: 4rem;
-}
-
-.carousel-text h2 {
-  top: -1.5rem;
-}
-
-.brand h2 {
-    text-align: center;
-    margin: 1rem auto;
-}
-
-.brand {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.our-brands {
-  padding-top: 4%;
-  padding-bottom: 2%;
-  margin: auto;
-  text-align: center;
-}
-
-.our-brands div img {
-    padding: 0 2rem;
-    min-width: 200px;
-}
-
-.carousel-text p {
-    position: relative;
-    top: -1.5rem;
-}
-
-.block {
-    color: #2b3268;
-    font-family: 'Zilla Slab', sans-serif;
-    position: relative;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    font-size: 1.5rem;
-    top: -1.35rem;
-    font-weight: bold;
-}
-
-.brand .block {
-    top: .9rem;
-    left: -2.5rem;
-}
-
-.card--team,
-.card--brewers,
-.card--retail {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.card--team h3,
-.card--brewers h3,
-.card--retail h3 {
-    font-size: 1.5rem;
-    letter-spacing: .15rem;
-    margin-bottom: 1rem;
-}
-
-.blue-cards, .blue-cards section {
-  color: white;
-  width: 100%;
-}
-
-.carousel-img {
-    margin: auto;
-}
-
-.blue-cards {
-  display: grid;
-  grid-template-rows: auto;
-  grid-gap: 1rem;
-}
-
-.blue-cards section{
-  background-size: cover;
-  padding: 2rem 1rem;
-}
-
-.card--team {
-    background-image: url("../img/bluecard1.jpg");
-}
-
-.card--retail {
-    background-image: url("../img/bluecard2.jpg");
-}
-
-.card--brewers {
-    background-image: url("../img/bluecard3.jpg");
-}
-
-.our-brands {
-  padding-top: 4%;
-  padding-bottom: 2%;
-  margin: auto;
-  text-align: center;
-}
-
-.our-brands img {
-  max-width: 200px;
-  display: inline-block;
-}
+  body {
+      overflow-x:hidden;
+  }
 
 
-/* MEDIA QUERIES */
 
-@media all and (min-width: 600px) {
+  /****** HOMEPAGE BODY ******/
 
-    main {
-      display: grid;
-      grid-template-rows: 1fr 1fr 350px;
-      grid-gap: 2.5rem;
-    }
-
-
-    .carousel-hero {
-        padding: 0;
-    }
-
-    .carousel-hero-desktop {
-        background-color: #a9a4a3;
-        background-image: url("../img/kegs-homepage.jpg");
-        background-position: center left;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 50vh;
-
-    }
-
-    .carousel-hero-gradient {
-        background: linear-gradient(to left, white, transparent);
-        padding: 2rem 1rem;
-        display: flex;
-        justify-content: flex-end;
-        height: inherit;
-
-    }
-
-    .carousel-text {
-        width: 60%;
-        margin: 1rem;
-        max-width: 480px;
-    }
-
-    .blue-cards {
-        display: grid;
-        grid-template-columns:1fr 1fr 1fr;
-        height: 100%;
-        grid-gap: .5rem;
-        /*max-width: 960px;*/
-        margin: auto;
-        min-height: 250px;
-    }
-
-    .blue-cards section {
-        justify-content: center;
-    }
-
-    .brand {
-      width:90%;
-      max-width: 960px;
-      margin: auto;
-    }
-
-    .our-brands {
-      display: flex;
-      width: 100%;
-      box-sizing: border-box;
-      justify-content: space-around;
-      align-items: baseline;
-      flex-wrap: wrap;
-    }
-
-    .our-brands div img {
-      box-sizing: border-box;
-      max-width: 200px;
-    }
-}
-
-
-/* START NAV STYLES*/
-.header-background {
-    width: 100%;
-}
-
-.social-media-top-hp {
-    justify-content: space-around;
+  .carousel,.brand {
     padding: 1rem;
-    background-color: rgba(102, 102, 102, .2);
-}
+    line-height: 2rem;
+  }
 
-.headerlogo {
-    width: 80%;
-    float: left;
-    clear: both;
-}
+  .carousel-hero {
+      padding-bottom: 50%;
+    background-color: #a9a4a3;
+    background-image: url("../img/kegs-homepage.jpg");
+    background-position: center left;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: row;
+  }
 
-.logo {
+  .carousel-text,
+  .blue-cards p {
+      color: #ffffff;
+      font-size: 1rem;
+      line-height: 1.5rem;
+  }
+
+  .carousel-text {
+      padding: 1rem 1rem 0;
+      width: 100%;
+      align-self: flex-end;
+      background-color: rgba(102, 102, 102, 0.70);
+  }
+
+  .carousel-text h2,
+  .brand h2 {
+    color: #df4c3f;
+    font-family: 'Barley Script', 'Cookie', cursive;
+    font-weight: normal;
+    position: relative;
+    text-transform: capitalize;
+    font-size: 4rem;
+  }
+
+  .carousel-text h2 {
+    top: -1.5rem;
+  }
+
+  .brand h2 {
+      text-align: center;
+      margin: 1rem auto;
+  }
+
+  .brand {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .our-brands {
+    padding-top: 4%;
+    padding-bottom: 2%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .our-brands div img {
+      padding: 0 2rem;
+      min-width: 200px;
+  }
+
+  .carousel-text p {
+      position: relative;
+      top: -1.5rem;
+  }
+
+  .block {
+      color: #2b3268;
+      font-family: 'Zilla Slab', sans-serif;
+      position: relative;
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      font-size: 1.5rem;
+      top: -1.35rem;
+      font-weight: bold;
+  }
+
+  .brand .block {
+      top: .9rem;
+      left: -2.5rem;
+  }
+
+  .card--team,
+  .card--brewers,
+  .card--retail {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+  }
+
+  .card--team h3,
+  .card--brewers h3,
+  .card--retail h3 {
+      font-size: 1.5rem;
+      letter-spacing: .15rem;
+      margin-bottom: 1rem;
+  }
+
+  .blue-cards, .blue-cards section {
+    color: white;
     width: 100%;
-    max-width: 360px;
-}
+  }
 
-.fa-bars {
-        color: #db493d;
-}
+  .carousel-img {
+      margin: auto;
+  }
 
-.main-menu ul {
-    background-image: none;
-    background-color: transparent;
-}
+  .blue-cards {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+  }
 
-#main-menu-toggle {
+  .blue-cards section{
+    background-size: cover;
+    padding: 2rem 1rem;
+  }
+
+  .card--team {
+      background-image: url("../img/bluecard1.jpg");
+  }
+
+  .card--retail {
+      background-image: url("../img/bluecard2.jpg");
+  }
+
+  .card--brewers {
+      background-image: url("../img/bluecard3.jpg");
+  }
+
+  .our-brands {
+    padding-top: 4%;
+    padding-bottom: 2%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .our-brands img {
+    max-width: 200px;
+    display: inline-block;
+  }
+
+
+  /* MEDIA QUERIES */
+
+  @media all and (min-width: 600px) {
+
+      main {
+        display: grid;
+        grid-template-rows: 1fr 1fr 350px;
+        grid-gap: 2.5rem;
+      }
+
+
+      .carousel-hero {
+          padding: 0;
+      }
+
+      .carousel-hero-desktop {
+          background-color: #a9a4a3;
+          background-image: url("../img/kegs-homepage.jpg");
+          background-position: center left;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 50vh;
+
+      }
+
+      .carousel-hero-gradient {
+          background: linear-gradient(to left, white, transparent);
+          padding: 2rem 1rem;
+          display: flex;
+          justify-content: flex-end;
+          height: inherit;
+
+      }
+
+      .carousel-text {
+          width: 60%;
+          margin: 1rem;
+          max-width: 480px;
+      }
+
+      .blue-cards {
+          display: grid;
+          grid-template-columns:1fr 1fr 1fr;
+          height: 100%;
+          grid-gap: .5rem;
+          /*max-width: 960px;*/
+          margin: auto;
+          min-height: 250px;
+      }
+
+      .blue-cards section {
+          justify-content: center;
+      }
+
+      .brand {
+        width:90%;
+        max-width: 960px;
+        margin: auto;
+      }
+
+      .our-brands {
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: space-around;
+        align-items: baseline;
+        flex-wrap: wrap;
+      }
+
+      .our-brands div img {
+        box-sizing: border-box;
+        max-width: 200px;
+      }
+  }
+
+
+  /* START NAV STYLES*/
+  .header-background {
+      width: 100%;
+  }
+
+  .social-media-top-hp {
+      justify-content: space-around;
+      padding: 1rem;
+      background-color: rgba(102, 102, 102, .2);
+  }
+
+  .headerlogo {
+      width: 80%;
+      float: left;
+      clear: both;
+  }
+
+  .logo {
+      width: 100%;
+      max-width: 360px;
+  }
+
+  .fa-bars {
+          color: #db493d;
+  }
+
+  .main-menu ul {
+      background-image: none;
+      background-color: transparent;
+  }
+
+  #main-menu-toggle {
+      display: block;
+      position: absolute;
+      top: 120px;
+      right: 12px;
+
+      z-index: 2;
+
+      -webkit-user-select: none;
+      user-select: none;
+  }
+
+  #main-menu-toggle input {
     display: block;
+    width: 40px;
+    height: 32px;
     position: absolute;
-    top: 120px;
-    right: 12px;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 3; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  #main-menu-toggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #df4c3f;
+    border-radius: 3px;
 
     z-index: 2;
 
-    -webkit-user-select: none;
-    user-select: none;
-}
+    transform-origin: 4px 0px;
 
-#main-menu-toggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
 
-  cursor: pointer;
+  #main-menu-toggle span:first-child {
+    transform-origin: 0% 0%;
+  }
 
-  opacity: 0; /* hide this */
-  z-index: 3; /* and place it over the hamburger */
+  #main-menu-toggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
 
-  -webkit-touch-callout: none;
-}
+  /*
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  #main-menu-toggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #ffffff;
+  }
 
-#main-menu-toggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
+  /*
+   * But let's hide the middle one.
+   */
+  #main-menu-toggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
 
-  background: #df4c3f;
-  border-radius: 3px;
+  /*
+   * Ohyeah and the last one should go the other direction
+   */
+   #main-menu-toggle input:checked ~ span:nth-last-child(2) {
+       opacity: 1;
+     transform: rotate(-45deg) translate(0, -1px);
+   }
 
-  z-index: 2;
+  /*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+   #menu {
+     position: absolute;
+     width: 100vw;
+     margin: -4.5rem 0 0 0;
+     padding: 2rem 1rem 1rem 2rem;
+     right: -1rem;
 
-  transform-origin: 4px 0px;
-
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#main-menu-toggle span:first-child {
-  transform-origin: 0% 0%;
-}
-
-#main-menu-toggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
-
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#main-menu-toggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #ffffff;
-}
-
-/*
- * But let's hide the middle one.
- */
-#main-menu-toggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
- #main-menu-toggle input:checked ~ span:nth-last-child(2) {
-     opacity: 1;
-   transform: rotate(-45deg) translate(0, -1px);
- }
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
- #menu {
-   position: absolute;
-   width: 100vw;
-   margin: -4.5rem 0 0 0;
-   padding: 2rem 1rem 1rem 2rem;
-   right: -1rem;
-
-    overflow-y: visible;
-   background: #df4c3f;
-   background-image: url('../img/texture-red.png');
-       background-position: center;
-       background-repeat: no-repeat;
-       background-size: cover;
-   list-style-type: none;
-   -webkit-font-smoothing: antialiased;
-   /* to stop flickering of text in safari */
-
-   transform-origin: 0% 0%;
-   transform: translate(100%, 0);
-
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
- }
-
-#main-menu-toggle input:checked ~ ul {
-  transform: scale(1.0, 1.0);
-  opacity: 1;
-}
-
-a.navlist {
-        width: 50%;
-}
-
-a.navlist:hover {
-    text-shadow: none;
-    color: #df4c3f;
-    background-color: rgba(255,255,255,.9);
-
-}
-
-
-@media all and (min-width: 420px) {
-    .header-background {
-        justify-content: flex-end;
-    }
-}
-
-@media all and (min-width: 500px) {
-    .social-media-top-hp {
-        background-color: transparent;
-        padding-bottom: 0;
-        justify-content: flex-end;
-    }
-    .headerlogo {
-        float: none;
-    }
-    #main-menu-toggle {
-        top: 1.9rem;
-        left: 1.5rem;
-    }
-    #menu {
-        transform-origin: 100% 0%;
-        transform: translate(-100%, 0);
-    }
-    .navlist {
-        text-align: center;
-    }
-}
-
-@media all and (min-width: 700px) {
-    #main-menu-toggle {
-        display: block;
-        position: static;
-        -webkit-user-select: none;
-        user-select: none;
-        background: #df4c3f;
-        background-image: url('../img/texture-red.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-    }
-    #main-menu-toggle span {
-        display: none;
-    }
-    #menu {
-      position: relative;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      width: 100%;
-      padding: 0 1rem;
       overflow-y: visible;
-      overflow-x: visible;
-      transform: translate(0, 0);
-    }
-    a.navlist {
-        display: inline-block;
-        padding: 1rem 1rem 1.1rem;
+     background: #df4c3f;
+     background-image: url('../img/texture-red.png');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+     list-style-type: none;
+     -webkit-font-smoothing: antialiased;
+     /* to stop flickering of text in safari */
+
+     transform-origin: 0% 0%;
+     transform: translate(100%, 0);
+
+     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+   }
+
+  #main-menu-toggle input:checked ~ ul {
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+  }
+
+  a.navlist {
+          width: 50%;
+  }
+
+  a.navlist:hover {
+      text-shadow: none;
+      color: #df4c3f;
+      background-color: rgba(255,255,255,.9);
+
+  }
+
+
+  @media all and (min-width: 420px) {
+      .header-background {
+          justify-content: flex-end;
+      }
+  }
+
+  @media all and (min-width: 500px) {
+      .social-media-top-hp {
+          background-color: transparent;
+          padding-bottom: 0;
+          justify-content: flex-end;
+      }
+      .headerlogo {
+          float: none;
+      }
+      #main-menu-toggle {
+          top: 1.9rem;
+          left: 1.5rem;
+      }
+      #menu {
+          transform-origin: 100% 0%;
+          transform: translate(-100%, 0);
+      }
+      .navlist {
+          text-align: center;
+      }
+  }
+
+  @media all and (min-width: 700px) {
+      #main-menu-toggle {
+          display: block;
+          position: static;
+          -webkit-user-select: none;
+          user-select: none;
+          background: #df4c3f;
+          background-image: url('../img/texture-red.png');
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+      }
+      #main-menu-toggle span {
+          display: none;
+      }
+      #menu {
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
         width: 100%;
-        margin: 0;
-    }
+        padding: 0 1rem;
+        overflow-y: visible;
+        overflow-x: visible;
+        transform: translate(0, 0);
+      }
+      a.navlist {
+          display: inline-block;
+          padding: 1rem 1rem 1.1rem;
+          width: 100%;
+          margin: 0;
+      }
 
-    .header-background {
-        display: block;
-    }
+      .header-background {
+          display: block;
+      }
 
-    .header-background {
-                padding-bottom: 0;
-    }
+      .header-background {
+                  padding-bottom: 0;
+      }
 
-    .menu-toggle,
-    #main-menu-close {
-        display: none;
-    }
+      .menu-toggle,
+      #main-menu-close {
+          display: none;
+      }
 
-    .main-menu {
-        position: static;
-    }
+      .main-menu {
+          position: static;
+      }
 
-    .main-menu ul {
-        box-shadow: none;
-        align-self: end;
-        padding-top: 0;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: no-wrap;
-        justify-content: space-between;
-        max-width: 810px;
-        margin: auto;
-    }
+      .main-menu ul {
+          box-shadow: none;
+          align-self: end;
+          padding-top: 0;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: no-wrap;
+          justify-content: space-between;
+          max-width: 810px;
+          margin: auto;
+      }
 
-    .logo-desktop {
-        width: 100%;
-        padding-bottom: 1rem;
-    }
-}
-/* END NAV STYLES*/
+      .logo-desktop {
+          width: 100%;
+          padding-bottom: 1rem;
+      }
+  }
+  /* END NAV STYLES*/
 
-#menu li a[href="index.html"] {
-    text-shadow: none;
-    color: rgba(43,50,104,.8);
-}
+  #menu li a[href="index.html"] {
+      text-shadow: none;
+      color: rgba(43,50,104,.8);
+  }
 
-#menu li a[href="index.html"]:hover {
-    text-shadow: none;
-    color: rgba(43,50,104,.8);
-    background-color: transparent;
-    cursor: default;
+  #menu li a[href="index.html"]:hover {
+      text-shadow: none;
+      color: rgba(43,50,104,.8);
+      background-color: transparent;
+      cursor: default;
+  }
+
 }
