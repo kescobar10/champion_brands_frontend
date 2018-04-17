@@ -1,6 +1,7 @@
 .careers--page {
 //////////////////// careers styling
   @import "nav";
+  @import "footer";
   main, .job--posts, .job {
     display: grid;
     grid-template-rows: auto;

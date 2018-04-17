@@ -1,6 +1,7 @@
 .contact--page {
+  @import "footer";
 ////////////////////// contact styles
-@import "nav";
+  @import "nav";
 
   .container {
     width: 90%;
