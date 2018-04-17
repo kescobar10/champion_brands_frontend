@@ -2729,3 +2729,379 @@ a.current-nav {
   @media all and (min-width: 900px) {
     .post--page a.navlist {
       font-size: 1.2rem; } }
+
+.product--page {
+  /**
+ * Featherlight – ultra slim jQuery lightbox
+ * Version 1.7.9 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2017, Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
+  /* hide non featherlight items when printing */ }
+  @media all {
+    .product--page {
+      /* support for nested featherlights. Does not work in IE8 (use JS to fix) */
+      /* contains the content */
+      /* don't show these though */
+      /* See http://stackoverflow.com/questions/16077341/how-to-reset-all-default-styles-of-the-html5-button-element */ }
+      .product--page html.with-featherlight {
+        /* disable global scrolling when featherlights are visible */
+        overflow: hidden; }
+      .product--page .featherlight {
+        display: none;
+        /* dimensions: spanning the background from edge to edge */
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2147483647;
+        /* z-index needs to be >= elements on the site. */
+        /* position: centering content */
+        text-align: center;
+        /* insures that the ::before pseudo element doesn't force wrap with fixed width content; */
+        white-space: nowrap;
+        /* styling */
+        cursor: pointer;
+        background: #333;
+        /* IE8 "hack" for nested featherlights */
+        background: transparent; }
+      .product--page .featherlight:last-of-type {
+        background: rgba(0, 0, 0, 0.8); }
+      .product--page .featherlight:before {
+        /* position: trick to center content vertically */
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle; }
+      .product--page .featherlight .featherlight-inner {
+        /* make sure its visible */
+        display: block;
+        margin: auto; }
+      .product--page .featherlight-content img {
+        width: 100%;
+        max-width: 300px;
+        margin: auto; }
+      .product--page .featherlight h3 {
+        color: #2b3268;
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 2.3rem; }
+      .product--page .brand-place,
+      .product--page .featherlight p:last-child {
+        color: #726a68;
+        font-size: 1rem;
+        line-height: 1.5rem; }
+      .product--page .brand-place {
+        text-transform: uppercase;
+        font-weight: bold; }
+      .product--page .featherlight script.featherlight-inner,
+      .product--page .featherlight link.featherlight-inner,
+      .product--page .featherlight style.featherlight-inner {
+        display: none; }
+      .product--page .featherlight .featherlight-close-icon {
+        /* position: centering vertical and horizontal */
+        position: absolute;
+        z-index: 9999;
+        top: 2rem;
+        right: 1rem;
+        /* dimensions: 25px x 25px */
+        line-height: 50px;
+        width: 50px;
+        /* styling */
+        cursor: pointer;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background: #fff;
+        /* Set the background in case it overlaps the content */
+        background: rgba(255, 255, 255, 0.3);
+        color: #000;
+        border: none;
+        padding: 0; }
+      .product--page .featherlight .featherlight-close-icon::-moz-focus-inner {
+        border: 0;
+        padding: 0; }
+      .product--page .featherlight .featherlight-image {
+        /* styling */
+        width: 100%; }
+      .product--page .featherlight-iframe .featherlight-content {
+        /* removed the border for image croping since iframe is edge to edge */
+        border-bottom: 0;
+        padding: 0;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll; }
+      .product--page .featherlight iframe {
+        /* styling */
+        border: none; }
+      .product--page .featherlight * {
+        /* See https://github.com/noelboss/featherlight/issues/42 */
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; } }
+  .product--page .featherlight .featherlight-content {
+    /* dimensions: maximize lightbox with for small screens */
+    max-height: 98%;
+    padding: 10px 10px 0;
+    border-bottom: 10px solid transparent;
+    /* make content container for positioned elements (close button) */
+    width: 90%;
+    max-width: 854px;
+    position: relative;
+    margin: auto;
+    /* position: centering vertical and horizontal */
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    /* dimensions: cut off images */
+    overflow: auto;
+    /* styling */
+    background: #fff;
+    cursor: auto;
+    /* reset white-space wrapping */
+    white-space: normal; }
+  @media (min-width: 1024px) {
+    .product--page {
+      /* dimensions: handling large content */ }
+      .product--page .featherlight .featherlight-content {
+        max-height: 95%;
+        border-bottom: none;
+        padding-top: 1rem; } }
+  @media print {
+    @page {
+      .product--page {
+        size: landscape; } }
+    .product--page html.with-featherlight > * > :not(.featherlight) {
+      display: none; } }
+  .product--page body {
+    color: #726a68; }
+  .product--page .product-wrapper {
+    margin: auto; }
+  .product--page .featherlight-content {
+    display: none; }
+  .product--page .featherlight .featherlight-inner {
+    padding-left: 1rem;
+    margin: auto;
+    width: 100%;
+    height: 96%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .product--page .featherlight-content h3 {
+    margin: 1rem 0 0; }
+  .product--page .featherlight-content p {
+    margin: 2rem 0; }
+  .product--page .featherlight-column-2 p:nth-child(2) {
+    margin: 0 0 1rem; }
+  .product--page .featherlight-content h3,
+  .product--page .brand-place {
+    align-self: flex-start; }
+  .product--page .get-it-button,
+  .product--page .back-to-product-category {
+    display: inline-block;
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+    text-align: center; }
+  .product--page .get-it-button {
+    color: white;
+    background-color: #bb8c08;
+    background-image: linear-gradient(#bb8c08, #d6a51d);
+    padding: 1rem 1.1rem;
+    border-radius: 4px;
+    max-width: 200px; }
+  .product--page .back-to-product-category {
+    color: #d6a51d;
+    margin: 1rem auto; }
+  .product--page .hero-image {
+    background-image: url("../img/products-hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: stretch;
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .product--page .hero-image article {
+    width: 80%;
+    max-width: 600px;
+    padding: 1rem 0 1.5rem;
+    margin: 4rem auto 5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 4rem;
+    box-shadow: 0 0 4rem 2rem rgba(255, 255, 255, 0.9);
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .product--page article a {
+    text-shadow: none;
+    color: red; }
+  .product--page article p {
+    margin: 1rem .5rem 1rem 1rem; }
+  .product--page h1 {
+    font-size: 2rem;
+    font-family: 'Zilla Slab', sans-serif;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2b3268;
+    text-transform: uppercase; }
+  .product--page .toc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto; }
+  .product--page .toc-button {
+    background-image: linear-gradient(#bb8c08, #d6a51d);
+    border-radius: 4px;
+    padding: 1.1rem .5rem;
+    margin: .5rem;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    text-shadow: none;
+    vertical-align: middle;
+    align-self: center; }
+  .product--page .toc-button:hover {
+    background-image: linear-gradient(#a67d07, #bf931a);
+    text-decoration: none;
+    font-weight: bold;
+    color: #f1f1f1; }
+  .product--page .product-category {
+    background-color: #2b3268;
+    padding-bottom: 2rem;
+    margin: 2px auto;
+    width: 99%; }
+  .product--page .product-category p {
+    color: #ffffff;
+    width: 87%;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.5; }
+  .product--page .brands {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1200px;
+    padding: 2rem;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: -5px 5px 30px #000000; }
+  .product--page .brands ul li {
+    width: 80%;
+    margin: auto; }
+  .product--page .brands ul li a img {
+    padding: 1rem;
+    width: 100%;
+    margin: auto;
+    max-width: 300px; }
+  .product--page h2 {
+    font-family: 'Barley Script', sans-serif;
+    font-size: 5rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: white;
+    position: relative;
+    left: 1.7rem;
+    text-shadow: -5px 5px 20px #000000;
+    z-index: 0;
+    text-align: center;
+    margin: auto;
+    padding: 1rem 0 1.7rem; }
+  .product--page .block {
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #e35e53;
+    vertical-align: sub;
+    position: relative;
+    left: -4.5rem;
+    top: .1rem;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-shadow: -1px 1px 10px #000000; }
+  .product--page #ciders-gluten-free .block,
+  .product--page #red-bull .block {
+    left: -6.5rem; }
+  .product--page #non-alcoholic .block {
+    left: -12rem; }
+  .product--page .brands ul li {
+    list-style: none; }
+  .product--page #red-bull {
+    padding-bottom: 6rem; }
+  .product--page a.back-to-top {
+    text-align: center;
+    padding: 2rem 0 0;
+    width: 100%;
+    display: inline-block; }
+  @media (min-width: 390px) {
+    .product--page .toc {
+      width: 100%;
+      padding: .75rem;
+      display: grid;
+      grid-template-columns: calc(50% - .5rem) calc(50% - .5rem);
+      grid-template-rows: auto auto auto auto auto;
+      grid-gap: 1rem; }
+    .product--page .toc-button {
+      margin: 0;
+      width: 100%; }
+    .product--page .brands ul {
+      display: grid;
+      grid-template-columns: auto auto; }
+    .product--page .brands ul li {
+      display: inline-block;
+      width: 100%; }
+    .product--page .get-it-button {
+      margin-right: 2rem; } }
+
+@media (min-width: 390px) and (min-width: 600px) {
+  .product--page .toc {
+    grid-template-columns: calc(100%/3 - .5rem) calc(100%/3 - .5rem) calc(100%/3 - .5rem);
+    grid-template-rows: auto auto auto auto; }
+  .product--page .brands ul {
+    grid-template-columns: auto auto; } }
+
+@media (min-width: 390px) and (min-width: 800px) {
+  .product--page .toc {
+    grid-template-columns: calc(25% - .66rem) calc(25% - .66rem) calc(25% - .66rem) calc(25% - .66rem);
+    grid-template-rows: auto auto auto; }
+  .product--page .featherlight-content {
+    height: 60%;
+    min-height: 540px; } }
+
+@media (min-width: 390px) and (min-width: 990px) {
+  .product--page .toc {
+    grid-template-columns: calc(20% - .8rem) calc(20% - .8rem) calc(20% - .8rem) calc(20% - .8rem) calc(20% - .8rem);
+    grid-template-rows: auto auto; }
+  .product--page .brands ul {
+    grid-template-columns: auto auto auto; } }
+
+@media (min-width: 390px) and (min-width: 800px) {
+  .product--page .featherlight .featherlight-inner {
+    /* make sure its visible */
+    display: grid;
+    width: 96%;
+    grid-template-columns: 300px auto;
+    grid-column-gap: 2rem;
+    grid-row-gap: 0;
+    grid-template-rows: auto auto;
+    justify-content: flex-start;
+    margin: auto; }
+  .product--page .featherlight-content img {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    align-self: flex-end; }
+  .product--page .featherlight h3 {
+    align-self: flex-end; }
+  .product--page .featherlight h3,
+  .product--page .brand-place,
+  .product--page .featherlight p {
+    grid-column: 2 / 2; }
+  .product--page .featherlight-ctas {
+    grid-column: 2 / 2; }
+  .product--page .brand-place,
+  .product--page .featherlight p:last-child {
+    align-self: flex-start; } }
