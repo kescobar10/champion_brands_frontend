@@ -1,0 +1,352 @@
+
+#main-menu-toggle {
+    display: block;
+    position: absolute;
+    top: 120px;
+    right: 12px;
+
+    z-index: 2;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#main-menu-toggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 3; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+#main-menu-toggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #df4c3f;
+  border-radius: 3px;
+
+  z-index: 2;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#main-menu-toggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#main-menu-toggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#main-menu-toggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #ffffff;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#main-menu-toggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+ #main-menu-toggle input:checked ~ span:nth-last-child(2) {
+     opacity: 1;
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+ #menu {
+   position: absolute;
+   width: 100vw;
+   margin: -4.5rem 0 0 0;
+   padding: 2rem 1rem 1rem 2rem;
+   right: -1rem;
+
+    overflow-y: visible;
+   background: #df4c3f;
+   background-image: url('../img/texture-red.png');
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+
+   transform-origin: 0% 0%;
+   transform: translate(100%, 0);
+
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+
+#main-menu-toggle input:checked ~ ul {
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}
+
+a.navlist {
+        width: 50%;
+}
+
+a.navlist:hover {
+    text-shadow: none;
+    color: #df4c3f;
+    background-color: rgba(255,255,255,.9);
+
+}
+
+
+@media all and (min-width: 420px) {
+    .header-background {
+        justify-content: flex-end;
+    }
+}
+
+@media all and (min-width: 500px) {
+    .social-media-top-hp {
+        background-color: transparent;
+        padding-bottom: 0;
+        justify-content: flex-end;
+    }
+    .headerlogo {
+        float: none;
+    }
+    #main-menu-toggle {
+        top: 1.9rem;
+        left: 1.5rem;
+    }
+    #menu {
+        transform-origin: 100% 0%;
+        transform: translate(-100%, 0);
+    }
+    .navlist {
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 700px) {
+    #main-menu-toggle {
+        display: block;
+        position: static;
+        -webkit-user-select: none;
+        user-select: none;
+        background: #df4c3f;
+        background-image: url('../img/texture-red.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+    #main-menu-toggle span {
+        display: none;
+    }
+    #menu {
+      position: relative;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 100%;
+      padding: 0 1rem;
+      overflow-y: visible;
+      overflow-x: visible;
+      transform: translate(0, 0);
+    }
+    a.navlist {
+        display: inline-block;
+        padding: 1rem 1rem 1.1rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .header-background {
+        display: block;
+    }
+
+    .header-background {
+                padding-bottom: 0;
+    }
+
+    .menu-toggle,
+    #main-menu-close {
+        display: none;
+    }
+
+    .main-menu {
+        position: static;
+    }
+
+    .main-menu ul {
+        box-shadow: none;
+        align-self: end;
+        padding-top: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: no-wrap;
+        justify-content: space-between;
+        max-width: 810px;
+        margin: auto;
+    }
+
+    .logo-desktop {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+}
+/* END NAV STYLES*/
+
+
+.logo-desktop {
+    display: none;
+}
+
+.logo-mobile {
+    display: block;
+    width: 100%;
+    min-width: 150px;
+    max-width: 300px;
+}
+
+.header-background {
+    background-image: url('../img/texture-red.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-menu ul {
+    background-image: none;
+    background-color: transparent;
+}
+
+
+.menu-toggle  {
+    color: rgba(255,255,255,.9);
+    text-shadow: -2px 2px 10px rgba(0,0,0,.2);
+    padding: 1rem;
+    text-align: right;
+    display: inline-block;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: #dddddd;
+  text-shadow: none;
+}
+
+.main-menu a {
+  display: block;
+  padding: .75rem 15px;
+  line-height: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-menu ul li a {
+    border-radius: 4px 4px 0 0;
+}
+
+.main-menu a:hover,
+.main-menu a:focus,
+.main-menu a:active {
+  background: rgba(255,255,255,.9);
+  color: #df4c3f;
+    text-shadow: none;
+}
+
+a.current-nav {
+    background: white;
+    color: #df4c3f;
+      text-shadow: none;
+}
+
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+@media all and (min-width: 420px) {
+
+    .logo-mobile {
+        display: none;
+    }
+    .logo-desktop {
+        display: block;
+        width: 75%;
+        min-width: 150px;
+        max-width: 300px;
+    }
+
+    .header-background {
+        padding: 1rem 1rem 0;
+        display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: 20% calc(80% - 1rem);
+        justify-content: flex-end;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .header-background {
+                padding-bottom: 0;
+    }
+
+    .main-menu {
+        position: static;
+        display: grid;
+        justify-content: flex-end;
+        align-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .main-menu ul {
+        box-shadow: none;
+        align-self: end;
+        padding-top: 0;
+    }
+
+    .logo-desktop {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    a.navlist {
+        font-size: 1rem;
+    }
+}
+
+@media all and (min-width: 900px) {
+    a.navlist {
+        font-size: 1.2rem;
+    }
+}
+/* END NAV STYLES*/
