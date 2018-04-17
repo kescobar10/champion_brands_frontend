@@ -12,7 +12,10 @@ IMPORTANT ******/
   src: url("../fonts/barleyscript-regular.otf") format("otf"), url("../fonts/barleyscript-regular.woff") format("woff"), url("../fonts/barleyscript-regular.woff2") format("woff2"), url("../fonts/barleyscript-regular.ttf") format("truetype"); }
 
 :root {
-  font-size: 16px; }
+  font-size: 16px;
+  --blue: #2b3268;
+  --orange: #df4c3f;
+  --grey: #726a68; }
 
 *,
 *::before,
@@ -1483,3 +1486,237 @@ a.current-nav {
     padding-left: 0; }
   .blog--page sidebar .block {
     font-size: 1.2rem; } }
+
+.careers--page {
+  /* hamburger menu interactivity */
+  /*
+ We could us `.main-menu:target:after`, but
+ it wouldn't be clickable.
+*/
+  /* END NAV STYLES*/
+  /* MEDIA QUERIES */ }
+  .careers--page .logo-desktop {
+    display: none; }
+  .careers--page .logo-mobile {
+    display: block;
+    width: 100%;
+    min-width: 150px;
+    max-width: 300px; }
+  .careers--page .header-background {
+    background-image: url("../img/texture-red.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .careers--page .main-menu ul {
+    background-image: none;
+    background-color: transparent; }
+  .careers--page .menu-toggle {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    text-align: right;
+    display: inline-block; }
+  .careers--page .menu-toggle:hover,
+  .careers--page .menu-toggle:focus {
+    color: #dddddd;
+    text-shadow: none; }
+  .careers--page .main-menu {
+    position: absolute;
+    top: -332px;
+    left: 0;
+    overflow-y: visible;
+    overflow-x: visible;
+    transition: top 0.3s ease;
+    z-index: 999;
+    background-image: url("../img/texture-red.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .careers--page .main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 2.5em 0 0;
+    /* Hide shadow w/ -8px while 'closed' */
+    -webkit-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
+    box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
+    width: 100%; }
+  .careers--page .main-menu a {
+    display: block;
+    padding: .75rem 15px;
+    line-height: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none; }
+  .careers--page .main-menu ul li a {
+    border-radius: 4px 4px 0 0; }
+  .careers--page .main-menu a:hover,
+  .careers--page .main-menu a:focus,
+  .careers--page .main-menu a:active {
+    background: rgba(255, 255, 255, 0.9);
+    color: #df4c3f;
+    text-shadow: none; }
+  .careers--page a.current-nav {
+    background: white;
+    color: #df4c3f;
+    text-shadow: none; }
+  .careers--page .main-menu .menu-close {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .careers--page .main-menu:target,
+  .careers--page .main-menu[aria-expanded="true"] {
+    top: 0; }
+  .careers--page .main-menu:target .menu-close,
+  .careers--page .main-menu[aria-expanded="true"] .menu-close {
+    z-index: 1001; }
+  .careers--page .main-menu:target ul,
+  .careers--page .main-menu[aria-expanded="true"] ul {
+    position: relative;
+    z-index: 1000; }
+  .careers--page .main-menu:target + .backdrop,
+  .careers--page .main-menu[aria-expanded="true"] + .backdrop {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    cursor: default; }
+  @supports (position: fixed) {
+    .careers--page .main-menu,
+    .careers--page .main-menu:target + .backdrop,
+    .careers--page .main-menu[aria-expanded="true"] + .backdrop {
+      position: fixed; } }
+  @media all and (min-width: 420px) {
+    .careers--page .logo-mobile {
+      display: none; }
+    .careers--page .logo-desktop {
+      display: block;
+      width: 75%;
+      min-width: 150px;
+      max-width: 300px; }
+    .careers--page .header-background {
+      padding: 1rem 1rem 0;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: 20% calc(80% - 1rem);
+      justify-content: flex-end; } }
+  @media all and (min-width: 800px) {
+    .careers--page .header-background {
+      padding-bottom: 0; }
+    .careers--page .menu-toggle,
+    .careers--page #main-menu-close {
+      display: none; }
+    .careers--page .main-menu {
+      position: static;
+      display: grid;
+      justify-content: flex-end;
+      align-content: flex-end;
+      align-items: flex-end; }
+    .careers--page .main-menu ul {
+      box-shadow: none;
+      align-self: end;
+      padding-top: 0; }
+    .careers--page .logo-desktop {
+      width: 100%;
+      padding-bottom: 1rem; }
+    .careers--page a.navlist {
+      font-size: 1rem; } }
+  @media all and (min-width: 900px) {
+    .careers--page a.navlist {
+      font-size: 1.2rem; } }
+  .careers--page main, .careers--page .job--posts, .careers--page .job {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 1rem; }
+  .careers--page main {
+    width: 90%;
+    max-width: 960px;
+    grid-gap: 2rem;
+    margin: auto;
+    padding: 5% 0;
+    justify-content: center; }
+  .careers--page h1 {
+    font-family: 'Barley Script', sans-serif;
+    font-weight: normal;
+    font-size: 4.5rem;
+    color: #df4c3f;
+    text-align: center;
+    padding: .5rem; }
+  .careers--page .title {
+    width: 100%; }
+  .careers--page .hero-image {
+    width: 100%;
+    background: url("../img/hero.jpg"), rgba(41, 51, 104, 0.7);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    padding-bottom: 30%;
+    background-position: center;
+    position: relative; }
+  .careers--page h2, .careers--page h3, .careers--page .hero-image p {
+    font-family: 'Zilla Slab', serif; }
+  .careers--page h2, .careers--page .hero-image p {
+    font-weight: 700; }
+  .careers--page .hero-image p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem; }
+  .careers--page h2 {
+    color: var(--blue);
+    font-size: 1.6rem; }
+  .careers--page h3 {
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--blue); }
+  .careers--page .job h4, .careers--page .job ul, .careers--page .benefits ul {
+    font-family: 'Asap', sans-serif; }
+  .careers--page .job h4, .careers--page main p, .careers--page main ul {
+    line-height: 1.7rem;
+    color: #726a68; }
+  .careers--page .benefits p {
+    padding-top: 1.2rem; }
+  .careers--page .benefits ul,
+  .careers--page .job--req ul,
+  .careers--page .job--qual ul {
+    padding-left: 1rem; }
+  .careers--page .job p, .careers--page .job ul li, .careers--page .benefits p, .careers--page .benefits ul li, .careers--page .culture p {
+    font-size: .9rem;
+    font-size: 1.1rem; }
+  .careers--page .job ul, .careers--page .benefits ul {
+    list-style-type: none; }
+  .careers--page .job ul li:before, .careers--page .benefits ul li:before {
+    content: "";
+    border-color: transparent #df4c3f;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: inline-block;
+    height: 0.75rem;
+    width: 0.75rem;
+    margin-right: 0.5rem; }
+  .careers--page .job ul li, .careers--page .benefits ul li {
+    text-indent: 0.1em; }
+  .careers--page iframe {
+    padding-bottom: 1rem; }
+  .careers--page .job {
+    border-top: var(--orange) solid 0.35rem; }
+  .careers--page .vid--mid, .careers--page .vid--desktop {
+    display: none; }
+  .careers--page .job--posts {
+    grid-gap: 5rem; }
+  @media all and (min-width: 600px) {
+    .careers--page .vid--mobile, .careers--page .vid--desktop {
+      display: none; }
+    .careers--page .vid--mid {
+      display: inline; } }
+
+@media all and (min-width: 600px) and (min-width: 800px) {
+  .careers--page .job--posts button {
+    width: 30%; }
+  .careers--page .vid--mobile, .careers--page .vid--mid {
+    display: none; }
+  .careers--page .vid--desktop {
+    display: inline; } }

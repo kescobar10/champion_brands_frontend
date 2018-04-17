@@ -1,160 +1,157 @@
-@import url('https://fonts.googleapis.com/css?family=Asap');
+.careers--page {
+//////////////////// careers styling
+  @import "nav";
+  main, .job--posts, .job {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+  }
 
-:root {
-  --blue: #2b3268;
-  --orange: #df4c3f;
-  --grey: #726a68;
-}
+  main {
+    width: 90%;
+    max-width: 960px;
+    grid-gap: 2rem;
+    margin: auto;
+    padding: 5% 0;
+    justify-content: center;
+  }
 
-main, .job--posts, .job {
-  display: grid;
-  grid-template-rows: auto;
-  grid-gap: 1rem;
-}
+  h1 {
+    font-family: 'Barley Script', sans-serif;
+    font-weight: normal;
+    font-size: 4.5rem;
+    color: #df4c3f;
+    text-align: center;
+    padding: .5rem;
+  }
 
-main {
-  width: 90%;
-  max-width: 960px;
-  grid-gap: 2rem;
-  margin: auto;
-  padding: 5% 0;
-  justify-content: center;
-}
+  .title {
+    width: 100%;
+  }
 
-h1 {
-  font-family: 'Barley Script', sans-serif;
-  font-weight: normal;
-  font-size: 4.5rem;
-  color: #df4c3f;
-  text-align: center;
-  padding: .5rem;
-}
+  .hero-image {
+    width: 100%;
+    background:
+      url("../img/hero.jpg"),
+      rgba(41, 51, 104, 0.70);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    padding-bottom: 30%;
+    background-position: center;
+    position: relative;
+  }
 
-.title {
-  width: 100%;
-}
+  h2, h3, .hero-image p {
+    font-family: 'Zilla Slab', serif;
+  }
 
-.hero-image {
-  width: 100%;
-  background:
-    url("../img/hero.jpg"),
-    rgba(41, 51, 104, 0.70);
-  background-repeat: no-repeat;
-  object-fit: cover;
-  background-size: cover;
-  padding-bottom: 30%;
-  background-position: center;
-  position: relative;
-}
+  h2, .hero-image p {
+    font-weight: 700;
+  }
 
-h2, h3, .hero-image p {
-  font-family: 'Zilla Slab', serif;
-}
+  .hero-image p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+  }
 
-h2, .hero-image p {
-  font-weight: 700;
-}
+  h2 {
+    color: var(--blue);
+    font-size: 1.6rem;
+  }
 
-.hero-image p {
-  color: white;
-  text-align: center;
-  font-size: 1.5rem;
-}
+  h3{
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--blue);
+  }
 
-h2 {
-  color: var(--blue);
-  font-size: 1.6rem;
-}
+  .job h4, .job ul, .benefits ul {
+    font-family: 'Asap', sans-serif;
+  }
 
-h3{
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: var(--blue);
-}
+  .job h4, main p, main ul {
+      line-height: 1.7rem;
+      color: #726a68;
+  }
 
-.job h4, .job ul, .benefits ul {
-  font-family: 'Asap', sans-serif;
-}
+  .benefits p {
+    padding-top: 1.2rem;
+  }
 
-.job h4, main p, main ul {
-    line-height: 1.7rem;
-    color: #726a68;
-}
+  .benefits ul,
+  .job--req ul,
+  .job--qual ul {
+      padding-left: 1rem;
+  }
+  .job p, .job ul li, .benefits p, .benefits ul li, .culture p{
+    font-size: .9rem;
+    font-size: 1.1rem;
+  }
 
-.benefits p {
-  padding-top: 1.2rem;
-}
+  .job ul, .benefits ul {
+    list-style-type: none;
+  }
 
-.benefits ul,
-.job--req ul,
-.job--qual ul {
-    padding-left: 1rem;
-}
-.job p, .job ul li, .benefits p, .benefits ul li, .culture p{
-  font-size: .9rem;
-  font-size: 1.1rem;
-}
+  .job ul li:before, .benefits ul li:before {
+    content: "";
+    border-color: transparent #df4c3f;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: inline-block;
+    height: 0.75rem;
+    width: 0.75rem;
+    margin-right: 0.5rem;
+  }
 
-.job ul, .benefits ul {
-  list-style-type: none;
-}
+  .job ul li, .benefits ul li{
+    text-indent: 0.1em;
+  }
 
-.job ul li:before, .benefits ul li:before {
-  content: "";
-  border-color: transparent #df4c3f;
-  border-style: solid;
-  border-width: 0.35em 0 0.35em 0.45em;
-  display: inline-block;
-  height: 0.75rem;
-  width: 0.75rem;
-  margin-right: 0.5rem;
-}
+  iframe {
+    padding-bottom: 1rem;
+  }
 
-.job ul li, .benefits ul li{
-  text-indent: 0.1em;
-}
+  .job {
+    border-top: var(--orange) solid 0.35rem;
+  }
 
-iframe {
-  padding-bottom: 1rem;
-}
+  .vid--mid, .vid--desktop{
+    display: none;
+  }
 
-.job {
-  border-top: var(--orange) solid 0.35rem;
-}
+  .job--posts {
+    grid-gap: 5rem
+  }
 
-.vid--mid, .vid--desktop{
-  display: none;
-}
+  /* MEDIA QUERIES */
 
-.job--posts {
-  grid-gap: 5rem
-}
+  @media all and (min-width: 600px) {
 
-/* MEDIA QUERIES */
+      .vid--mobile, .vid--desktop {
+        display: none;
+      }
 
-@media all and (min-width: 600px) {
+      .vid--mid {
+        display: inline;
 
-    .vid--mobile, .vid--desktop {
-      display: none;
-    }
-
-    .vid--mid {
-      display: inline;
-
-    }
+      }
 
 
-@media all and (min-width: 800px) {
-    .job--posts button {
-        width: 30%;
-    }
+  @media all and (min-width: 800px) {
+      .job--posts button {
+          width: 30%;
+      }
 
-    .vid--mobile, .vid--mid  {
-      display: none;
-    }
+      .vid--mobile, .vid--mid  {
+        display: none;
+      }
 
-    .vid--desktop {
-      display: inline;
+      .vid--desktop {
+        display: inline;
 
-    }
+      }
+  }
+  }
 }
